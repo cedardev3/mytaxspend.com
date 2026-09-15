@@ -1,0 +1,2532 @@
+{
+  "generatedAt": "2026-09-15T06:38:35Z",
+  "omb": {
+    "table": "3.2",
+    "title": "Outlays by Function and Subfunction",
+    "fiscalYear": 2025,
+    "status": "actual",
+    "units": "millions of dollars",
+    "publication": "Budget of the United States Government, Fiscal Year 2027",
+    "dateIssued": "2026-04-03",
+    "zipUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/zip/BUDGET-2027-TAB.zip",
+    "spreadsheetUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx",
+    "detailsUrl": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB",
+    "historicalTablesUrl": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/",
+    "amountMillions": 7011105.0,
+    "onBudgetMillions": 5579500.0,
+    "offBudgetMillions": 1431605.0
+  },
+  "treasuryMts": {
+    "recordDate": "2026-08-31",
+    "fiscalYear": 2026,
+    "periodLabel": "FY 2026 through August 31, 2026",
+    "receipts": 4845452239722.57,
+    "netOutlays": 6811043257196.1,
+    "functions": [
+      {
+        "name": "National Defense",
+        "amount": 876163147483.11,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:National%20Defense&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "International Affairs",
+        "amount": 44856706952.51,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:International%20Affairs&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "General Science, Space, and Technology",
+        "amount": 36244370834.92,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:General%20Science%2C%20Space%2C%20and%20Technology&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Energy",
+        "amount": 18397623743.74,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Energy&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Natural Resources and Environment",
+        "amount": 51890792643.15,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Natural%20Resources%20and%20Environment&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Agriculture",
+        "amount": 51012897156.25,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Agriculture&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Commerce and Housing Credit",
+        "amount": -10489655182.17,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Commerce%20and%20Housing%20Credit&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Transportation",
+        "amount": 126436540460.34,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Transportation&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Community and Regional Development",
+        "amount": 57374718724.84,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Community%20and%20Regional%20Development&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Education, Training, Employment, and Social Services",
+        "amount": 91952446164.87,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Education%2C%20Training%2C%20Employment%2C%20and%20Social%20Services&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Health",
+        "amount": 925697746444.03,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Health&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Medicare",
+        "amount": 979300323725.09,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Medicare&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Income Security",
+        "amount": 645229822908.48,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Income%20Security&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Social Security",
+        "amount": 1525869028278.8,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Social%20Security&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Veterans Benefits and Services",
+        "amount": 395646633236.24,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Veterans%20Benefits%20and%20Services&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Administration of Justice",
+        "amount": 99368583177.08,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Administration%20of%20Justice&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "General Government",
+        "amount": 24840909797.99,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:General%20Government&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Net Interest",
+        "amount": 1016966437408.25,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Net%20Interest&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Undistributed Offsetting Receipts",
+        "amount": -145715816761.42,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Undistributed%20Offsetting%20Receipts&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      }
+    ],
+    "queryUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31&sort=src_line_nbr&page[size]=200",
+    "datasetUrl": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/",
+    "latestRecordQueryUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?sort=-record_date&page[size]=1&fields=record_date,record_fiscal_year,record_calendar_month"
+  },
+  "root": {
+    "id": "us-federal-outlays",
+    "name": "US federal outlays",
+    "amountMillions": 7011105.0,
+    "color": "#1f3d4d",
+    "description": "FY 2025 actual federal outlays from OMB Historical Table 3.2. Click a function to open its official subfunctions.",
+    "sources": [
+      {
+        "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+        "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+      },
+      {
+        "label": "FY 2027 Historical Tables (GovInfo)",
+        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+      },
+      {
+        "label": "Table 3.2 spreadsheet",
+        "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+      }
+    ],
+    "children": [
+      {
+        "id": "050-national-defense",
+        "name": "National Defense",
+        "code": "050",
+        "amountMillions": 916140.0,
+        "color": "#c45c26",
+        "description": "OMB budget function 050: National Defense. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:National%20Defense&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "050-military-personnel",
+            "name": "Military Personnel",
+            "amountMillions": 206527.0,
+            "color": "#cf794d",
+            "description": "OMB Table 3.2 line under function 050: Military Personnel.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "050-operation-and-maintenance",
+            "name": "Operation and Maintenance",
+            "amountMillions": 342398.0,
+            "color": "#a6562d",
+            "description": "OMB Table 3.2 line under function 050: Operation and Maintenance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "050-procurement",
+            "name": "Procurement",
+            "amountMillions": 161963.0,
+            "color": "#cf794d",
+            "description": "OMB Table 3.2 line under function 050: Procurement.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "050-research-development-test-and-evaluation",
+            "name": "Research, Development, Test, and Evaluation",
+            "amountMillions": 141424.0,
+            "color": "#a6562d",
+            "description": "OMB Table 3.2 line under function 050: Research, Development, Test, and Evaluation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "050-military-construction",
+            "name": "Military Construction",
+            "amountMillions": 13150.0,
+            "color": "#cf794d",
+            "description": "OMB Table 3.2 line under function 050: Military Construction.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "050-family-housing",
+            "name": "Family Housing",
+            "amountMillions": 1785.0,
+            "color": "#a6562d",
+            "description": "OMB Table 3.2 line under function 050: Family Housing.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "050-other",
+            "name": "Other",
+            "amountMillions": 1179.0,
+            "color": "#cf794d",
+            "description": "OMB Table 3.2 line under function 050: Other.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "050-053-atomic-energy-defense-activities",
+            "name": "Atomic energy defense activities",
+            "amountMillions": 36551.0,
+            "color": "#a6562d",
+            "description": "OMB subfunction 053, Atomic energy defense activities.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "053"
+          },
+          {
+            "id": "050-054-defense-related-activities",
+            "name": "Defense-related activities",
+            "amountMillions": 11163.0,
+            "color": "#cf794d",
+            "description": "OMB subfunction 054, Defense-related activities.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "054"
+          }
+        ]
+      },
+      {
+        "id": "150-international-affairs",
+        "name": "International Affairs",
+        "code": "150",
+        "amountMillions": 45171.0,
+        "color": "#2a6f97",
+        "description": "OMB budget function 150: International Affairs. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:International%20Affairs&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "150-151-international-development-and-humanitarian-assistance",
+            "name": "International development and humanitarian assistance",
+            "amountMillions": 30014.0,
+            "color": "#5089aa",
+            "description": "OMB subfunction 151, International development and humanitarian assistance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "151"
+          },
+          {
+            "id": "150-152-international-security-assistance",
+            "name": "International security assistance",
+            "amountMillions": 15516.0,
+            "color": "#28668a",
+            "description": "OMB subfunction 152, International security assistance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "152"
+          },
+          {
+            "id": "150-153-conduct-of-foreign-affairs",
+            "name": "Conduct of foreign affairs",
+            "amountMillions": 12558.0,
+            "color": "#5089aa",
+            "description": "OMB subfunction 153, Conduct of foreign affairs.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "153"
+          },
+          {
+            "id": "150-154-foreign-information-and-exchange-activities",
+            "name": "Foreign information and exchange activities",
+            "amountMillions": 2019.0,
+            "color": "#28668a",
+            "description": "OMB subfunction 154, Foreign information and exchange activities.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "154"
+          },
+          {
+            "id": "150-155-international-financial-programs",
+            "name": "International financial programs",
+            "amountMillions": -14936.0,
+            "color": "#5089aa",
+            "description": "OMB subfunction 155, International financial programs.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "155"
+          }
+        ]
+      },
+      {
+        "id": "250-general-science-space-and-technology",
+        "name": "General Science, Space, and Technology",
+        "code": "250",
+        "amountMillions": 41966.0,
+        "color": "#6b5b95",
+        "description": "OMB budget function 250: General Science, Space, and Technology. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:General%20Science%2C%20Space%2C%20and%20Technology&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "250-251-general-science-and-basic-research",
+            "name": "General science and basic research",
+            "amountMillions": 18362.0,
+            "color": "#8679a8",
+            "description": "OMB subfunction 251, General science and basic research.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "251"
+          },
+          {
+            "id": "250-252-space-flight-research-and-supporting-activities",
+            "name": "Space flight, research, and supporting activities",
+            "amountMillions": 23604.0,
+            "color": "#5d5688",
+            "description": "OMB subfunction 252, Space flight, research, and supporting activities.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "252"
+          }
+        ]
+      },
+      {
+        "id": "270-energy",
+        "name": "Energy",
+        "code": "270",
+        "amountMillions": 20765.0,
+        "color": "#b8860b",
+        "description": "OMB budget function 270: Energy. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Energy&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "270-271-energy-supply",
+            "name": "Energy supply",
+            "amountMillions": 11794.0,
+            "color": "#c59c37",
+            "description": "OMB subfunction 271, Energy supply.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "271"
+          },
+          {
+            "id": "270-272-energy-conservation",
+            "name": "Energy conservation",
+            "amountMillions": 5792.0,
+            "color": "#9c7917",
+            "description": "OMB subfunction 272, Energy conservation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "272"
+          },
+          {
+            "id": "270-274-emergency-energy-preparedness",
+            "name": "Emergency energy preparedness",
+            "amountMillions": 2383.0,
+            "color": "#c59c37",
+            "description": "OMB subfunction 274, Emergency energy preparedness.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "274"
+          },
+          {
+            "id": "270-276-energy-information-policy-and-regulation",
+            "name": "Energy information, policy, and regulation",
+            "amountMillions": 796.0,
+            "color": "#9c7917",
+            "description": "OMB subfunction 276, Energy information, policy, and regulation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "276"
+          }
+        ]
+      },
+      {
+        "id": "300-natural-resources-and-environment",
+        "name": "Natural Resources and Environment",
+        "code": "300",
+        "amountMillions": 89834.0,
+        "color": "#4a7c59",
+        "description": "OMB budget function 300: Natural Resources and Environment. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Natural%20Resources%20and%20Environment&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "300-301-water-resources",
+            "name": "Water resources",
+            "amountMillions": 17020.0,
+            "color": "#6b9477",
+            "description": "OMB subfunction 301, Water resources.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "301"
+          },
+          {
+            "id": "300-302-conservation-and-land-management",
+            "name": "Conservation and land management",
+            "amountMillions": 19675.0,
+            "color": "#427157",
+            "description": "OMB subfunction 302, Conservation and land management.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "302"
+          },
+          {
+            "id": "300-303-recreational-resources",
+            "name": "Recreational resources",
+            "amountMillions": 5614.0,
+            "color": "#6b9477",
+            "description": "OMB subfunction 303, Recreational resources.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "303"
+          },
+          {
+            "id": "300-304-pollution-control-and-abatement",
+            "name": "Pollution control and abatement",
+            "amountMillions": 36232.0,
+            "color": "#427157",
+            "description": "OMB subfunction 304, Pollution control and abatement.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "304"
+          },
+          {
+            "id": "300-306-other-natural-resources",
+            "name": "Other natural resources",
+            "amountMillions": 11293.0,
+            "color": "#6b9477",
+            "description": "OMB subfunction 306, Other natural resources.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "306"
+          }
+        ]
+      },
+      {
+        "id": "350-agriculture",
+        "name": "Agriculture",
+        "code": "350",
+        "amountMillions": 47447.0,
+        "color": "#8a9a3a",
+        "description": "OMB budget function 350: Agriculture. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Agriculture&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "350-351-farm-income-stabilization",
+            "name": "Farm income stabilization",
+            "amountMillions": 21185.0,
+            "color": "#9fac5d",
+            "description": "OMB subfunction 351, Farm income stabilization.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "351"
+          },
+          {
+            "id": "350-352-agricultural-research-and-services",
+            "name": "Agricultural research and services",
+            "amountMillions": 26262.0,
+            "color": "#77893d",
+            "description": "OMB subfunction 352, Agricultural research and services.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "352"
+          }
+        ]
+      },
+      {
+        "id": "370-commerce-and-housing-credit",
+        "name": "Commerce and Housing Credit",
+        "code": "370",
+        "amountMillions": -28131.0,
+        "color": "#7a6a58",
+        "description": "OMB budget function 370: Commerce and Housing Credit. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Commerce%20and%20Housing%20Credit&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "370-371-mortgage-credit",
+            "name": "Mortgage credit",
+            "amountMillions": -40708.0,
+            "color": "#928576",
+            "description": "OMB subfunction 371, Mortgage credit.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "371"
+          },
+          {
+            "id": "370-372-postal-service",
+            "name": "Postal service",
+            "amountMillions": 5165.0,
+            "color": "#6a6256",
+            "description": "OMB subfunction 372, Postal service.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "372"
+          },
+          {
+            "id": "370-373-deposit-insurance",
+            "name": "Deposit insurance",
+            "amountMillions": -32159.0,
+            "color": "#928576",
+            "description": "OMB subfunction 373, Deposit insurance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "373"
+          },
+          {
+            "id": "370-376-other-advancement-of-commerce",
+            "name": "Other advancement of commerce",
+            "amountMillions": 39571.0,
+            "color": "#6a6256",
+            "description": "OMB subfunction 376, Other advancement of commerce.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "376"
+          }
+        ]
+      },
+      {
+        "id": "400-transportation",
+        "name": "Transportation",
+        "code": "400",
+        "amountMillions": 145320.0,
+        "color": "#5c6b73",
+        "description": "OMB budget function 400: Transportation. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Transportation&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "400-401-ground-transportation",
+            "name": "Ground transportation",
+            "amountMillions": 100827.0,
+            "color": "#79868c",
+            "description": "OMB subfunction 401, Ground transportation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "401"
+          },
+          {
+            "id": "400-402-air-transportation",
+            "name": "Air transportation",
+            "amountMillions": 29743.0,
+            "color": "#51636c",
+            "description": "OMB subfunction 402, Air transportation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "402"
+          },
+          {
+            "id": "400-403-water-transportation",
+            "name": "Water transportation",
+            "amountMillions": 13852.0,
+            "color": "#79868c",
+            "description": "OMB subfunction 403, Water transportation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "403"
+          },
+          {
+            "id": "400-407-other-transportation",
+            "name": "Other transportation",
+            "amountMillions": 898.0,
+            "color": "#51636c",
+            "description": "OMB subfunction 407, Other transportation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "407"
+          }
+        ]
+      },
+      {
+        "id": "450-community-and-regional-development",
+        "name": "Community and Regional Development",
+        "code": "450",
+        "amountMillions": 82374.0,
+        "color": "#3b6d9a",
+        "description": "OMB budget function 450: Community and Regional Development. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Community%20and%20Regional%20Development&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "450-451-community-development",
+            "name": "Community development",
+            "amountMillions": 12318.0,
+            "color": "#5e87ac",
+            "description": "OMB subfunction 451, Community development.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "451"
+          },
+          {
+            "id": "450-452-area-and-regional-development",
+            "name": "Area and regional development",
+            "amountMillions": 7288.0,
+            "color": "#36648c",
+            "description": "OMB subfunction 452, Area and regional development.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "452"
+          },
+          {
+            "id": "450-453-disaster-relief-and-insurance",
+            "name": "Disaster relief and insurance",
+            "amountMillions": 62768.0,
+            "color": "#5e87ac",
+            "description": "OMB subfunction 453, Disaster relief and insurance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "453"
+          }
+        ]
+      },
+      {
+        "id": "500-education-training-employment-and-social-services",
+        "name": "Education, Training, Employment, and Social Services",
+        "code": "500",
+        "amountMillions": 72042.0,
+        "color": "#c4922a",
+        "description": "OMB budget function 500: Education, Training, Employment, and Social Services. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Education%2C%20Training%2C%20Employment%2C%20and%20Social%20Services&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "500-501-elementary-secondary-and-vocational-education",
+            "name": "Elementary, secondary, and vocational education",
+            "amountMillions": 68364.0,
+            "color": "#cfa650",
+            "description": "OMB subfunction 501, Elementary, secondary, and vocational education.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "501"
+          },
+          {
+            "id": "500-502-higher-education",
+            "name": "Higher education",
+            "amountMillions": -35005.0,
+            "color": "#a68330",
+            "description": "OMB subfunction 502, Higher education.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "502"
+          },
+          {
+            "id": "500-503-research-and-general-education-aids",
+            "name": "Research and general education aids",
+            "amountMillions": 4656.0,
+            "color": "#cfa650",
+            "description": "OMB subfunction 503, Research and general education aids.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "503"
+          },
+          {
+            "id": "500-504-training-and-employment",
+            "name": "Training and employment",
+            "amountMillions": 5434.0,
+            "color": "#a68330",
+            "description": "OMB subfunction 504, Training and employment.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "504"
+          },
+          {
+            "id": "500-505-other-labor-services",
+            "name": "Other labor services",
+            "amountMillions": 2282.0,
+            "color": "#cfa650",
+            "description": "OMB subfunction 505, Other labor services.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "505"
+          },
+          {
+            "id": "500-506-social-services",
+            "name": "Social services",
+            "amountMillions": 26311.0,
+            "color": "#a68330",
+            "description": "OMB subfunction 506, Social services.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "506"
+          }
+        ]
+      },
+      {
+        "id": "550-health",
+        "name": "Health",
+        "code": "550",
+        "amountMillions": 978511.0,
+        "color": "#2f7d6d",
+        "description": "OMB budget function 550: Health. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Health&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "550-551-health-care-services",
+            "name": "Health care services",
+            "amountMillions": 922659.0,
+            "color": "#549487",
+            "description": "OMB subfunction 551, Health care services.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "551"
+          },
+          {
+            "id": "550-552-health-research-and-training",
+            "name": "Health research and training",
+            "amountMillions": 50204.0,
+            "color": "#2c7167",
+            "description": "OMB subfunction 552, Health research and training.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "552"
+          },
+          {
+            "id": "550-554-consumer-and-occupational-health-and-safety",
+            "name": "Consumer and occupational health and safety",
+            "amountMillions": 5648.0,
+            "color": "#549487",
+            "description": "OMB subfunction 554, Consumer and occupational health and safety.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "554"
+          }
+        ]
+      },
+      {
+        "id": "570-medicare",
+        "name": "Medicare",
+        "code": "570",
+        "amountMillions": 996718.0,
+        "color": "#1f6f62",
+        "description": "OMB budget function 570: Medicare. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Medicare&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "570-571-medicare",
+            "name": "Medicare",
+            "amountMillions": 996718.0,
+            "color": "#47897e",
+            "description": "OMB subfunction 571, Medicare.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "571"
+          }
+        ]
+      },
+      {
+        "id": "600-income-security",
+        "name": "Income Security",
+        "code": "600",
+        "amountMillions": 701609.0,
+        "color": "#3b6d9a",
+        "description": "OMB budget function 600: Income Security. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Income%20Security&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "600-601-general-retirement-and-disability-insurance-excluding-social-security",
+            "name": "General retirement and disability insurance (excluding social security)",
+            "amountMillions": 6663.0,
+            "color": "#5e87ac",
+            "description": "OMB subfunction 601, General retirement and disability insurance (excluding social security).",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "601"
+          },
+          {
+            "id": "600-602-federal-employee-retirement-and-disability",
+            "name": "Federal employee retirement and disability",
+            "amountMillions": 190234.0,
+            "color": "#36648c",
+            "description": "OMB subfunction 602, Federal employee retirement and disability.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "602"
+          },
+          {
+            "id": "600-603-unemployment-compensation",
+            "name": "Unemployment compensation",
+            "amountMillions": 41771.0,
+            "color": "#5e87ac",
+            "description": "OMB subfunction 603, Unemployment compensation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "603"
+          },
+          {
+            "id": "600-604-housing-assistance",
+            "name": "Housing assistance",
+            "amountMillions": 77989.0,
+            "color": "#36648c",
+            "description": "OMB subfunction 604, Housing assistance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "604"
+          },
+          {
+            "id": "600-605-food-and-nutrition-assistance",
+            "name": "Food and nutrition assistance",
+            "amountMillions": 149631.0,
+            "color": "#5e87ac",
+            "description": "OMB subfunction 605, Food and nutrition assistance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "605"
+          },
+          {
+            "id": "600-609-other-income-security",
+            "name": "Other income security",
+            "amountMillions": 235321.0,
+            "color": "#36648c",
+            "description": "OMB subfunction 609, Other income security.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "609"
+          }
+        ]
+      },
+      {
+        "id": "650-social-security",
+        "name": "Social Security",
+        "code": "650",
+        "amountMillions": 1580673.0,
+        "color": "#245d82",
+        "description": "OMB budget function 650: Social Security. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Social%20Security&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "650-651-social-security",
+            "name": "Social security",
+            "amountMillions": 1580673.0,
+            "color": "#4b7a98",
+            "description": "OMB subfunction 651, Social security.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "651"
+          }
+        ]
+      },
+      {
+        "id": "700-veterans-benefits-and-services",
+        "name": "Veterans Benefits and Services",
+        "code": "700",
+        "amountMillions": 377163.0,
+        "color": "#4a7c59",
+        "description": "OMB budget function 700: Veterans Benefits and Services. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Veterans%20Benefits%20and%20Services&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "700-701-income-security-for-veterans",
+            "name": "Income security for veterans",
+            "amountMillions": 200631.0,
+            "color": "#6b9477",
+            "description": "OMB subfunction 701, Income security for veterans.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "701"
+          },
+          {
+            "id": "700-702-veterans-education-training-and-rehabilitation",
+            "name": "Veterans education, training, and rehabilitation",
+            "amountMillions": 16379.0,
+            "color": "#427157",
+            "description": "OMB subfunction 702, Veterans education, training, and rehabilitation.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "702"
+          },
+          {
+            "id": "700-703-hospital-and-medical-care-for-veterans",
+            "name": "Hospital and medical care for veterans",
+            "amountMillions": 148835.0,
+            "color": "#6b9477",
+            "description": "OMB subfunction 703, Hospital and medical care for veterans.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "703"
+          },
+          {
+            "id": "700-704-veterans-housing",
+            "name": "Veterans housing",
+            "amountMillions": 981.0,
+            "color": "#427157",
+            "description": "OMB subfunction 704, Veterans housing.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "704"
+          },
+          {
+            "id": "700-705-other-veterans-benefits-and-services",
+            "name": "Other veterans benefits and services",
+            "amountMillions": 10337.0,
+            "color": "#6b9477",
+            "description": "OMB subfunction 705, Other veterans benefits and services.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "705"
+          }
+        ]
+      },
+      {
+        "id": "750-administration-of-justice",
+        "name": "Administration of Justice",
+        "code": "750",
+        "amountMillions": 83146.0,
+        "color": "#5c4a6b",
+        "description": "OMB budget function 750: Administration of Justice. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Administration%20of%20Justice&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "750-751-federal-law-enforcement-activities",
+            "name": "Federal law enforcement activities",
+            "amountMillions": 43862.0,
+            "color": "#796b86",
+            "description": "OMB subfunction 751, Federal law enforcement activities.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "751"
+          },
+          {
+            "id": "750-752-federal-litigative-and-judicial-activities",
+            "name": "Federal litigative and judicial activities",
+            "amountMillions": 19909.0,
+            "color": "#514866",
+            "description": "OMB subfunction 752, Federal litigative and judicial activities.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "752"
+          },
+          {
+            "id": "750-753-federal-correctional-activities",
+            "name": "Federal correctional activities",
+            "amountMillions": 9133.0,
+            "color": "#796b86",
+            "description": "OMB subfunction 753, Federal correctional activities.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "753"
+          },
+          {
+            "id": "750-754-criminal-justice-assistance",
+            "name": "Criminal justice assistance",
+            "amountMillions": 10242.0,
+            "color": "#514866",
+            "description": "OMB subfunction 754, Criminal justice assistance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "754"
+          }
+        ]
+      },
+      {
+        "id": "800-general-government",
+        "name": "General Government",
+        "code": "800",
+        "amountMillions": 40546.0,
+        "color": "#7a6a58",
+        "description": "OMB budget function 800: General Government. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:General%20Government&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "800-801-legislative-functions",
+            "name": "Legislative functions",
+            "amountMillions": 6303.0,
+            "color": "#928576",
+            "description": "OMB subfunction 801, Legislative functions.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "801"
+          },
+          {
+            "id": "800-802-executive-direction-and-management",
+            "name": "Executive direction and management",
+            "amountMillions": 589.0,
+            "color": "#6a6256",
+            "description": "OMB subfunction 802, Executive direction and management.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "802"
+          },
+          {
+            "id": "800-803-central-fiscal-operations",
+            "name": "Central fiscal operations",
+            "amountMillions": 21105.0,
+            "color": "#928576",
+            "description": "OMB subfunction 803, Central fiscal operations.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "803"
+          },
+          {
+            "id": "800-804-general-property-and-records-management",
+            "name": "General property and records management",
+            "amountMillions": -23.0,
+            "color": "#6a6256",
+            "description": "OMB subfunction 804, General property and records management.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "804"
+          },
+          {
+            "id": "800-805-central-personnel-management",
+            "name": "Central personnel management",
+            "amountMillions": 433.0,
+            "color": "#928576",
+            "description": "OMB subfunction 805, Central personnel management.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "805"
+          },
+          {
+            "id": "800-806-general-purpose-fiscal-assistance",
+            "name": "General purpose fiscal assistance",
+            "amountMillions": 9134.0,
+            "color": "#6a6256",
+            "description": "OMB subfunction 806, General purpose fiscal assistance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "806"
+          },
+          {
+            "id": "800-808-other-general-government",
+            "name": "Other general government",
+            "amountMillions": 5495.0,
+            "color": "#928576",
+            "description": "OMB subfunction 808, Other general government.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "808"
+          },
+          {
+            "id": "800-809-deductions-for-offsetting-receipts",
+            "name": "Deductions for offsetting receipts",
+            "amountMillions": -2490.0,
+            "color": "#6a6256",
+            "description": "OMB subfunction 809, Deductions for offsetting receipts.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "809"
+          }
+        ]
+      },
+      {
+        "id": "900-net-interest",
+        "name": "Net Interest",
+        "code": "900",
+        "amountMillions": 970065.0,
+        "color": "#6b5b95",
+        "description": "OMB budget function 900: Net Interest. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Net%20Interest&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "900-901-interest-on-treasury-debt-securities-gross",
+            "name": "Interest on Treasury debt securities (gross)",
+            "amountMillions": 1215611.0,
+            "color": "#8679a8",
+            "description": "OMB subfunction 901, Interest on Treasury debt securities (gross).",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "901"
+          },
+          {
+            "id": "900-902-interest-received-by-on-budget-trust-funds",
+            "name": "Interest received by on-budget trust funds",
+            "amountMillions": -117535.0,
+            "color": "#5d5688",
+            "description": "OMB subfunction 902, Interest received by on-budget trust funds.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "902"
+          },
+          {
+            "id": "900-903-interest-received-by-off-budget-trust-funds",
+            "name": "Interest received by off-budget trust funds",
+            "amountMillions": -70026.0,
+            "color": "#8679a8",
+            "description": "OMB subfunction 903, Interest received by off-budget trust funds.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "903"
+          },
+          {
+            "id": "900-908-other-interest",
+            "name": "Other interest",
+            "amountMillions": -55249.0,
+            "color": "#5d5688",
+            "description": "OMB subfunction 908, Other interest.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "908"
+          },
+          {
+            "id": "900-909-other-investment-income",
+            "name": "Other investment income",
+            "amountMillions": -2736.0,
+            "color": "#8679a8",
+            "description": "OMB subfunction 909, Other investment income.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "909"
+          }
+        ]
+      },
+      {
+        "id": "950-undistributed-offsetting-receipts",
+        "name": "Undistributed Offsetting Receipts",
+        "code": "950",
+        "amountMillions": -150254.0,
+        "color": "#8a7060",
+        "description": "OMB budget function 950: Undistributed Offsetting Receipts. FY 2025 actual outlays.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Table 3.2 spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+          },
+          {
+            "label": "Treasury MTS Table 9, FY 2026 through August 31, 2026",
+            "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Undistributed%20Offsetting%20Receipts&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+          },
+          {
+            "label": "Monthly Treasury Statement dataset",
+            "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/"
+          }
+        ],
+        "children": [
+          {
+            "id": "950-951-employer-share-employee-retirement-on-budget",
+            "name": "Employer share, employee retirement (on-budget)",
+            "amountMillions": -120078.0,
+            "color": "#9f8a7d",
+            "description": "OMB subfunction 951, Employer share, employee retirement (on-budget).",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "951"
+          },
+          {
+            "id": "950-952-employer-share-employee-retirement-off-budget",
+            "name": "Employer share, employee retirement (off-budget)",
+            "amountMillions": -24370.0,
+            "color": "#77675d",
+            "description": "OMB subfunction 952, Employer share, employee retirement (off-budget).",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "952"
+          },
+          {
+            "id": "950-953-rents-and-royalties-on-the-outer-continental-shelf",
+            "name": "Rents and royalties on the Outer Continental Shelf",
+            "amountMillions": -5775.0,
+            "color": "#9f8a7d",
+            "description": "OMB subfunction 953, Rents and royalties on the Outer Continental Shelf.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "953"
+          },
+          {
+            "id": "950-954-sale-of-major-assets",
+            "name": "Sale of major assets",
+            "amountMillions": -31.0,
+            "color": "#77675d",
+            "description": "OMB subfunction 954, Sale of major assets.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 3.2, FY 2025 actual outlays",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Table 3.2 spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+              }
+            ],
+            "code": "954"
+          }
+        ]
+      }
+    ]
+  }
+}
