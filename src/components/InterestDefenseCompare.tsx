@@ -25,7 +25,7 @@ export default function InterestDefenseCompare({ pair }: InterestDefenseCompareP
       className="flex h-full flex-col justify-center rounded-2xl border border-[#eadfce] bg-white/80 px-3 py-2.5"
     >
       <p className="text-[10px] font-medium uppercase tracking-wide text-[#8a7358]">
-        Interest vs defense
+        Interest vs defense payments
       </p>
       <p className="mt-0.5 text-[11px] leading-4 text-[#5c6b73]">
         {interestLeads ? (

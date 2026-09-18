@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T06:18:37Z",
+  "generatedAt": "2026-09-18T07:57:15Z",
   "omb": {
     "table": "Public Accounts",
     "title": "Federal revenues by source (Public Accounts of Canada)",
@@ -32,7 +32,7 @@
     "name": "Canadian Federal Revenue",
     "amountMillions": 510951.0,
     "color": "#1f3d4d",
-    "description": "FY 2024-25 actual Canadian federal revenues from the Public Accounts of Canada (2 layers). Click a source to open its components.",
+    "description": "FY 2024-25 actual Canadian federal revenues from the Public Accounts of Canada. Click a source to open income-tax, GST, and other revenue detail.",
     "sources": [
       {
         "label": "Public Accounts of Canada, FY 2024-25",
@@ -62,11 +62,11 @@
         ],
         "children": [
           {
-            "id": "ca-tax-personal-income-tax",
-            "name": "Personal income tax",
-            "amountMillions": 234319.0,
-            "color": "#cd7649",
-            "description": "Public Accounts FY 2024-25: Personal income tax.",
+            "id": "ca-tax-income-tax-revenues",
+            "name": "Income tax revenues",
+            "amountMillions": 344801.0,
+            "color": "#cb7040",
+            "description": "Public Accounts FY 2024-25: Income tax revenues.",
             "sources": [
               {
                 "label": "Public Accounts of Canada, FY 2024-25",
@@ -76,14 +76,67 @@
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
               }
+            ],
+            "children": [
+              {
+                "id": "ca-tax-income-tax-revenues-personal",
+                "name": "Personal",
+                "amountMillions": 234319.0,
+                "color": "#cd7649",
+                "description": "Public Accounts FY 2024-25: Personal.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-tax-income-tax-revenues-corporate",
+                "name": "Corporate",
+                "amountMillions": 96954.0,
+                "color": "#aa572c",
+                "description": "Public Accounts FY 2024-25: Corporate.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-tax-income-tax-revenues-non-resident",
+                "name": "Non-resident",
+                "amountMillions": 13528.0,
+                "color": "#cd7649",
+                "description": "Public Accounts FY 2024-25: Non-resident.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              }
             ]
           },
           {
-            "id": "ca-tax-corporate-income-tax",
-            "name": "Corporate income tax",
-            "amountMillions": 96954.0,
-            "color": "#aa572c",
-            "description": "Public Accounts FY 2024-25: Corporate income tax.",
+            "id": "ca-tax-other-taxes-and-duties",
+            "name": "Other taxes and duties",
+            "amountMillions": 71904.0,
+            "color": "#b0582b",
+            "description": "Public Accounts FY 2024-25: Other taxes and duties.",
             "sources": [
               {
                 "label": "Public Accounts of Canada, FY 2024-25",
@@ -93,90 +146,217 @@
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
               }
-            ]
-          },
-          {
-            "id": "ca-tax-non-resident-income-tax",
-            "name": "Non-resident income tax",
-            "amountMillions": 13528.0,
-            "color": "#cd7649",
-            "description": "Public Accounts FY 2024-25: Non-resident income tax.",
-            "sources": [
+            ],
+            "children": [
               {
-                "label": "Public Accounts of Canada, FY 2024-25",
-                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                "id": "ca-tax-other-taxes-and-duties-goods-and-services-tax",
+                "name": "Goods and services tax",
+                "amountMillions": 52503.0,
+                "color": "#cd7649",
+                "description": "Public Accounts FY 2024-25: Goods and services tax.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-goods-and-services-tax-gst",
+                    "name": "GST",
+                    "amountMillions": 62334.0,
+                    "color": "#d07d51",
+                    "description": "Public Accounts FY 2024-25: GST.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-goods-and-services-tax-quarterly-tax-credits",
+                    "name": "Quarterly tax credits",
+                    "amountMillions": -6266.0,
+                    "color": "#a3562e",
+                    "description": "Public Accounts FY 2024-25: Quarterly tax credits.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-goods-and-services-tax-remission-order-for-the-gst-paid-and-accrue",
+                    "name": "Remission order for the GST paid and accrued by ministries on or for goods and services purchased from outside parties",
+                    "amountMillions": -3565.0,
+                    "color": "#d07d51",
+                    "description": "Public Accounts FY 2024-25: Remission order for the GST paid and accrued by ministries on or for goods and services purchased from outside parties.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "label": "Revenues / expenses CSV",
-                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
-              }
-            ]
-          },
-          {
-            "id": "ca-tax-goods-and-services-tax",
-            "name": "Goods and services tax",
-            "amountMillions": 52503.0,
-            "color": "#aa572c",
-            "description": "Public Accounts FY 2024-25: Goods and services tax.",
-            "sources": [
-              {
-                "label": "Public Accounts of Canada, FY 2024-25",
-                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                "id": "ca-tax-other-taxes-and-duties-other-excise-taxes-and-duties",
+                "name": "Other excise taxes and duties",
+                "amountMillions": 7487.0,
+                "color": "#aa572c",
+                "description": "Public Accounts FY 2024-25: Other excise taxes and duties.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-other-excise-taxes-and-duties-excise-duties",
+                    "name": "Excise duties",
+                    "amountMillions": 5656.0,
+                    "color": "#d07d51",
+                    "description": "Public Accounts FY 2024-25: Excise duties.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-other-excise-taxes-and-duties-air-travellers-security-charge",
+                    "name": "Air travellers security charge",
+                    "amountMillions": 1159.0,
+                    "color": "#a3562e",
+                    "description": "Public Accounts FY 2024-25: Air travellers security charge.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-other-excise-taxes-and-duties-other-miscellaneous-excise-taxes-and",
+                    "name": "Other miscellaneous excise taxes and duties",
+                    "amountMillions": 672.0,
+                    "color": "#d07d51",
+                    "description": "Public Accounts FY 2024-25: Other miscellaneous excise taxes and duties.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "label": "Revenues / expenses CSV",
-                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
-              }
-            ]
-          },
-          {
-            "id": "ca-tax-energy-taxes",
-            "name": "Energy taxes",
-            "amountMillions": 5650.0,
-            "color": "#cd7649",
-            "description": "Public Accounts FY 2024-25: Energy taxes.",
-            "sources": [
-              {
-                "label": "Public Accounts of Canada, FY 2024-25",
-                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                "id": "ca-tax-other-taxes-and-duties-customs-import-duties",
+                "name": "Customs import duties",
+                "amountMillions": 6264.0,
+                "color": "#cd7649",
+                "description": "Public Accounts FY 2024-25: Customs import duties.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
               },
               {
-                "label": "Revenues / expenses CSV",
-                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
-              }
-            ]
-          },
-          {
-            "id": "ca-tax-customs-import-duties",
-            "name": "Customs import duties",
-            "amountMillions": 6264.0,
-            "color": "#aa572c",
-            "description": "Public Accounts FY 2024-25: Customs import duties.",
-            "sources": [
-              {
-                "label": "Public Accounts of Canada, FY 2024-25",
-                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
-              },
-              {
-                "label": "Revenues / expenses CSV",
-                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
-              }
-            ]
-          },
-          {
-            "id": "ca-tax-other-excise-taxes-and-duties",
-            "name": "Other excise taxes and duties",
-            "amountMillions": 7487.0,
-            "color": "#cd7649",
-            "description": "Public Accounts FY 2024-25: Other excise taxes and duties.",
-            "sources": [
-              {
-                "label": "Public Accounts of Canada, FY 2024-25",
-                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
-              },
-              {
-                "label": "Revenues / expenses CSV",
-                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                "id": "ca-tax-other-taxes-and-duties-energy-taxes",
+                "name": "Energy taxes",
+                "amountMillions": 5650.0,
+                "color": "#aa572c",
+                "description": "Public Accounts FY 2024-25: Energy taxes.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-energy-taxes-excise-tax-gasoline",
+                    "name": "Excise tax\u2014Gasoline",
+                    "amountMillions": 4361.0,
+                    "color": "#d07d51",
+                    "description": "Public Accounts FY 2024-25: Excise tax\u2014Gasoline.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-tax-other-taxes-and-duties-energy-taxes-excise-tax-aviation-gasoline-and-diesel-fuel",
+                    "name": "Excise tax\u2014Aviation gasoline and diesel fuel",
+                    "amountMillions": 1289.0,
+                    "color": "#a3562e",
+                    "description": "Public Accounts FY 2024-25: Excise tax\u2014Aviation gasoline and diesel fuel.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -237,7 +417,7 @@
             "id": "ca-other-rev-other-program-revenues",
             "name": "Other program revenues",
             "amountMillions": 34348.0,
-            "color": "#cda34c",
+            "color": "#cb9f44",
             "description": "Public Accounts FY 2024-25: Other program revenues.",
             "sources": [
               {
@@ -248,13 +428,49 @@
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
               }
+            ],
+            "children": [
+              {
+                "id": "ca-other-rev-other-program-revenues-miscellaneous",
+                "name": "Miscellaneous",
+                "amountMillions": 18549.0,
+                "color": "#cda34c",
+                "description": "Public Accounts FY 2024-25: Miscellaneous.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-other-rev-other-program-revenues-sales-of-goods-and-services",
+                "name": "Sales of goods and services",
+                "amountMillions": 15799.0,
+                "color": "#aa8430",
+                "description": "Public Accounts FY 2024-25: Sales of goods and services.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              }
             ]
           },
           {
             "id": "ca-other-rev-enterprise-crown-corporations-and-other-government-business-enterprises",
             "name": "Enterprise Crown corporations and other government business enterprises",
             "amountMillions": 8048.0,
-            "color": "#aa8430",
+            "color": "#b0882e",
             "description": "Public Accounts FY 2024-25: Enterprise Crown corporations and other government business enterprises.",
             "sources": [
               {
@@ -265,13 +481,49 @@
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
               }
+            ],
+            "children": [
+              {
+                "id": "ca-other-rev-enterprise-crown-corporations-and-other-government-business-enterprises-interest-an",
+                "name": "Interest and other",
+                "amountMillions": 4809.0,
+                "color": "#cda34c",
+                "description": "Public Accounts FY 2024-25: Interest and other.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-other-rev-enterprise-crown-corporations-and-other-government-business-enterprises-share-of-an",
+                "name": "Share of annual profit (loss)",
+                "amountMillions": 3239.0,
+                "color": "#aa8430",
+                "description": "Public Accounts FY 2024-25: Share of annual profit (loss).",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              }
             ]
           },
           {
             "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments",
             "name": "Net foreign exchange revenues and return on investments",
             "amountMillions": 6768.0,
-            "color": "#cda34c",
+            "color": "#cb9f44",
             "description": "Public Accounts FY 2024-25: Net foreign exchange revenues and return on investments.",
             "sources": [
               {
@@ -281,6 +533,201 @@
               {
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+              }
+            ],
+            "children": [
+              {
+                "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-net-foreign-exchange-revenu",
+                "name": "Net foreign exchange revenues",
+                "amountMillions": 4703.0,
+                "color": "#cda34c",
+                "description": "Public Accounts FY 2024-25: Net foreign exchange revenues.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-net-foreign-exchange-revenu",
+                    "name": "Exchange Fund Account",
+                    "amountMillions": 4150.0,
+                    "color": "#d0a855",
+                    "description": "Public Accounts FY 2024-25: Exchange Fund Account.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-net-foreign-exchange-revenu",
+                    "name": "International Monetary Fund",
+                    "amountMillions": 471.0,
+                    "color": "#a38131",
+                    "description": "Public Accounts FY 2024-25: International Monetary Fund.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-net-foreign-exchange-revenu",
+                    "name": "Other",
+                    "amountMillions": 82.0,
+                    "color": "#d0a855",
+                    "description": "Public Accounts FY 2024-25: Other.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-return-on-investments",
+                "name": "Return on investments",
+                "amountMillions": 2065.0,
+                "color": "#aa8430",
+                "description": "Public Accounts FY 2024-25: Return on investments.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-return-on-investments-cash-",
+                    "name": "Cash and accounts receivable",
+                    "amountMillions": 821.0,
+                    "color": "#d0a855",
+                    "description": "Public Accounts FY 2024-25: Cash and accounts receivable.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-return-on-investments-cash-",
+                        "name": "Interest on bank deposits",
+                        "amountMillions": 821.0,
+                        "color": "#d2ac5d",
+                        "description": "Public Accounts FY 2024-25: Interest on bank deposits.",
+                        "sources": [
+                          {
+                            "label": "Public Accounts of Canada, FY 2024-25",
+                            "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                          },
+                          {
+                            "label": "Revenues / expenses CSV",
+                            "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-return-on-investments-other",
+                    "name": "Other loans, investments and advances",
+                    "amountMillions": 780.0,
+                    "color": "#a38131",
+                    "description": "Public Accounts FY 2024-25: Other loans, investments and advances.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-return-on-investments-net-l",
+                    "name": "Net loss on exchange",
+                    "amountMillions": 473.0,
+                    "color": "#d0a855",
+                    "description": "Public Accounts FY 2024-25: Net loss on exchange.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-return-on-investments-elimi",
+                    "name": "Elimination of return on investments internal to the Government",
+                    "amountMillions": -14.0,
+                    "color": "#a38131",
+                    "description": "Public Accounts FY 2024-25: Elimination of return on investments internal to the Government.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-other-rev-net-foreign-exchange-revenues-and-return-on-investments-return-on-investments-other",
+                    "name": "Other accounts",
+                    "amountMillions": 5.0,
+                    "color": "#d0a855",
+                    "description": "Public Accounts FY 2024-25: Other accounts.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts of Canada, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "Revenues / expenses CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

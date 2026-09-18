@@ -1,12 +1,13 @@
 """
-Build Canadian federal spending + revenue trees (2 layers deep) and write:
+Build Canadian federal spending + revenue trees (multi-layer) and write:
   src/data/canada-federal-outlays.json
   src/data/canada-federal-receipts.json
 
 Sources (FY 2024-25 actuals):
-  - Public Accounts of Canada revenues/expenses CSV (Receiver General)
-  - Finance Canada Fiscal Reference Tables (October 2025) for spending category detail
-  - Statistics Canada / FRT-implied GDP for share-of-GDP comparisons
+  - Finance Canada Fiscal Reference Tables (October 2025) for spending category spine
+  - Public Accounts revenues/expenses CSV for revenue + public debt detail
+  - Public Accounts Other transfer payments by ministry (OTP)
+  - Public Accounts Ministerial expenditures by type (MET) for other direct program
 
 Run: python scripts/refresh-canada-federal.py
 """
@@ -18,6 +19,7 @@ import json
 import re
 import ssl
 import urllib.request
+from collections import defaultdict
 from datetime import datetime, timezone
 from io import StringIO
 from pathlib import Path
@@ -32,6 +34,13 @@ PUBLIC_ACCOUNTS_URL = (
 PUBLIC_ACCOUNTS_DATASET = (
     "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
 )
+OTP_URL = (
+    "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/"
+    "otpmopeom-apdtmacdpam-2025.csv"
+)
+OTP_DATASET = "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+MET_URL = "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+MET_DATASET = "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
 FRT_PAGE_URL = (
     "https://www.canada.ca/en/department-finance/services/publications/"
     "fiscal-reference-tables/2025.html"
@@ -39,7 +48,7 @@ FRT_PAGE_URL = (
 FRT_PDF_URL = "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
 
 FISCAL_YEAR_LABEL = "2024-25"
-FISCAL_YEAR = 2025  # ending year, parallel to US FY labeling
+FISCAL_YEAR = 2025
 STATUS = "actual"
 
 # FRT Table 7 / 10 / 11 / 12 / 13 — FY 2024-25 (millions of dollars).
@@ -73,10 +82,8 @@ FRT_SPENDING = {
     "direct_program": {
         "name": "Direct program expenses",
         "amount": 237594.0,
-        "children": [
-            {"name": "Other transfer payments", "amount": 107140.0},
-            {"name": "Other direct program expenses", "amount": 130454.0},
-        ],
+        "other_transfer_payments": 107140.0,
+        "other_direct": 130454.0,
     },
     "pollution_pricing": {
         "name": "Pollution pricing proceeds returned to Canadians",
@@ -86,13 +93,10 @@ FRT_SPENDING = {
     "public_debt": {
         "name": "Public debt charges",
         "amount": 53410.0,
-        # L2 filled from Public Accounts CSV (sums to 53410).
-        "children": None,
     },
 }
 
-# Department of National Defence FY 2024-25 actuals (millions) — already established
-# for the interest-vs-defense strip; not a top-level FRT drill node yet.
+# Department of National Defence FY 2024-25 actuals (millions) for interest-vs-defense strip.
 CANADA_NATIONAL_DEFENCE_MILLIONS = 33924.8
 
 # FRT Table 1: budgetary deficit -36,348 is -1.2% of GDP → GDP ≈ 3,029 billion.
@@ -126,6 +130,12 @@ def slug(text: str) -> str:
     return text.strip("-")[:96]
 
 
+def clean_label(text: str) -> str:
+    text = (text or "").replace("\ufffd", "–").replace("\xa0", " ").strip()
+    text = re.sub(r"\s+", " ", text)
+    return text
+
+
 def mix_hex(color: str, toward: str, t: float) -> str:
     def parts(value: str) -> tuple[int, int, int]:
         value = value.lstrip("#")
@@ -148,6 +158,18 @@ def assert_sum(label: str, total: float, parts: list[float]) -> None:
         raise RuntimeError(f"{label}: parts sum {got} != total {want}")
 
 
+def reconcile_amounts(target: float, amounts: list[float]) -> list[float]:
+    """Round to 1 decimal and adjust the largest absolute item so parts sum to target."""
+    if not amounts:
+        return amounts
+    rounded = [round1(value) for value in amounts]
+    delta = round1(target) - round1(sum(rounded))
+    if delta != 0:
+        index = max(range(len(rounded)), key=lambda i: abs(rounded[i]))
+        rounded[index] = round1(rounded[index] + delta)
+    return rounded
+
+
 def sources_pa() -> list[dict[str, str]]:
     return [
         {
@@ -155,6 +177,26 @@ def sources_pa() -> list[dict[str, str]]:
             "url": PUBLIC_ACCOUNTS_DATASET,
         },
         {"label": "Revenues / expenses CSV", "url": PUBLIC_ACCOUNTS_URL},
+    ]
+
+
+def sources_otp() -> list[dict[str, str]]:
+    return [
+        {
+            "label": f"Public Accounts — other transfer payments by ministry, FY {FISCAL_YEAR_LABEL}",
+            "url": OTP_DATASET,
+        },
+        {"label": "OTP by ministry CSV", "url": OTP_URL},
+    ]
+
+
+def sources_met() -> list[dict[str, str]]:
+    return [
+        {
+            "label": f"Public Accounts — ministerial expenditures by type, FY {FISCAL_YEAR_LABEL}",
+            "url": MET_DATASET,
+        },
+        {"label": "MET CSV", "url": MET_URL},
     ]
 
 
@@ -221,14 +263,180 @@ def parse_amount(raw: str | None) -> float | None:
     return float(text)
 
 
-def load_public_accounts() -> list[dict]:
-    text = fetch(PUBLIC_ACCOUNTS_URL).decode("utf-8-sig")
+def load_csv(url: str) -> list[dict]:
+    text = fetch(url).decode("utf-8-sig")
     return list(csv.DictReader(StringIO(text)))
 
 
+def load_public_accounts() -> list[dict]:
+    return load_csv(PUBLIC_ACCOUNTS_URL)
+
+
+def otp_consolidated_millions(row: dict) -> float:
+    """OTP CSV units are x1000; consolidation formula matches FRT Other TP."""
+
+    def num(key: str) -> float:
+        return parse_amount(row.get(key)) or 0.0
+
+    total_thousands = (
+        num("Ttl-min-net-exp_Ttl-dep-min-nettes")
+        + num("Cons-special-accnts_Cmpts-determinees-cons")
+        + num("Accrual-and-other-adjs_Redressements-courus-et-autres")
+        + num("Xpns-CC-other-ents_Dep-SE-autres-ents")
+        + num("Tax-credits-and-repay_Credits-et-rembours-fiscaux")
+    )
+    return total_thousands / 1000.0
+
+
+def other_transfer_payment_ministries(color: str) -> list[dict]:
+    """Ministry rows from PAC Table 2b, including the valuation provision line.
+
+    Public Accounts Table 2b lists ministries then a separate
+    "Provision for valuation and other items" row (blank ministry name,
+    Provision_eng filled). That line bridges ministry subtotal → FRT total.
+    Indigenous Services is fully present in the CSV; it is not omitted.
+    """
+    rows = load_csv(OTP_URL)
+    buckets: dict[str, float] = defaultdict(float)
+    for row in rows:
+        if (row.get("Xpns-type_Type-dep_eng") or "") != "Other transfer payments":
+            continue
+        ministry = clean_label(row.get("Min-portfolio_Portefeuille-min_eng") or "")
+        provision = clean_label(row.get("Provision_eng") or "")
+        name = ministry or provision
+        if not name:
+            continue
+        buckets[name] += otp_consolidated_millions(row)
+
+    target = FRT_SPENDING["direct_program"]["other_transfer_payments"]
+    ordered = sorted(buckets.items(), key=lambda item: -abs(item[1]))
+    amounts = reconcile_amounts(target, [amount for _, amount in ordered])
+    sources = sources_otp()
+    children = []
+    for index, ((name, _), amount) in enumerate(zip(ordered, amounts)):
+        if amount == 0:
+            continue
+        children.append(
+            leaf(
+                node_id=slug(f"ca-otp-{name}"),
+                name=name,
+                amount=amount,
+                color=mix_hex(color, "#ffffff" if index % 2 == 0 else "#1f3d4d", 0.16),
+                description=(
+                    f"Public Accounts FY {FISCAL_YEAR_LABEL}: other transfer payments — {name}."
+                ),
+                sources=sources,
+            )
+        )
+    assert_sum("Other transfer payments (ministries)", target, [c["amountMillions"] for c in children])
+    return children
+
+
+def other_direct_program_ministries(color: str) -> list[dict]:
+    """MET other-program spending by ministry → entity, plus residual to FRT."""
+    rows = load_csv(MET_URL)
+    by_ministry: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    for row in rows:
+        amount = (parse_amount(row.get("Other-prog-xpend_Autres-depenses-prog")) or 0.0) / 1000.0
+        if abs(amount) < 0.05:
+            continue
+        ministry = clean_label(row.get("Min-portfolio_Portefeuille-min_eng") or "")
+        entity = clean_label(row.get("Entity_Entite_eng") or "") or ministry
+        if not ministry:
+            continue
+        by_ministry[ministry][entity] += amount
+
+    met_total = sum(sum(entities.values()) for entities in by_ministry.values())
+    target = FRT_SPENDING["direct_program"]["other_direct"]
+    residual = round1(target - round1(met_total))
+    sources = sources_met()
+
+    ministry_items = sorted(
+        ((name, entities) for name, entities in by_ministry.items()),
+        key=lambda item: -abs(sum(item[1].values())),
+    )
+    ministry_raw = [sum(entities.values()) for _, entities in ministry_items]
+    residual_note: str | None = None
+    if residual != 0:
+        ministry_raw.append(residual)
+        ministry_items.append(
+            (
+                "Consolidation and other adjustments",
+                {"Consolidation and other adjustments": residual},
+            )
+        )
+        residual_note = (
+            f"Bridge to Fiscal Reference Tables: ministerial other-program lines sum to "
+            f"{round1(met_total):,.1f} million; FRT other direct program expenses are "
+            f"{round1(target):,.1f} million. This {round1(residual):,.1f} million residual "
+            f"covers consolidation and other items not allocated to a ministry in the MET file."
+        )
+    ministry_amounts = reconcile_amounts(target, ministry_raw)
+
+    children: list[dict] = []
+    for index, ((ministry, entities), ministry_amount) in enumerate(
+        zip(ministry_items, ministry_amounts)
+    ):
+        entity_items = sorted(entities.items(), key=lambda item: -abs(item[1]))
+        is_residual = ministry == "Consolidation and other adjustments"
+        description = (
+            residual_note
+            if is_residual and residual_note
+            else (
+                f"Public Accounts FY {FISCAL_YEAR_LABEL}: other direct program — {ministry}."
+            )
+        )
+        if is_residual or (
+            len(entity_items) == 1 and entity_items[0][0] == ministry
+        ):
+            children.append(
+                leaf(
+                    node_id=slug(f"ca-ode-{ministry}"),
+                    name=ministry,
+                    amount=ministry_amount,
+                    color=mix_hex(color, "#ffffff" if index % 2 == 0 else "#1f3d4d", 0.16),
+                    description=description,
+                    sources=sources,
+                )
+            )
+            continue
+
+        entity_amounts = reconcile_amounts(
+            ministry_amount, [amount for _, amount in entity_items]
+        )
+        entity_children = []
+        for j, ((entity, _), amount) in enumerate(zip(entity_items, entity_amounts)):
+            entity_children.append(
+                leaf(
+                    node_id=slug(f"ca-ode-{ministry}-{entity}"),
+                    name=entity,
+                    amount=amount,
+                    color=mix_hex(color, "#ffffff" if j % 2 == 0 else "#1f3d4d", 0.22),
+                    description=(
+                        f"Public Accounts FY {FISCAL_YEAR_LABEL}: {ministry} — {entity}."
+                    ),
+                    sources=sources,
+                )
+            )
+        children.append(
+            branch(
+                node_id=slug(f"ca-ode-{ministry}"),
+                name=ministry,
+                amount=ministry_amount,
+                color=mix_hex(color, "#ffffff" if index % 2 == 0 else "#1f3d4d", 0.12),
+                description=description,
+                sources=sources,
+                children=entity_children,
+            )
+        )
+
+    assert_sum("Other direct program expenses", target, [c["amountMillions"] for c in children])
+    return children
+
+
 def public_debt_children(rows: list[dict]) -> list[dict]:
-    """Aggregate Public Accounts public-debt lines to Type-detail2 (2nd layer)."""
-    buckets: dict[str, float] = {}
+    """Public debt → Type-detail2 → Type-detail3/4."""
+    nested: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     for row in rows:
         if row.get("Account_Compte_eng") != "Expenses":
             continue
@@ -237,30 +445,116 @@ def public_debt_children(rows: list[dict]) -> list[dict]:
         amount = parse_amount(row.get("2024/2025"))
         if amount is None:
             continue
-        label = (row.get("Type-detail2_eng") or "").strip() or "Other public debt charges"
-        # Normalize encoding artifacts
-        label = label.replace("\ufffd", "-")
-        buckets[label] = buckets.get(label, 0.0) + amount
+        group = clean_label(row.get("Type-detail2_eng") or "") or "Other public debt charges"
+        detail3 = clean_label(row.get("Type-detail3_eng") or "")
+        detail4 = clean_label(row.get("Type-detail4_eng") or "")
+        leaf_name = detail4 or detail3 or group
+        nested[group][leaf_name] += amount
 
     color = COLORS[5]
-    children = []
-    for index, (name, amount) in enumerate(
-        sorted(buckets.items(), key=lambda item: -abs(item[1]))
+    sources = sources_pa()
+    children: list[dict] = []
+    for index, (group, details) in enumerate(
+        sorted(nested.items(), key=lambda item: -abs(sum(item[1].values())))
     ):
+        group_total = sum(details.values())
+        detail_items = sorted(details.items(), key=lambda item: -abs(item[1]))
+        if len(detail_items) == 1 and detail_items[0][0] == group:
+            children.append(
+                leaf(
+                    node_id=slug(f"ca-debt-{group}"),
+                    name=group,
+                    amount=group_total,
+                    color=mix_hex(color, "#ffffff" if index % 2 == 0 else "#1f3d4d", 0.16),
+                    description=(
+                        f"Public Accounts FY {FISCAL_YEAR_LABEL}: public debt charges — {group}."
+                    ),
+                    sources=sources,
+                )
+            )
+            continue
+
+        detail_amounts = reconcile_amounts(
+            group_total, [amount for _, amount in detail_items]
+        )
+        detail_children = []
+        for j, ((name, _), amount) in enumerate(zip(detail_items, detail_amounts)):
+            detail_children.append(
+                leaf(
+                    node_id=slug(f"ca-debt-{group}-{name}"),
+                    name=name,
+                    amount=amount,
+                    color=mix_hex(color, "#ffffff" if j % 2 == 0 else "#1f3d4d", 0.22),
+                    description=(
+                        f"Public Accounts FY {FISCAL_YEAR_LABEL}: {group} — {name}."
+                    ),
+                    sources=sources,
+                )
+            )
         children.append(
-            leaf(
-                node_id=slug(f"ca-debt-{name}"),
-                name=name,
-                amount=amount,
-                color=mix_hex(color, "#ffffff" if index % 2 == 0 else "#1f3d4d", 0.16),
+            branch(
+                node_id=slug(f"ca-debt-{group}"),
+                name=group,
+                amount=group_total,
+                color=mix_hex(color, "#ffffff" if index % 2 == 0 else "#1f3d4d", 0.12),
                 description=(
-                    f"Public Accounts FY {FISCAL_YEAR_LABEL}: public debt charges — {name}."
+                    f"Public Accounts FY {FISCAL_YEAR_LABEL}: public debt charges — {group}."
                 ),
-                sources=sources_pa(),
+                sources=sources,
+                children=detail_children,
             )
         )
-    assert_sum("Public debt charges", FRT_SPENDING["public_debt"]["amount"], [c["amountMillions"] for c in children])
+
+    assert_sum(
+        "Public debt charges",
+        FRT_SPENDING["public_debt"]["amount"],
+        [c["amountMillions"] for c in children],
+    )
     return children
+
+
+def build_direct_program(color: str) -> dict:
+    frt = sources_frt()
+    otp_color = mix_hex(color, "#ffffff", 0.08)
+    ode_color = mix_hex(color, "#1f3d4d", 0.08)
+    otp_amount = FRT_SPENDING["direct_program"]["other_transfer_payments"]
+    ode_amount = FRT_SPENDING["direct_program"]["other_direct"]
+    kids = [
+        branch(
+            node_id="ca-direct-other-transfer-payments",
+            name="Other transfer payments",
+            amount=otp_amount,
+            color=otp_color,
+            description=(
+                f"Fiscal Reference Tables FY {FISCAL_YEAR_LABEL}: other transfer payments "
+                "inside direct program, detailed by ministry from Public Accounts."
+            ),
+            sources=frt + sources_otp(),
+            children=other_transfer_payment_ministries(otp_color),
+        ),
+        branch(
+            node_id="ca-direct-other-direct-program-expenses",
+            name="Other direct program expenses",
+            amount=ode_amount,
+            color=ode_color,
+            description=(
+                f"Fiscal Reference Tables FY {FISCAL_YEAR_LABEL}: other direct program expenses, "
+                "detailed by ministry and entity from Public Accounts. A consolidation residual "
+                "bridges the MET ministry total to the FRT figure."
+            ),
+            sources=frt + sources_met(),
+            children=other_direct_program_ministries(ode_color),
+        ),
+    ]
+    return branch(
+        node_id="ca-direct-program-expenses",
+        name="Direct program expenses",
+        amount=FRT_SPENDING["direct_program"]["amount"],
+        color=color,
+        description=f"Fiscal Reference Tables FY {FISCAL_YEAR_LABEL}: Direct program expenses.",
+        sources=frt,
+        children=kids,
+    )
 
 
 def build_spending_tree(rows: list[dict]) -> dict:
@@ -286,7 +580,20 @@ def build_spending_tree(rows: list[dict]) -> dict:
                 f"Finance Canada Fiscal Reference Tables, FY {FISCAL_YEAR_LABEL}. "
                 "Public debt charge detail from Public Accounts."
             )
-        elif spec["children"]:
+            children.append(
+                branch(
+                    node_id=slug(f"ca-{spec['name']}"),
+                    name=spec["name"],
+                    amount=spec["amount"],
+                    color=color,
+                    description=desc,
+                    sources=src,
+                    children=kids,
+                )
+            )
+        elif key == "direct_program":
+            children.append(build_direct_program(color))
+        elif spec.get("children"):
             kids = []
             for j, child in enumerate(spec["children"]):
                 kids.append(
@@ -302,26 +609,30 @@ def build_spending_tree(rows: list[dict]) -> dict:
                         sources=frt,
                     )
                 )
-            src = frt
-            desc = f"Fiscal Reference Tables FY {FISCAL_YEAR_LABEL}: {spec['name']}."
-        else:
-            kids = []
-            src = frt
-            desc = f"Fiscal Reference Tables FY {FISCAL_YEAR_LABEL}: {spec['name']}."
-
-        children.append(
-            branch(
-                node_id=slug(f"ca-{spec['name']}"),
-                name=spec["name"],
-                amount=spec["amount"],
-                color=color,
-                description=desc,
-                sources=src,
-                children=kids,
+            children.append(
+                branch(
+                    node_id=slug(f"ca-{spec['name']}"),
+                    name=spec["name"],
+                    amount=spec["amount"],
+                    color=color,
+                    description=f"Fiscal Reference Tables FY {FISCAL_YEAR_LABEL}: {spec['name']}.",
+                    sources=frt,
+                    children=kids,
+                )
             )
-        )
+        else:
+            children.append(
+                leaf(
+                    node_id=slug(f"ca-{spec['name']}"),
+                    name=spec["name"],
+                    amount=spec["amount"],
+                    color=color,
+                    description=f"Fiscal Reference Tables FY {FISCAL_YEAR_LABEL}: {spec['name']}.",
+                    sources=frt,
+                )
+            )
 
-    total = sum(spec["amount"] for spec in (FRT_SPENDING[k] for k in order))
+    total = sum(FRT_SPENDING[k]["amount"] for k in order)
     assert_sum("Canadian federal spending", total, [c["amountMillions"] for c in children])
 
     return branch(
@@ -331,16 +642,24 @@ def build_spending_tree(rows: list[dict]) -> dict:
         color="#1f3d4d",
         description=(
             f"FY {FISCAL_YEAR_LABEL} actual Canadian federal expenses from Finance Canada "
-            "Fiscal Reference Tables (2 layers). Click a category to open its components."
+            "Fiscal Reference Tables, with Public Accounts ministry and debt detail. "
+            "Click a category to open its components."
         ),
         sources=frt,
         children=children,
     )
 
 
-def build_revenue_tree(rows: list[dict]) -> dict:
-    """Two layers from Public Accounts revenue lines."""
-    pa = sources_pa()
+def nest_from_rows(
+    rows: list[dict],
+    *,
+    path_keys: list[str],
+    color: str,
+    id_prefix: str,
+    sources: list[dict[str, str]],
+) -> list[dict]:
+    """Build a nested SpendNode forest from PA rows using successive detail columns."""
+    tree: dict = {}
 
     def amount_of(row: dict) -> float:
         value = parse_amount(row.get("2024/2025"))
@@ -348,58 +667,105 @@ def build_revenue_tree(rows: list[dict]) -> dict:
             raise RuntimeError(f"Missing amount for {row}")
         return value
 
+    for row in rows:
+        labels = []
+        for key in path_keys:
+            label = clean_label(row.get(key) or "")
+            if label:
+                labels.append(label)
+        if not labels:
+            continue
+        cursor = tree
+        for label in labels[:-1]:
+            cursor = cursor.setdefault(label, {"__children__": {}, "__amount__": 0.0})[
+                "__children__"
+            ]
+        leaf_label = labels[-1]
+        node = cursor.setdefault(leaf_label, {"__children__": {}, "__amount__": 0.0})
+        node["__amount__"] += amount_of(row)
+
+    def node_total(payload: dict) -> float:
+        if payload["__children__"]:
+            return payload["__amount__"] + sum(
+                node_total(child) for child in payload["__children__"].values()
+            )
+        return payload["__amount__"]
+
+    def to_nodes(mapping: dict, prefix: str, depth: int) -> list[dict]:
+        items = [(name, payload, node_total(payload)) for name, payload in mapping.items()]
+        items.sort(key=lambda item: -abs(item[2]))
+        nodes: list[dict] = []
+        for index, (name, payload, total) in enumerate(items):
+            child_map = payload["__children__"]
+            node_id = slug(f"{prefix}-{name}")
+            tint = mix_hex(color, "#ffffff" if index % 2 == 0 else "#1f3d4d", 0.12 + 0.04 * depth)
+            if child_map:
+                kids = to_nodes(child_map, node_id, depth + 1)
+                own = round1(payload["__amount__"])
+                if own != 0:
+                    kids.append(
+                        leaf(
+                            node_id=slug(f"{node_id}-other"),
+                            name="Other",
+                            amount=own,
+                            color=mix_hex(color, "#1f3d4d", 0.28),
+                            description=f"Public Accounts FY {FISCAL_YEAR_LABEL}: {name} — other.",
+                            sources=sources,
+                        )
+                    )
+                    kids.sort(key=lambda node: -abs(node["amountMillions"]))
+                nodes.append(
+                    branch(
+                        node_id=node_id,
+                        name=name,
+                        amount=total,
+                        color=tint,
+                        description=f"Public Accounts FY {FISCAL_YEAR_LABEL}: {name}.",
+                        sources=sources,
+                        children=kids,
+                    )
+                )
+            else:
+                nodes.append(
+                    leaf(
+                        node_id=node_id,
+                        name=name,
+                        amount=total,
+                        color=tint,
+                        description=f"Public Accounts FY {FISCAL_YEAR_LABEL}: {name}.",
+                        sources=sources,
+                    )
+                )
+        return nodes
+
+    return to_nodes(tree, id_prefix, 0)
+
+
+def build_revenue_tree(rows: list[dict]) -> dict:
+    """Multi-layer Public Accounts revenue tree."""
+    pa = sources_pa()
     revenue_rows = [r for r in rows if r.get("Account_Compte_eng") == "Revenues"]
 
-    # Tax revenues — flatten meaningful L2 categories.
-    personal = corporate = non_resident = 0.0
-    gst = energy = customs = other_excise = 0.0
-    for row in revenue_rows:
-        d1 = row.get("Type-detail_eng") or ""
-        d2 = row.get("Type-detail2_eng") or ""
-        d3 = row.get("Type-detail3_eng") or ""
-        d4 = row.get("Type-detail4_eng") or ""
-        if d1 != "Tax revenues":
-            continue
-        amt = amount_of(row)
-        if d2 == "Income tax revenues":
-            if d3 == "Personal":
-                personal += amt
-            elif d3 == "Corporate":
-                corporate += amt
-            elif d3 == "Non-resident":
-                non_resident += amt
-        elif d2 == "Other taxes and duties":
-            if d3 == "Goods and services tax":
-                gst += amt
-            elif d3 == "Energy taxes":
-                energy += amt
-            elif d3 == "Customs import duties":
-                customs += amt
-            elif d3 == "Other excise taxes and duties":
-                other_excise += amt
+    def amount_of(row: dict) -> float:
+        value = parse_amount(row.get("2024/2025"))
+        if value is None:
+            raise RuntimeError(f"Missing amount for {row}")
+        return value
 
-    tax_children_spec = [
-        ("Personal income tax", personal),
-        ("Corporate income tax", corporate),
-        ("Non-resident income tax", non_resident),
-        ("Goods and services tax", gst),
-        ("Energy taxes", energy),
-        ("Customs import duties", customs),
-        ("Other excise taxes and duties", other_excise),
-    ]
-    tax_total = sum(a for _, a in tax_children_spec)
-    tax_color = COLORS[0]
-    tax_children = [
-        leaf(
-            node_id=slug(f"ca-tax-{name}"),
-            name=name,
-            amount=amount,
-            color=mix_hex(tax_color, "#ffffff" if i % 2 == 0 else "#1f3d4d", 0.16),
-            description=f"Public Accounts FY {FISCAL_YEAR_LABEL}: {name}.",
-            sources=pa,
-        )
-        for i, (name, amount) in enumerate(tax_children_spec)
-    ]
+    tax_rows = [r for r in revenue_rows if (r.get("Type-detail_eng") or "") == "Tax revenues"]
+    tax_children = nest_from_rows(
+        tax_rows,
+        path_keys=[
+            "Type-detail2_eng",
+            "Type-detail3_eng",
+            "Type-detail4_eng",
+            "Type-detail5_eng",
+        ],
+        color=COLORS[0],
+        id_prefix="ca-tax",
+        sources=pa,
+    )
+    tax_total = sum(c["amountMillions"] for c in tax_children)
 
     ei = next(
         amount_of(r)
@@ -412,35 +778,27 @@ def build_revenue_tree(rows: list[dict]) -> dict:
         if (r.get("Type-detail_eng") or "") == "Pollution pricing proceeds"
     )
 
-    # Other revenues — group by Type-detail2.
-    other_buckets: dict[str, float] = {}
-    for row in revenue_rows:
-        if (row.get("Type-detail_eng") or "") != "Other revenues":
-            continue
-        label = (row.get("Type-detail2_eng") or "Other").strip()
-        other_buckets[label] = other_buckets.get(label, 0.0) + amount_of(row)
-    other_total = sum(other_buckets.values())
-    other_color = COLORS[3]
-    other_children = [
-        leaf(
-            node_id=slug(f"ca-other-rev-{name}"),
-            name=name,
-            amount=amount,
-            color=mix_hex(other_color, "#ffffff" if i % 2 == 0 else "#1f3d4d", 0.16),
-            description=f"Public Accounts FY {FISCAL_YEAR_LABEL}: {name}.",
-            sources=pa,
-        )
-        for i, (name, amount) in enumerate(
-            sorted(other_buckets.items(), key=lambda item: -abs(item[1]))
-        )
-    ]
+    other_rows = [r for r in revenue_rows if (r.get("Type-detail_eng") or "") == "Other revenues"]
+    other_children = nest_from_rows(
+        other_rows,
+        path_keys=[
+            "Type-detail2_eng",
+            "Type-detail3_eng",
+            "Type-detail4_eng",
+            "Type-detail5_eng",
+        ],
+        color=COLORS[3],
+        id_prefix="ca-other-rev",
+        sources=pa,
+    )
+    other_total = sum(c["amountMillions"] for c in other_children)
 
     children = [
         branch(
             node_id="ca-tax-revenues",
             name="Tax revenues",
             amount=tax_total,
-            color=tax_color,
+            color=COLORS[0],
             description=f"Public Accounts FY {FISCAL_YEAR_LABEL}: Tax revenues.",
             sources=pa,
             children=tax_children,
@@ -465,7 +823,7 @@ def build_revenue_tree(rows: list[dict]) -> dict:
             node_id="ca-other-revenues",
             name="Other revenues",
             amount=other_total,
-            color=other_color,
+            color=COLORS[3],
             description=f"Public Accounts FY {FISCAL_YEAR_LABEL}: Other revenues.",
             sources=pa,
             children=other_children,
@@ -481,7 +839,7 @@ def build_revenue_tree(rows: list[dict]) -> dict:
         color="#1f3d4d",
         description=(
             f"FY {FISCAL_YEAR_LABEL} actual Canadian federal revenues from the Public Accounts "
-            "of Canada (2 layers). Click a source to open its components."
+            "of Canada. Click a source to open income-tax, GST, and other revenue detail."
         ),
         sources=pa,
         children=children,
@@ -542,7 +900,6 @@ def main() -> None:
     spending_root = build_spending_tree(rows)
     revenue_root = build_revenue_tree(rows)
 
-    # Cross-check Public Accounts revenue total vs FRT.
     pa_revenue = sum(
         parse_amount(r.get("2024/2025")) or 0.0
         for r in rows
@@ -553,8 +910,8 @@ def main() -> None:
 
     outlays = dataset_shell(
         root=spending_root,
-        table="FRT 7 / 10–13",
-        title="Federal expenses by major category (Fiscal Reference Tables)",
+        table="FRT 7 / 10–13 + Public Accounts OTP/MET",
+        title="Federal expenses by major category (Fiscal Reference Tables + Public Accounts)",
         spreadsheet_url=FRT_PDF_URL,
         historical_url=FRT_PAGE_URL,
         extra={
@@ -573,6 +930,8 @@ def main() -> None:
             "publicAccounts": {
                 "url": PUBLIC_ACCOUNTS_URL,
                 "datasetUrl": PUBLIC_ACCOUNTS_DATASET,
+                "otpUrl": OTP_URL,
+                "metUrl": MET_URL,
                 "expenseMillions": sum(
                     parse_amount(r.get("2024/2025")) or 0.0
                     for r in rows
@@ -593,15 +952,16 @@ def main() -> None:
                 "defense": {
                     "name": "National Defence",
                     "amountMillions": CANADA_NATIONAL_DEFENCE_MILLIONS,
+                    "nodeId": "ca-ode-national-defence",
                     "note": (
-                        "Department of National Defence actuals for FY "
-                        f"{FISCAL_YEAR_LABEL} (not yet a top-level drill slice)"
+                        "Department of National Defence FY "
+                        f"{FISCAL_YEAR_LABEL} actuals (GC Infobase / Public Accounts). "
+                        "Drillable under Direct program → Other direct program expenses."
                     ),
                 },
             },
         },
     )
-    # Fix treasury figures for spending dataset.
     outlays["treasuryMts"]["netOutlays"] = spending_root["amountMillions"] * 1_000_000
     outlays["treasuryMts"]["receipts"] = revenue_root["amountMillions"] * 1_000_000
 

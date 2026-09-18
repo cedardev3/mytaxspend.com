@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-18T06:18:37Z",
+  "generatedAt": "2026-09-18T07:57:15Z",
   "omb": {
-    "table": "FRT 7 / 10\u201313",
-    "title": "Federal expenses by major category (Fiscal Reference Tables)",
+    "table": "FRT 7 / 10\u201313 + Public Accounts OTP/MET",
+    "title": "Federal expenses by major category (Fiscal Reference Tables + Public Accounts)",
     "fiscalYear": 2025,
     "fiscalYearLabel": "2024-25",
     "status": "actual",
@@ -32,7 +32,7 @@
     "name": "Canadian Federal Spending",
     "amountMillions": 547299.0,
     "color": "#1f3d4d",
-    "description": "FY 2024-25 actual Canadian federal expenses from Finance Canada Fiscal Reference Tables (2 layers). Click a category to open its components.",
+    "description": "FY 2024-25 actual Canadian federal expenses from Finance Canada Fiscal Reference Tables, with Public Accounts ministry and debt detail. Click a category to open its components.",
     "sources": [
       {
         "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
@@ -270,11 +270,11 @@
         ],
         "children": [
           {
-            "id": "ca-direct-program-other-transfer-payments",
+            "id": "ca-direct-other-transfer-payments",
             "name": "Other transfer payments",
             "amountMillions": 107140.0,
-            "color": "#cda34c",
-            "description": "Fiscal Reference Tables FY 2024-25: Direct program expenses \u2014 Other transfer payments.",
+            "color": "#c99b3b",
+            "description": "Fiscal Reference Tables FY 2024-25: other transfer payments inside direct program, detailed by ministry from Public Accounts.",
             "sources": [
               {
                 "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
@@ -283,15 +283,484 @@
               {
                 "label": "FRT PDF",
                 "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              },
+              {
+                "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+              },
+              {
+                "label": "OTP by ministry CSV",
+                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+              }
+            ],
+            "children": [
+              {
+                "id": "ca-otp-indigenous-services",
+                "name": "Indigenous Services",
+                "amountMillions": 24858.9,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Indigenous Services.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-crown-indigenous-relations-and-northern-affairs",
+                "name": "Crown-Indigenous Relations and Northern Affairs",
+                "amountMillions": 12970.4,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Crown-Indigenous Relations and Northern Affairs.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-housing-infrastructure-and-communities",
+                "name": "Housing, Infrastructure and Communities",
+                "amountMillions": 10716.6,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Housing, Infrastructure and Communities.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-employment-and-workforce-development",
+                "name": "Employment and Workforce Development",
+                "amountMillions": 10581.7,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Employment and Workforce Development.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-national-revenue",
+                "name": "National Revenue",
+                "amountMillions": 9256.8,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 National Revenue.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-innovation-science-and-industry",
+                "name": "Innovation, Science and Industry",
+                "amountMillions": 7880.7,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Innovation, Science and Industry.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-global-affairs",
+                "name": "Global Affairs",
+                "amountMillions": 6232.3,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Global Affairs.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-health",
+                "name": "Health",
+                "amountMillions": 4665.4,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Health.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-immigration-refugees-and-citizenship",
+                "name": "Immigration, Refugees and Citizenship",
+                "amountMillions": 3568.3,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Immigration, Refugees and Citizenship.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-energy-and-natural-resources",
+                "name": "Energy and Natural Resources",
+                "amountMillions": 3275.5,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Energy and Natural Resources.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-agriculture-and-agri-food",
+                "name": "Agriculture and Agri-Food",
+                "amountMillions": 2798.8,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Agriculture and Agri-Food.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-transport",
+                "name": "Transport",
+                "amountMillions": 2088.5,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Transport.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-canadian-heritage",
+                "name": "Canadian Heritage",
+                "amountMillions": 1847.1,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Canadian Heritage.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-national-defence",
+                "name": "National Defence",
+                "amountMillions": 1592.0,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 National Defence.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-environment-and-climate-change",
+                "name": "Environment and Climate Change",
+                "amountMillions": 1417.8,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Environment and Climate Change.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-finance",
+                "name": "Finance",
+                "amountMillions": 832.3,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Finance.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-fisheries-oceans-and-the-canadian-coast-guard",
+                "name": "Fisheries, Oceans and the Canadian Coast Guard",
+                "amountMillions": 740.4,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Fisheries, Oceans and the Canadian Coast Guard.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-public-safety",
+                "name": "Public Safety",
+                "amountMillions": 737.3,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Public Safety.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-justice",
+                "name": "Justice",
+                "amountMillions": 710.0,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Justice.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-women-gender-equality-and-youth",
+                "name": "Women, Gender Equality and Youth",
+                "amountMillions": 299.5,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Women, Gender Equality and Youth.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-parks-canada",
+                "name": "Parks Canada",
+                "amountMillions": 103.1,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Parks Canada.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-provision-for-valuation-and-other-items",
+                "name": "Provision for valuation and other items",
+                "amountMillions": -95.1,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Provision for valuation and other items.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-veterans-affairs",
+                "name": "Veterans Affairs",
+                "amountMillions": 55.6,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Veterans Affairs.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-democratic-institutions",
+                "name": "Democratic Institutions",
+                "amountMillions": 2.1,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Democratic Institutions.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-parliament",
+                "name": "Parliament",
+                "amountMillions": 2.0,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Parliament.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-privy-council",
+                "name": "Privy Council",
+                "amountMillions": 1.2,
+                "color": "#ae8c3e",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Privy Council.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-otp-treasury-board",
+                "name": "Treasury Board",
+                "amountMillions": 0.8,
+                "color": "#d2ab5a",
+                "description": "Public Accounts FY 2024-25: other transfer payments \u2014 Treasury Board.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 other transfer payments by ministry, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/f6db2071-1f97-4d88-8af0-1deeb949ee2f"
+                  },
+                  {
+                    "label": "OTP by ministry CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv"
+                  }
+                ]
               }
             ]
           },
           {
-            "id": "ca-direct-program-other-direct-program-expenses",
+            "id": "ca-direct-other-direct-program-expenses",
             "name": "Other direct program expenses",
             "amountMillions": 130454.0,
-            "color": "#aa8430",
-            "description": "Fiscal Reference Tables FY 2024-25: Direct program expenses \u2014 Other direct program expenses.",
+            "color": "#b78b2d",
+            "description": "Fiscal Reference Tables FY 2024-25: other direct program expenses, detailed by ministry and entity from Public Accounts. A consolidation residual bridges the MET ministry total to the FRT figure.",
             "sources": [
               {
                 "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
@@ -300,6 +769,2807 @@
               {
                 "label": "FRT PDF",
                 "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              },
+              {
+                "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+              },
+              {
+                "label": "MET CSV",
+                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+              }
+            ],
+            "children": [
+              {
+                "id": "ca-ode-national-defence",
+                "name": "National Defence",
+                "amountMillions": 33371.6,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 National Defence.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-national-defence-department-of-national-defence",
+                    "name": "Department of National Defence",
+                    "amountMillions": 32329.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: National Defence \u2014 Department of National Defence.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-national-defence-communications-security-establishment",
+                    "name": "Communications Security Establishment",
+                    "amountMillions": 1028.0,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: National Defence \u2014 Communications Security Establishment.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-national-defence-military-grievances-external-review-committee",
+                    "name": "Military Grievances External Review Committee",
+                    "amountMillions": 8.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: National Defence \u2014 Military Grievances External Review Committee.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-national-defence-military-police-complaints-commission",
+                    "name": "Military Police Complaints Commission",
+                    "amountMillions": 5.8,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: National Defence \u2014 Military Police Complaints Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-public-safety",
+                "name": "Public Safety",
+                "amountMillions": 13564.3,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Public Safety.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-public-safety-royal-canadian-mounted-police",
+                    "name": "Royal Canadian Mounted Police",
+                    "amountMillions": 5721.2,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Royal Canadian Mounted Police.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-correctional-service-of-canada",
+                    "name": "Correctional Service of Canada",
+                    "amountMillions": 3594.5,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Correctional Service of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-canada-border-services-agency",
+                    "name": "Canada Border Services Agency",
+                    "amountMillions": 3008.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Canada Border Services Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-canadian-security-intelligence-service",
+                    "name": "Canadian Security Intelligence Service",
+                    "amountMillions": 813.0,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Canadian Security Intelligence Service.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-department-of-public-safety-and-emergency-preparedness",
+                    "name": "Department of Public Safety and Emergency Preparedness",
+                    "amountMillions": 293.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Department of Public Safety and Emergency Preparedness.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-parole-board-of-canada",
+                    "name": "Parole Board of Canada",
+                    "amountMillions": 76.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Parole Board of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-office-of-the-commissioner-of-official-languages",
+                    "name": "Office of the Commissioner of Official Languages",
+                    "amountMillions": 26.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Office of the Commissioner of Official Languages.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-civilian-review-and-complaints-commission-for-the-royal-canadian-mounted-po",
+                    "name": "Civilian Review and Complaints Commission for the Royal Canadian Mounted Police",
+                    "amountMillions": 16.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Civilian Review and Complaints Commission for the Royal Canadian Mounted Police.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-office-of-the-correctional-investigator-of-canada",
+                    "name": "Office of the Correctional Investigator of Canada",
+                    "amountMillions": 6.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Office of the Correctional Investigator of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-safety-royal-canadian-mounted-police-external-review-committee",
+                    "name": "Royal Canadian Mounted Police External Review Committee",
+                    "amountMillions": 6.7,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Public Safety \u2014 Royal Canadian Mounted Police External Review Committee.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-treasury-board",
+                "name": "Treasury Board",
+                "amountMillions": 11146.8,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Treasury Board.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-treasury-board-treasury-board-secretariat",
+                    "name": "Treasury Board Secretariat",
+                    "amountMillions": 11035.2,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Treasury Board \u2014 Treasury Board Secretariat.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-treasury-board-canada-school-of-public-service",
+                    "name": "Canada School of Public Service",
+                    "amountMillions": 98.8,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Treasury Board \u2014 Canada School of Public Service.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-treasury-board-office-of-the-public-sector-integrity-commissioner",
+                    "name": "Office of the Public Sector Integrity Commissioner",
+                    "amountMillions": 6.7,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Treasury Board \u2014 Office of the Public Sector Integrity Commissioner.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-treasury-board-office-of-the-commissioner-of-lobbying",
+                    "name": "Office of the Commissioner of Lobbying",
+                    "amountMillions": 6.1,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Treasury Board \u2014 Office of the Commissioner of Lobbying.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-public-services-and-procurement",
+                "name": "Public Services and Procurement",
+                "amountMillions": 8132.6,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Public Services and Procurement.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-public-services-and-procurement-department-of-public-works-and-government-services",
+                    "name": "Department of Public Works and Government Services",
+                    "amountMillions": 5347.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Public Services and Procurement \u2014 Department of Public Works and Government Services.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-services-and-procurement-shared-services-canada",
+                    "name": "Shared Services Canada",
+                    "amountMillions": 2612.3,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Public Services and Procurement \u2014 Shared Services Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-services-and-procurement-national-capital-commission",
+                    "name": "National Capital Commission",
+                    "amountMillions": 150.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Public Services and Procurement \u2014 National Capital Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-public-services-and-procurement-canada-post-corporation",
+                    "name": "Canada Post Corporation",
+                    "amountMillions": 22.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Public Services and Procurement \u2014 Canada Post Corporation.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-housing-infrastructure-and-communities",
+                "name": "Housing, Infrastructure and Communities",
+                "amountMillions": 6870.6,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Housing, Infrastructure and Communities.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-housing-infrastructure-and-communities-canada-mortgage-and-housing-corporation",
+                    "name": "Canada Mortgage and Housing Corporation",
+                    "amountMillions": 5443.6,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Housing, Infrastructure and Communities \u2014 Canada Mortgage and Housing Corporation.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-housing-infrastructure-and-communities-windsor-detroit-bridge-authority",
+                    "name": "Windsor-Detroit Bridge Authority",
+                    "amountMillions": 944.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Housing, Infrastructure and Communities \u2014 Windsor-Detroit Bridge Authority.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-housing-infrastructure-and-communities-department-of-housing-infrastructure-and-communiti",
+                    "name": "Department of Housing, Infrastructure and Communities",
+                    "amountMillions": 241.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Housing, Infrastructure and Communities \u2014 Department of Housing, Infrastructure and Communities.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-housing-infrastructure-and-communities-the-jacques-cartier-and-champlain-bridges-inc",
+                    "name": "The Jacques-Cartier and Champlain Bridges Inc.",
+                    "amountMillions": 189.6,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Housing, Infrastructure and Communities \u2014 The Jacques-Cartier and Champlain Bridges Inc..",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-housing-infrastructure-and-communities-office-of-infrastructure-of-canada",
+                    "name": "Office of Infrastructure of Canada",
+                    "amountMillions": 51.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Housing, Infrastructure and Communities \u2014 Office of Infrastructure of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-national-revenue",
+                "name": "National Revenue",
+                "amountMillions": 6293.1,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 National Revenue.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-national-revenue-canada-revenue-agency",
+                    "name": "Canada Revenue Agency",
+                    "amountMillions": 6293.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: National Revenue \u2014 Canada Revenue Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-fisheries-oceans-and-the-canadian-coast-guard",
+                "name": "Fisheries, Oceans and the Canadian Coast Guard",
+                "amountMillions": 4453.8,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Fisheries, Oceans and the Canadian Coast Guard.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-fisheries-oceans-and-the-canadian-coast-guard-department-of-fisheries-and-oceans",
+                    "name": "Department of Fisheries and Oceans",
+                    "amountMillions": 4453.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Fisheries, Oceans and the Canadian Coast Guard \u2014 Department of Fisheries and Oceans.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-transport",
+                "name": "Transport",
+                "amountMillions": 3737.6,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Transport.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-transport-department-of-transport",
+                    "name": "Department of Transport",
+                    "amountMillions": 1438.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Transport \u2014 Department of Transport.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-transport-canadian-air-transport-security-authority",
+                    "name": "Canadian Air Transport Security Authority",
+                    "amountMillions": 1079.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Transport \u2014 Canadian Air Transport Security Authority.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-transport-via-rail-canada-inc",
+                    "name": "VIA Rail Canada Inc.",
+                    "amountMillions": 878.6,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Transport \u2014 VIA Rail Canada Inc..",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-transport-marine-atlantic-inc",
+                    "name": "Marine Atlantic Inc.",
+                    "amountMillions": 195.0,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Transport \u2014 Marine Atlantic Inc..",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-transport-via-hfr-via-tgf-inc",
+                    "name": "VIA HFR - VIA TGF Inc.",
+                    "amountMillions": 69.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Transport \u2014 VIA HFR - VIA TGF Inc..",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-transport-canadian-transportation-agency",
+                    "name": "Canadian Transportation Agency",
+                    "amountMillions": 58.7,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Transport \u2014 Canadian Transportation Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-transport-the-federal-bridge-corporation-limited",
+                    "name": "The Federal Bridge Corporation Limited",
+                    "amountMillions": 17.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Transport \u2014 The Federal Bridge Corporation Limited.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-health",
+                "name": "Health",
+                "amountMillions": 3711.7,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Health.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-health-department-of-health",
+                    "name": "Department of Health",
+                    "amountMillions": 1574.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Health \u2014 Department of Health.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-health-public-health-agency-of-canada",
+                    "name": "Public Health Agency of Canada",
+                    "amountMillions": 1072.0,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Health \u2014 Public Health Agency of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-health-canadian-food-inspection-agency",
+                    "name": "Canadian Food Inspection Agency",
+                    "amountMillions": 963.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Health \u2014 Canadian Food Inspection Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-health-canadian-institutes-of-health-research",
+                    "name": "Canadian Institutes of Health Research",
+                    "amountMillions": 88.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Health \u2014 Canadian Institutes of Health Research.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-health-patented-medicine-prices-review-board",
+                    "name": "Patented Medicine Prices Review Board",
+                    "amountMillions": 13.7,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Health \u2014 Patented Medicine Prices Review Board.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-innovation-science-and-industry",
+                "name": "Innovation, Science and Industry",
+                "amountMillions": 3711.2,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Innovation, Science and Industry.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-national-research-council-of-canada",
+                    "name": "National Research Council of Canada",
+                    "amountMillions": 1068.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 National Research Council of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-department-of-industry",
+                    "name": "Department of Industry",
+                    "amountMillions": 759.0,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Department of Industry.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-statistics-canada",
+                    "name": "Statistics Canada",
+                    "amountMillions": 734.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Statistics Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-canadian-space-agency",
+                    "name": "Canadian Space Agency",
+                    "amountMillions": 555.3,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Canadian Space Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-canadian-tourism-commission",
+                    "name": "Canadian Tourism Commission",
+                    "amountMillions": 116.0,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Canadian Tourism Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-atlantic-canada-opportunities-agency",
+                    "name": "Atlantic Canada Opportunities Agency",
+                    "amountMillions": 86.1,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Atlantic Canada Opportunities Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-natural-sciences-and-engineering-research-council",
+                    "name": "Natural Sciences and Engineering Research Council",
+                    "amountMillions": 72.2,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Natural Sciences and Engineering Research Council.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-social-sciences-and-humanities-research-council",
+                    "name": "Social Sciences and Humanities Research Council",
+                    "amountMillions": 62.7,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Social Sciences and Humanities Research Council.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-economic-development-agency-of-canada-for-the-regions-of-",
+                    "name": "Economic Development Agency of Canada for the Regions of Quebec",
+                    "amountMillions": 55.2,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Economic Development Agency of Canada for the Regions of Quebec.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-department-of-western-economic-diversification",
+                    "name": "Department of Western Economic Diversification",
+                    "amountMillions": 50.6,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Department of Western Economic Diversification.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-federal-economic-development-agency-for-southern-ontario",
+                    "name": "Federal Economic Development Agency for Southern Ontario",
+                    "amountMillions": 42.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Federal Economic Development Agency for Southern Ontario.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-pacific-economic-development-agency-of-canada",
+                    "name": "Pacific Economic Development Agency of Canada",
+                    "amountMillions": 36.3,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Pacific Economic Development Agency of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-canadian-northern-economic-development-agency",
+                    "name": "Canadian Northern Economic Development Agency",
+                    "amountMillions": 25.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Canadian Northern Economic Development Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-standards-council-of-canada",
+                    "name": "Standards Council of Canada",
+                    "amountMillions": 25.6,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Standards Council of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-federal-economic-development-agency-for-northern-ontario",
+                    "name": "Federal Economic Development Agency for Northern Ontario",
+                    "amountMillions": 16.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Federal Economic Development Agency for Northern Ontario.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-innovation-science-and-industry-copyright-board",
+                    "name": "Copyright Board",
+                    "amountMillions": 5.1,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Innovation, Science and Industry \u2014 Copyright Board.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-indigenous-services",
+                "name": "Indigenous Services",
+                "amountMillions": 3621.5,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Indigenous Services.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-indigenous-services-department-of-indigenous-services",
+                    "name": "Department of Indigenous Services",
+                    "amountMillions": 3621.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Indigenous Services \u2014 Department of Indigenous Services.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-global-affairs",
+                "name": "Global Affairs",
+                "amountMillions": 3620.9,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Global Affairs.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-global-affairs-department-of-foreign-affairs-trade-and-development",
+                    "name": "Department of Foreign Affairs, Trade and Development",
+                    "amountMillions": 2813.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Global Affairs \u2014 Department of Foreign Affairs, Trade and Development.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-global-affairs-export-development-canada-canada-account",
+                    "name": "Export Development Canada (Canada Account)",
+                    "amountMillions": 583.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Global Affairs \u2014 Export Development Canada (Canada Account).",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-global-affairs-international-development-research-centre",
+                    "name": "International Development Research Centre",
+                    "amountMillions": 160.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Global Affairs \u2014 International Development Research Centre.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-global-affairs-invest-in-canada-hub",
+                    "name": "Invest in Canada Hub",
+                    "amountMillions": 32.7,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Global Affairs \u2014 Invest in Canada Hub.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-global-affairs-canadian-commercial-corporation",
+                    "name": "Canadian Commercial Corporation",
+                    "amountMillions": 13.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Global Affairs \u2014 Canadian Commercial Corporation.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-global-affairs-international-joint-commission-canadian-section",
+                    "name": "International Joint Commission (Canadian Section)",
+                    "amountMillions": 8.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Global Affairs \u2014 International Joint Commission (Canadian Section).",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-global-affairs-canadian-intergovernmental-conference-secretariat",
+                    "name": "Canadian Intergovernmental Conference Secretariat",
+                    "amountMillions": 8.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Global Affairs \u2014 Canadian Intergovernmental Conference Secretariat.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-immigration-refugees-and-citizenship",
+                "name": "Immigration, Refugees and Citizenship",
+                "amountMillions": 3288.6,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Immigration, Refugees and Citizenship.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-immigration-refugees-and-citizenship-department-of-citizenship-and-immigration",
+                    "name": "Department of Citizenship and Immigration",
+                    "amountMillions": 2935.7,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Immigration, Refugees and Citizenship \u2014 Department of Citizenship and Immigration.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-immigration-refugees-and-citizenship-immigration-and-refugee-board",
+                    "name": "Immigration and Refugee Board",
+                    "amountMillions": 352.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Immigration, Refugees and Citizenship \u2014 Immigration and Refugee Board.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-finance",
+                "name": "Finance",
+                "amountMillions": 3248.5,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Finance.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-finance-department-of-finance",
+                    "name": "Department of Finance",
+                    "amountMillions": 2646.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Finance \u2014 Department of Finance.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-finance-office-of-the-superintendent-of-financial-institutions",
+                    "name": "Office of the Superintendent of Financial Institutions",
+                    "amountMillions": 312.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Finance \u2014 Office of the Superintendent of Financial Institutions.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-finance-office-of-the-auditor-general",
+                    "name": "Office of the Auditor General",
+                    "amountMillions": 132.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Finance \u2014 Office of the Auditor General.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-finance-financial-transactions-and-reports-analysis-centre-of-canada",
+                    "name": "Financial Transactions and Reports Analysis Centre of Canada",
+                    "amountMillions": 101.4,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Finance \u2014 Financial Transactions and Reports Analysis Centre of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-finance-financial-consumer-agency-of-canada",
+                    "name": "Financial Consumer Agency of Canada",
+                    "amountMillions": 55.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Finance \u2014 Financial Consumer Agency of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-canadian-heritage",
+                "name": "Canadian Heritage",
+                "amountMillions": 2874.5,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Canadian Heritage.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-canadian-heritage-canadian-broadcasting-corporation",
+                    "name": "Canadian Broadcasting Corporation",
+                    "amountMillions": 1425.2,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canadian Broadcasting Corporation.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-canada-council-for-the-arts",
+                    "name": "Canada Council for the Arts",
+                    "amountMillions": 364.3,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canada Council for the Arts.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-department-of-canadian-heritage",
+                    "name": "Department of Canadian Heritage",
+                    "amountMillions": 281.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Department of Canadian Heritage.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-library-and-archives-of-canada",
+                    "name": "Library and Archives of Canada",
+                    "amountMillions": 204.4,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Library and Archives of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-telefilm-canada",
+                    "name": "Telefilm Canada",
+                    "amountMillions": 158.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Telefilm Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-canadian-museum-of-history",
+                    "name": "Canadian Museum of History",
+                    "amountMillions": 83.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canadian Museum of History.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-national-film-board",
+                    "name": "National Film Board",
+                    "amountMillions": 82.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 National Film Board.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-national-arts-centre-corporation",
+                    "name": "National Arts Centre Corporation",
+                    "amountMillions": 59.5,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 National Arts Centre Corporation.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-national-gallery-of-canada",
+                    "name": "National Gallery of Canada",
+                    "amountMillions": 50.0,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 National Gallery of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-national-museum-of-science-and-technology",
+                    "name": "National Museum of Science and Technology",
+                    "amountMillions": 38.4,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 National Museum of Science and Technology.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-canadian-museum-of-nature",
+                    "name": "Canadian Museum of Nature",
+                    "amountMillions": 36.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canadian Museum of Nature.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-canadian-museum-for-human-rights",
+                    "name": "Canadian Museum for Human Rights",
+                    "amountMillions": 28.6,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canadian Museum for Human Rights.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-canadian-radio-television-and-telecommunications-commission",
+                    "name": "Canadian Radio-television and Telecommunications Commission",
+                    "amountMillions": 21.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canadian Radio-television and Telecommunications Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-the-national-battlefields-commission",
+                    "name": "The National Battlefields Commission",
+                    "amountMillions": 18.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 The National Battlefields Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-canadian-race-relations-foundation",
+                    "name": "Canadian Race Relations Foundation",
+                    "amountMillions": 12.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canadian Race Relations Foundation.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-canadian-heritage-canadian-museum-of-immigration-at-pier-21",
+                    "name": "Canadian Museum of Immigration at Pier 21",
+                    "amountMillions": 10.0,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Canadian Heritage \u2014 Canadian Museum of Immigration at Pier 21.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-energy-and-natural-resources",
+                "name": "Energy and Natural Resources",
+                "amountMillions": 2821.8,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Energy and Natural Resources.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-energy-and-natural-resources-atomic-energy-of-canada-limited",
+                    "name": "Atomic Energy of Canada Limited",
+                    "amountMillions": 1433.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Energy and Natural Resources \u2014 Atomic Energy of Canada Limited.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-energy-and-natural-resources-department-of-natural-resources",
+                    "name": "Department of Natural Resources",
+                    "amountMillions": 1067.2,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Energy and Natural Resources \u2014 Department of Natural Resources.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-energy-and-natural-resources-canadian-nuclear-safety-commission",
+                    "name": "Canadian Nuclear Safety Commission",
+                    "amountMillions": 196.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Energy and Natural Resources \u2014 Canadian Nuclear Safety Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-energy-and-natural-resources-canadian-energy-regulator",
+                    "name": "Canadian Energy Regulator",
+                    "amountMillions": 123.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Energy and Natural Resources \u2014 Canadian Energy Regulator.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-energy-and-natural-resources-northern-pipeline-agency",
+                    "name": "Northern Pipeline Agency",
+                    "amountMillions": 0.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Energy and Natural Resources \u2014 Northern Pipeline Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-employment-and-workforce-development",
+                "name": "Employment and Workforce Development",
+                "amountMillions": 2706.6,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Employment and Workforce Development.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-employment-and-workforce-development-department-of-employment-and-social-development",
+                    "name": "Department of Employment and Social Development",
+                    "amountMillions": 2678.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Employment and Workforce Development \u2014 Department of Employment and Social Development.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-employment-and-workforce-development-canadian-centre-for-occupational-health-and-safety",
+                    "name": "Canadian Centre for Occupational Health and Safety",
+                    "amountMillions": 14.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Employment and Workforce Development \u2014 Canadian Centre for Occupational Health and Safety.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-employment-and-workforce-development-canadian-accessibility-standards-development-organiz",
+                    "name": "Canadian Accessibility Standards Development Organization",
+                    "amountMillions": 12.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Employment and Workforce Development \u2014 Canadian Accessibility Standards Development Organization.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-crown-indigenous-relations-and-northern-affairs",
+                "name": "Crown-Indigenous Relations and Northern Affairs",
+                "amountMillions": 2371.8,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Crown-Indigenous Relations and Northern Affairs.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-crown-indigenous-relations-and-northern-affairs-department-of-crown-indigenous-relations-",
+                    "name": "Department of Crown-Indigenous Relations and Northern Affairs",
+                    "amountMillions": 2343.4,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Crown-Indigenous Relations and Northern Affairs \u2014 Department of Crown-Indigenous Relations and Northern Affairs.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-crown-indigenous-relations-and-northern-affairs-canadian-high-arctic-research-station",
+                    "name": "Canadian High Arctic Research Station",
+                    "amountMillions": 28.4,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Crown-Indigenous Relations and Northern Affairs \u2014 Canadian High Arctic Research Station.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-veterans-affairs",
+                "name": "Veterans Affairs",
+                "amountMillions": 2071.4,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Veterans Affairs.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-veterans-affairs-department-of-veterans-affairs",
+                    "name": "Department of Veterans Affairs",
+                    "amountMillions": 2050.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Veterans Affairs \u2014 Department of Veterans Affairs.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-veterans-affairs-veterans-review-and-appeal-board",
+                    "name": "Veterans Review and Appeal Board",
+                    "amountMillions": 21.3,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Veterans Affairs \u2014 Veterans Review and Appeal Board.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-justice",
+                "name": "Justice",
+                "amountMillions": 2064.9,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Justice.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-justice-office-of-the-commissioner-for-federal-judicial-affairs",
+                    "name": "Office of the Commissioner for Federal Judicial Affairs",
+                    "amountMillions": 804.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Office of the Commissioner for Federal Judicial Affairs.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-department-of-justice",
+                    "name": "Department of Justice",
+                    "amountMillions": 633.3,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Department of Justice.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-office-of-the-director-of-public-prosecutions",
+                    "name": "Office of the Director of Public Prosecutions",
+                    "amountMillions": 254.2,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Office of the Director of Public Prosecutions.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-courts-administration-service",
+                    "name": "Courts Administration Service",
+                    "amountMillions": 135.7,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Courts Administration Service.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-administrative-tribunals-support-service-of-canada",
+                    "name": "Administrative Tribunals Support Service of Canada",
+                    "amountMillions": 86.0,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Administrative Tribunals Support Service of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-offices-of-the-information-and-privacy-commissioners-of-canada",
+                    "name": "Offices of the Information and Privacy Commissioners of Canada",
+                    "amountMillions": 54.5,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Offices of the Information and Privacy Commissioners of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-registrar-of-the-supreme-court-of-canada",
+                    "name": "Registrar of the Supreme Court of Canada",
+                    "amountMillions": 51.3,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Registrar of the Supreme Court of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-canadian-human-rights-commission",
+                    "name": "Canadian Human Rights Commission",
+                    "amountMillions": 41.6,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Canadian Human Rights Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-justice-law-commission-of-canada",
+                    "name": "Law Commission of Canada",
+                    "amountMillions": 4.0,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Justice \u2014 Law Commission of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-environment-and-climate-change",
+                "name": "Environment and Climate Change",
+                "amountMillions": 1533.3,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Environment and Climate Change.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-environment-and-climate-change-department-of-the-environment",
+                    "name": "Department of the Environment",
+                    "amountMillions": 1430.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Environment and Climate Change \u2014 Department of the Environment.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-environment-and-climate-change-impact-assessment-agency-of-canada",
+                    "name": "Impact Assessment Agency of Canada",
+                    "amountMillions": 83.5,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Environment and Climate Change \u2014 Impact Assessment Agency of Canada.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-environment-and-climate-change-canada-water-agency",
+                    "name": "Canada Water Agency",
+                    "amountMillions": 18.9,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Environment and Climate Change \u2014 Canada Water Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-parks-canada",
+                "name": "Parks Canada",
+                "amountMillions": 1265.1,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Parks Canada.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-parks-canada-parks-canada-agency",
+                    "name": "Parks Canada Agency",
+                    "amountMillions": 1265.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Parks Canada \u2014 Parks Canada Agency.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-parliament",
+                "name": "Parliament",
+                "amountMillions": 958.2,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Parliament.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-parliament-house-of-commons",
+                    "name": "House of Commons",
+                    "amountMillions": 642.6,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Parliament \u2014 House of Commons.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-parliament-senate",
+                    "name": "Senate",
+                    "amountMillions": 129.4,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Parliament \u2014 Senate.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-parliament-parliamentary-protective-service",
+                    "name": "Parliamentary Protective Service",
+                    "amountMillions": 107.8,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Parliament \u2014 Parliamentary Protective Service.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-parliament-library-of-parliament",
+                    "name": "Library of Parliament",
+                    "amountMillions": 62.1,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Parliament \u2014 Library of Parliament.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-parliament-office-of-the-conflict-of-interest-and-ethics-commissioner",
+                    "name": "Office of the Conflict of Interest and Ethics Commissioner",
+                    "amountMillions": 8.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Parliament \u2014 Office of the Conflict of Interest and Ethics Commissioner.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-parliament-office-of-the-parliamentary-budget-officer",
+                    "name": "Office of the Parliamentary Budget Officer",
+                    "amountMillions": 6.7,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Parliament \u2014 Office of the Parliamentary Budget Officer.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-parliament-office-of-the-senate-ethics-officer",
+                    "name": "Office of the Senate Ethics Officer",
+                    "amountMillions": 1.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Parliament \u2014 Office of the Senate Ethics Officer.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-agriculture-and-agri-food",
+                "name": "Agriculture and Agri-Food",
+                "amountMillions": 894.1,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Agriculture and Agri-Food.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-agriculture-and-agri-food-department-of-agriculture-and-agri-food",
+                    "name": "Department of Agriculture and Agri-Food",
+                    "amountMillions": 872.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Agriculture and Agri-Food \u2014 Department of Agriculture and Agri-Food.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-agriculture-and-agri-food-canadian-grain-commission",
+                    "name": "Canadian Grain Commission",
+                    "amountMillions": 16.9,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Agriculture and Agri-Food \u2014 Canadian Grain Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-agriculture-and-agri-food-canadian-dairy-commission",
+                    "name": "Canadian Dairy Commission",
+                    "amountMillions": 5.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Agriculture and Agri-Food \u2014 Canadian Dairy Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-privy-council",
+                "name": "Privy Council",
+                "amountMillions": 414.5,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Privy Council.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-privy-council-privy-council-office",
+                    "name": "Privy Council Office",
+                    "amountMillions": 250.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Privy Council \u2014 Privy Council Office.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-privy-council-public-service-commission",
+                    "name": "Public Service Commission",
+                    "amountMillions": 100.1,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Privy Council \u2014 Public Service Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-privy-council-canadian-transportation-accident-investigation-and-safety-board",
+                    "name": "Canadian Transportation Accident Investigation and Safety Board",
+                    "amountMillions": 43.0,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Privy Council \u2014 Canadian Transportation Accident Investigation and Safety Board.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-privy-council-national-security-and-intelligence-review-agency-secretariat",
+                    "name": "National Security and Intelligence Review Agency Secretariat",
+                    "amountMillions": 18.8,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Privy Council \u2014 National Security and Intelligence Review Agency Secretariat.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-privy-council-office-of-the-intelligence-commissioner",
+                    "name": "Office of the Intelligence Commissioner",
+                    "amountMillions": 2.1,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Privy Council \u2014 Office of the Intelligence Commissioner.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-democratic-institutions",
+                "name": "Democratic Institutions",
+                "amountMillions": 315.0,
+                "color": "#a58231",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Democratic Institutions.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-democratic-institutions-office-of-the-chief-electoral-officer",
+                    "name": "Office of the Chief Electoral Officer",
+                    "amountMillions": 311.2,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Democratic Institutions \u2014 Office of the Chief Electoral Officer.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-democratic-institutions-secretariat-of-the-national-security-and-intelligence-committee-o",
+                    "name": "Secretariat of the National Security and Intelligence Committee of Parliamentarians",
+                    "amountMillions": 3.1,
+                    "color": "#967a34",
+                    "description": "Public Accounts FY 2024-25: Democratic Institutions \u2014 Secretariat of the National Security and Intelligence Committee of Parliamentarians.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ca-ode-democratic-institutions-leaders-debates-commission",
+                    "name": "Leaders' Debates Commission",
+                    "amountMillions": 0.7,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Democratic Institutions \u2014 Leaders' Debates Commission.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-women-gender-equality-and-youth",
+                "name": "Women, Gender Equality and Youth",
+                "amountMillions": 66.5,
+                "color": "#c09946",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Women, Gender Equality and Youth.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "ca-ode-women-gender-equality-and-youth-department-for-women-and-gender-equality",
+                    "name": "Department for Women and Gender Equality",
+                    "amountMillions": 66.5,
+                    "color": "#c7a55b",
+                    "description": "Public Accounts FY 2024-25: Women, Gender Equality and Youth \u2014 Department for Women and Gender Equality.",
+                    "sources": [
+                      {
+                        "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                        "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                      },
+                      {
+                        "label": "MET CSV",
+                        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-office-of-the-governor-general-s-secretary",
+                "name": "Office of the Governor General's Secretary",
+                "amountMillions": 28.7,
+                "color": "#9f7f32",
+                "description": "Public Accounts FY 2024-25: other direct program \u2014 Office of the Governor General's Secretary.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-ode-consolidation-and-other-adjustments",
+                "name": "Consolidation and other adjustments",
+                "amountMillions": 1294.8,
+                "color": "#c39e4f",
+                "description": "Bridge to Fiscal Reference Tables: ministerial other-program lines sum to 129,159.2 million; FRT other direct program expenses are 130,454.0 million. This 1,294.8 million residual covers consolidation and other items not allocated to a ministry in the MET file.",
+                "sources": [
+                  {
+                    "label": "Public Accounts \u2014 ministerial expenditures by type, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "MET CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv"
+                  }
+                ]
               }
             ]
           }
@@ -347,7 +3617,7 @@
             "id": "ca-debt-unmatured-debt",
             "name": "Unmatured debt",
             "amountMillions": 42455.0,
-            "color": "#8375a6",
+            "color": "#7d6fa2",
             "description": "Public Accounts FY 2024-25: public debt charges \u2014 Unmatured debt.",
             "sources": [
               {
@@ -358,13 +3628,83 @@
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
               }
+            ],
+            "children": [
+              {
+                "id": "ca-debt-unmatured-debt-interest-on-marketable-bonds",
+                "name": "Interest on marketable bonds",
+                "amountMillions": 41864.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Unmatured debt \u2014 Interest on marketable bonds.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-unmatured-debt-net-interest-on-cross-currency-swaps",
+                "name": "Net interest on cross-currency swaps",
+                "amountMillions": 321.0,
+                "color": "#5a5485",
+                "description": "Public Accounts FY 2024-25: Unmatured debt \u2014 Net interest on cross-currency swaps.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-unmatured-debt-interest-on-capital-lease-obligations",
+                "name": "Interest on capital lease obligations",
+                "amountMillions": 143.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Unmatured debt \u2014 Interest on capital lease obligations.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-unmatured-debt-interest-on-obligations-under-public-private-partnerships",
+                "name": "Interest on obligations under public-private partnerships",
+                "amountMillions": 127.0,
+                "color": "#5a5485",
+                "description": "Public Accounts FY 2024-25: Unmatured debt \u2014 Interest on obligations under public-private partnerships.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              }
             ]
           },
           {
             "id": "ca-debt-pensions-and-other-future-benefits",
             "name": "Pensions and other future benefits",
             "amountMillions": 9623.0,
-            "color": "#5f5689",
+            "color": "#62578c",
             "description": "Public Accounts FY 2024-25: public debt charges \u2014 Pensions and other future benefits.",
             "sources": [
               {
@@ -375,13 +3715,83 @@
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
               }
+            ],
+            "children": [
+              {
+                "id": "ca-debt-pensions-and-other-future-benefits-other-employee-and-veteran-future-benefits",
+                "name": "Other employee and veteran future benefits",
+                "amountMillions": 7678.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Pensions and other future benefits \u2014 Other employee and veteran future benefits.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-pensions-and-other-future-benefits-public-sector-pensions-superannuation-accounts",
+                "name": "Public sector pensions\u2014Superannuation accounts",
+                "amountMillions": 4465.0,
+                "color": "#5a5485",
+                "description": "Public Accounts FY 2024-25: Pensions and other future benefits \u2014 Public sector pensions\u2014Superannuation accounts.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-pensions-and-other-future-benefits-allowance-for-pension-adjustments",
+                "name": "Allowance for pension adjustments",
+                "amountMillions": -2297.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Pensions and other future benefits \u2014 Allowance for pension adjustments.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-pensions-and-other-future-benefits-consolidated-crown-corporations-and-other-entities-pe",
+                "name": "Consolidated Crown corporations and other entities pensions",
+                "amountMillions": -223.0,
+                "color": "#5a5485",
+                "description": "Public Accounts FY 2024-25: Pensions and other future benefits \u2014 Consolidated Crown corporations and other entities pensions.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              }
             ]
           },
           {
             "id": "ca-debt-other-liabilities",
             "name": "Other liabilities",
             "amountMillions": 1332.0,
-            "color": "#8375a6",
+            "color": "#7d6fa2",
             "description": "Public Accounts FY 2024-25: public debt charges \u2014 Other liabilities.",
             "sources": [
               {
@@ -392,13 +3802,100 @@
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
               }
+            ],
+            "children": [
+              {
+                "id": "ca-debt-other-liabilities-other-liabilities",
+                "name": "Other liabilities",
+                "amountMillions": 1124.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Other liabilities \u2014 Other liabilities.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-other-liabilities-other-specified-purpose-accounts",
+                "name": "Other specified purpose accounts",
+                "amountMillions": 132.0,
+                "color": "#5a5485",
+                "description": "Public Accounts FY 2024-25: Other liabilities \u2014 Other specified purpose accounts.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-other-liabilities-deposit-and-trust-accounts",
+                "name": "Deposit and trust accounts",
+                "amountMillions": 52.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Other liabilities \u2014 Deposit and trust accounts.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-other-liabilities-canada-pension-plan",
+                "name": "Canada Pension Plan",
+                "amountMillions": 21.0,
+                "color": "#5a5485",
+                "description": "Public Accounts FY 2024-25: Other liabilities \u2014 Canada Pension Plan.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              },
+              {
+                "id": "ca-debt-other-liabilities-government-annuities-account",
+                "name": "Government Annuities Account",
+                "amountMillions": 3.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Other liabilities \u2014 Government Annuities Account.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
+              }
             ]
           },
           {
             "id": "ca-debt-consolidated-specified-purpose-accounts",
             "name": "Consolidated specified purpose accounts",
             "amountMillions": 13.0,
-            "color": "#5f5689",
+            "color": "#62578c",
             "description": "Public Accounts FY 2024-25: public debt charges \u2014 Consolidated specified purpose accounts.",
             "sources": [
               {
@@ -408,6 +3905,25 @@
               {
                 "label": "Revenues / expenses CSV",
                 "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+              }
+            ],
+            "children": [
+              {
+                "id": "ca-debt-consolidated-specified-purpose-accounts-interest",
+                "name": "Interest",
+                "amountMillions": 13.0,
+                "color": "#8c7fac",
+                "description": "Public Accounts FY 2024-25: Consolidated specified purpose accounts \u2014 Interest.",
+                "sources": [
+                  {
+                    "label": "Public Accounts of Canada, FY 2024-25",
+                    "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+                  },
+                  {
+                    "label": "Revenues / expenses CSV",
+                    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+                  }
+                ]
               }
             ]
           },
@@ -447,6 +3963,8 @@
   "publicAccounts": {
     "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv",
     "datasetUrl": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09",
+    "otpUrl": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/otpmopeom-apdtmacdpam/otpmopeom-apdtmacdpam-2025.csv",
+    "metUrl": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/dmc-met/dmc-met-2025.csv",
     "expenseMillions": 543279.0
   },
   "highlights": {
@@ -459,7 +3977,8 @@
     "defense": {
       "name": "National Defence",
       "amountMillions": 33924.8,
-      "note": "Department of National Defence actuals already loaded for FY 2024-25 (not yet a top-level drill slice)"
+      "nodeId": "ca-ode-national-defence",
+      "note": "Department of National Defence FY 2024-25 actuals (GC Infobase / Public Accounts). Drillable under Direct program \u2192 Other direct program expenses."
     }
   }
 }
