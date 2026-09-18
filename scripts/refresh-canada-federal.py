@@ -91,6 +91,10 @@ FRT_SPENDING = {
     },
 }
 
+# Department of National Defence FY 2024-25 actuals (millions) — already established
+# for the interest-vs-defense strip; not a top-level FRT drill node yet.
+CANADA_NATIONAL_DEFENCE_MILLIONS = 33924.8
+
 # FRT Table 1: budgetary deficit -36,348 is -1.2% of GDP → GDP ≈ 3,029 billion.
 CANADA_GDP_BILLIONS = 3029.0
 
@@ -574,6 +578,26 @@ def main() -> None:
                     for r in rows
                     if r.get("Account_Compte_eng") == "Expenses"
                 ),
+            },
+            "highlights": {
+                "interest": {
+                    "name": "Public debt charges",
+                    "amountMillions": next(
+                        child["amountMillions"]
+                        for child in spending_root["children"]
+                        if child["name"] == "Public debt charges"
+                    ),
+                    "nodeId": "ca-public-debt-charges",
+                    "note": "From this file's spending tree (FRT / Public Accounts)",
+                },
+                "defense": {
+                    "name": "National Defence",
+                    "amountMillions": CANADA_NATIONAL_DEFENCE_MILLIONS,
+                    "note": (
+                        "Department of National Defence actuals for FY "
+                        f"{FISCAL_YEAR_LABEL} (not yet a top-level drill slice)"
+                    ),
+                },
             },
         },
     )

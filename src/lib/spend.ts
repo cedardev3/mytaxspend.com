@@ -50,6 +50,21 @@ export type BudgetDataset = {
   };
   /** Present on the outlays dataset (OMB Table 10.1). */
   gdp?: GdpSeries;
+  /** Optional interest-vs-defense snapshot for comparison strip. */
+  highlights?: {
+    interest: {
+      name: string;
+      amountMillions: number;
+      nodeId?: string;
+      note?: string;
+    };
+    defense: {
+      name: string;
+      amountMillions: number;
+      nodeId?: string;
+      note?: string;
+    };
+  };
   treasuryMts: {
     recordDate: string;
     fiscalYear: number;

@@ -448,5 +448,18 @@
     "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv",
     "datasetUrl": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09",
     "expenseMillions": 543279.0
+  },
+  "highlights": {
+    "interest": {
+      "name": "Public debt charges",
+      "amountMillions": 53410.0,
+      "nodeId": "ca-public-debt-charges",
+      "note": "From this file's spending tree (FRT / Public Accounts)"
+    },
+    "defense": {
+      "name": "National Defence",
+      "amountMillions": 33924.8,
+      "note": "Department of National Defence actuals already loaded for FY 2024-25 (not yet a top-level drill slice)"
+    }
   }
 }

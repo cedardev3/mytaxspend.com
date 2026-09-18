@@ -3,7 +3,12 @@ import usReceipts from "@/data/federal-receipts.json";
 import caOutlays from "@/data/canada-federal-outlays.json";
 import caReceipts from "@/data/canada-federal-receipts.json";
 import type { CountryId } from "@/lib/jurisdiction";
-import { assertTreeTotals, type BudgetDataset, type GdpSeries } from "@/lib/spend";
+import {
+  assertTreeTotals,
+  type BudgetDataset,
+  type GdpSeries,
+  type SpendNode,
+} from "@/lib/spend";
 
 export const outlaysDataset = usOutlays as BudgetDataset;
 export const receiptsDataset = usReceipts as BudgetDataset;
@@ -37,6 +42,11 @@ function validatePair(outlays: BudgetDataset, receipts: BudgetDataset, label: st
 validatePair(outlaysDataset, receiptsDataset, "US");
 validatePair(canadaOutlaysDataset, canadaReceiptsDataset, "Canada");
 
+export type InterestDefensePair = {
+  interest: { name: string; amountMillions: number; nodeId?: string };
+  defense: { name: string; amountMillions: number; nodeId?: string };
+};
+
 export type CountryBudget = {
   outlays: BudgetDataset;
   receipts: BudgetDataset;
@@ -46,7 +56,55 @@ export type CountryBudget = {
   comparisonFiscalYear: number;
   comparisonFiscalYearLabel: string;
   comparisonStatus: string;
+  interestDefense: InterestDefensePair;
 };
+
+function rootChild(root: SpendNode, name: string): SpendNode {
+  const child = root.children?.find((node) => node.name === name);
+  if (!child) {
+    throw new Error(`Missing spending category "${name}" under "${root.id}"`);
+  }
+  return child;
+}
+
+/** Pull interest vs defense from amounts already present in each outlays dataset. */
+function interestDefenseFor(countryId: CountryId, spending: SpendNode): InterestDefensePair {
+  if (countryId === "us") {
+    const interest = rootChild(spending, "Net Interest");
+    const defense = rootChild(spending, "National Defense");
+    return {
+      interest: {
+        name: interest.name,
+        amountMillions: interest.amountMillions,
+        nodeId: interest.id,
+      },
+      defense: {
+        name: defense.name,
+        amountMillions: defense.amountMillions,
+        nodeId: defense.id,
+      },
+    };
+  }
+
+  const highlights = canadaOutlaysDataset.highlights;
+  if (!highlights?.interest || !highlights?.defense) {
+    throw new Error("Canada outlays dataset is missing interest/defense highlights");
+  }
+  // Prefer live tree amount for public debt when the node still exists.
+  const interestNode = spending.children?.find((node) => node.id === highlights.interest.nodeId);
+  return {
+    interest: {
+      name: highlights.interest.name,
+      amountMillions: interestNode?.amountMillions ?? highlights.interest.amountMillions,
+      nodeId: highlights.interest.nodeId,
+    },
+    defense: {
+      name: highlights.defense.name,
+      amountMillions: highlights.defense.amountMillions,
+      nodeId: highlights.defense.nodeId,
+    },
+  };
+}
 
 export function budgetFor(countryId: CountryId): CountryBudget {
   if (countryId === "ca") {
@@ -60,9 +118,10 @@ export function budgetFor(countryId: CountryId): CountryBudget {
       revenue: canadaReceiptsDataset.root,
       comparisonFiscalYear: canadaOutlaysDataset.omb.fiscalYear,
       comparisonFiscalYearLabel:
-        (canadaOutlaysDataset.omb as { fiscalYearLabel?: string }).fiscalYearLabel ??
+        canadaOutlaysDataset.omb.fiscalYearLabel ??
         String(canadaOutlaysDataset.omb.fiscalYear),
       comparisonStatus: canadaOutlaysDataset.omb.status,
+      interestDefense: interestDefenseFor("ca", canadaOutlaysDataset.root),
     };
   }
 
@@ -77,6 +136,7 @@ export function budgetFor(countryId: CountryId): CountryBudget {
     comparisonFiscalYear: outlaysDataset.omb.fiscalYear,
     comparisonFiscalYearLabel: String(outlaysDataset.omb.fiscalYear),
     comparisonStatus: outlaysDataset.omb.status,
+    interestDefense: interestDefenseFor("us", outlaysDataset.root),
   };
 }
 

@@ -8,12 +8,11 @@ import CountryFlag from "@/components/CountryFlag";
 import CountryToggle from "@/components/CountryToggle";
 import DrilldownPie from "@/components/DrilldownPie";
 import InfoTip from "@/components/InfoTip";
+import InterestDefenseCompare from "@/components/InterestDefenseCompare";
 import SourceLinks from "@/components/SourceLinks";
 import SpendingComparisons from "@/components/SpendingComparisons";
 import UpdateStamp from "@/components/UpdateStamp";
-import {
-  budgetFor,
-} from "@/data/budget";
+import { budgetFor } from "@/data/budget";
 import {
   DEFAULT_COUNTRY_ID,
   getCountry,
@@ -309,20 +308,27 @@ export default function SpendExplorer() {
         </div>
       </header>
 
-      {mode === "spending" ? (
-        <SpendingComparisons
-          jurisdiction={jurisdiction}
-          budget={budget}
-          revenueSourceNote={sourceNotes.revenueCompare}
-          gdpSourceNote={sourceNotes.gdpCompare}
-        />
-      ) : (
-        <BudgetBalance
-          jurisdiction={jurisdiction}
-          budget={budget}
-          sourceNote={sourceNotes.balance}
-        />
-      )}
+      <div className="grid items-stretch gap-3 lg:grid-cols-4">
+        <div className="min-w-0 lg:col-span-3">
+          {mode === "spending" ? (
+            <SpendingComparisons
+              jurisdiction={jurisdiction}
+              budget={budget}
+              revenueSourceNote={sourceNotes.revenueCompare}
+              gdpSourceNote={sourceNotes.gdpCompare}
+            />
+          ) : (
+            <BudgetBalance
+              jurisdiction={jurisdiction}
+              budget={budget}
+              sourceNote={sourceNotes.balance}
+            />
+          )}
+        </div>
+        <div className="min-w-0 lg:col-span-1">
+          <InterestDefenseCompare pair={budget.interestDefense} />
+        </div>
+      </div>
 
       <nav aria-label="Budget path" className="flex flex-wrap items-center gap-2 text-sm">
         {crumbs.map((crumb, index) => {
