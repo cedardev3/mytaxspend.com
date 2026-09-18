@@ -10,7 +10,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   title: "My Tax Spend",
   description:
-    "US federal outlays by budget function and subfunction, from OMB Historical Table 3.2 and the Treasury Monthly Treasury Statement.",
+    "US Federal Spending and US Federal Revenue from OMB Historical Tables and the Treasury Monthly Treasury Statement — see where tax dollars come from and where they go.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

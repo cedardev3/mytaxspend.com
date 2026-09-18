@@ -3,6 +3,7 @@ Pull official federal outlay figures and write src/data/federal-outlays.json.
 
 Sources:
   - OMB Historical Table 3.2 (function and subfunction actuals) via GovInfo
+  - OMB Public Budget Database DB-2 (agency / bureau / account under subfunctions)
   - Treasury Fiscal Data Monthly Treasury Statement Table 9 (latest FYTD)
 
 Run: python scripts/refresh-federal-outlays.py
@@ -13,6 +14,7 @@ from __future__ import annotations
 import json
 import re
 import ssl
+import sys
 import urllib.parse
 import urllib.request
 import zipfile
@@ -22,11 +24,23 @@ from io import BytesIO
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from public_budget_db import (  # noqa: E402
+    PDB_DETAILS_URL,
+    PDB_OUTLAYS_XLSX_URL,
+    PDB_ZIP_URL,
+    enrich_outlay_tree,
+    load_pdb_outlay_sheet,
+    parse_outlay_entries,
+)
+
 OUT_PATH = ROOT / "src" / "data" / "federal-outlays.json"
 
 OMB_ZIP_URL = "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/zip/BUDGET-2027-TAB.zip"
 OMB_TABLE_PATH = "BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+OMB_GDP_TABLE_PATH = "BUDGET-2027-TAB/xls/BUDGET-2027-TAB-11-1.xlsx"
 OMB_XLSX_URL = "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-4-2.xlsx"
+OMB_GDP_XLSX_URL = "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-11-1.xlsx"
 OMB_DETAILS_URL = "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
 OMB_HISTORICAL_TABLES_URL = (
     "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
@@ -158,6 +172,34 @@ def treasury_function_url(record_date: str, name: str) -> str:
         "&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr"
         "&page[size]=1"
     )
+
+
+def parse_omb_gdp(rows: dict[int, dict[int, str]], fiscal_year: int) -> dict:
+    """Table 10.1: years are rows; column 2 is GDP in billions of dollars."""
+    for r in sorted(rows):
+        fy_raw = str(rows[r].get(1, "")).strip()
+        try:
+            fy = int(float(fy_raw))
+        except ValueError:
+            continue
+        if fy != fiscal_year:
+            continue
+        gdp_billions = parse_millions(rows[r].get(2))
+        if gdp_billions is None:
+            raise RuntimeError(f"Table 10.1 missing GDP for FY {fiscal_year}")
+        return {
+            "fiscalYear": fiscal_year,
+            "status": "actual",
+            "table": "10.1",
+            "title": "Gross Domestic Product and Deflators Used in the Historical Tables",
+            "units": "billions of dollars",
+            "amountBillions": gdp_billions,
+            "amountMillions": gdp_billions * 1000.0,
+            "spreadsheetUrl": OMB_GDP_XLSX_URL,
+            "historicalTablesUrl": OMB_HISTORICAL_TABLES_URL,
+            "detailsUrl": OMB_DETAILS_URL,
+        }
+    raise RuntimeError(f"Table 10.1 has no row for FY {fiscal_year}")
 
 
 def parse_omb_table(rows: dict[int, dict[int, str]], fiscal_year: int) -> dict:
@@ -408,8 +450,10 @@ def main() -> None:
     zip_bytes = fetch(OMB_ZIP_URL)
     with zipfile.ZipFile(BytesIO(zip_bytes)) as z:
         xlsx = z.read(OMB_TABLE_PATH)
+        gdp_xlsx = z.read(OMB_GDP_TABLE_PATH)
     rows = parse_xlsx_sheet(xlsx)
     omb = parse_omb_table(rows, 2025)
+    gdp = parse_omb_gdp(parse_xlsx_sheet(gdp_xlsx), 2025)
     issued = mods_issued(zip_bytes)
     treasury = latest_treasury()
 
@@ -433,25 +477,45 @@ def main() -> None:
             "onBudgetMillions": omb["onBudgetMillions"],
             "offBudgetMillions": omb["offBudgetMillions"],
         },
+        "gdp": gdp,
         "treasuryMts": treasury,
         "root": {
             "id": "us-federal-outlays",
-            "name": "US federal outlays",
+            "name": "US Federal Spending",
             "amountMillions": omb["amountMillions"],
             "color": "#1f3d4d",
             "description": (
-                "FY 2025 actual federal outlays from OMB Historical Table 3.2. "
-                "Click a function to open its official subfunctions."
+                "FY 2025 actual US Federal Spending from OMB Historical Table 3.2, "
+                "with agency/bureau/account detail from the Public Budget Database. "
+                "Click a category to dig deeper."
             ),
             "sources": omb_sources(),
             "children": children,
         },
     }
+
+    outlay_sheet = load_pdb_outlay_sheet()
+    pdb_entries = parse_outlay_entries(outlay_sheet, 2025)
+    enrich_stats = enrich_outlay_tree(payload["root"], pdb_entries, 2025)
+    payload["publicBudgetDatabase"] = {
+        "zipUrl": PDB_ZIP_URL,
+        "detailsUrl": PDB_DETAILS_URL,
+        "outlaysSpreadsheetUrl": PDB_OUTLAYS_XLSX_URL,
+        "units": "thousands of dollars in source file; converted to millions here",
+        "enrichedLeaves": enrich_stats["enriched"],
+        "skippedLeaves": enrich_stats["skipped"],
+    }
+
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUT_PATH}")
     print(f"OMB FY 2025 total outlays: {omb['amountMillions']} million")
+    print(f"OMB FY 2025 GDP: {gdp['amountBillions']} billion")
     print(f"Treasury {treasury['periodLabel']} net outlays: {treasury['netOutlays']}")
+    print(
+        f"Public DB enrichment: {enrich_stats['enriched']} leaves expanded, "
+        f"{enrich_stats['skipped']} left as Table 3.2 leaves"
+    )
 
 
 if __name__ == "__main__":

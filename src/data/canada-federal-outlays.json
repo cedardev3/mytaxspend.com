@@ -1,0 +1,452 @@
+{
+  "generatedAt": "2026-09-18T06:18:37Z",
+  "omb": {
+    "table": "FRT 7 / 10\u201313",
+    "title": "Federal expenses by major category (Fiscal Reference Tables)",
+    "fiscalYear": 2025,
+    "fiscalYearLabel": "2024-25",
+    "status": "actual",
+    "units": "millions of dollars",
+    "publication": "Public Accounts of Canada / Fiscal Reference Tables",
+    "dateIssued": null,
+    "zipUrl": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf",
+    "spreadsheetUrl": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf",
+    "detailsUrl": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html",
+    "historicalTablesUrl": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html",
+    "amountMillions": 547299.0,
+    "onBudgetMillions": 547299.0,
+    "offBudgetMillions": 0.0
+  },
+  "treasuryMts": {
+    "recordDate": "2025-03-31",
+    "fiscalYear": 2025,
+    "periodLabel": "FY 2024-25 annual (Public Accounts)",
+    "receipts": 510951000000.0,
+    "netOutlays": 547299000000.0,
+    "queryUrl": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf",
+    "datasetUrl": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html",
+    "latestRecordQueryUrl": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+  },
+  "root": {
+    "id": "ca-federal-outlays",
+    "name": "Canadian Federal Spending",
+    "amountMillions": 547299.0,
+    "color": "#1f3d4d",
+    "description": "FY 2024-25 actual Canadian federal expenses from Finance Canada Fiscal Reference Tables (2 layers). Click a category to open its components.",
+    "sources": [
+      {
+        "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+        "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+      },
+      {
+        "label": "FRT PDF",
+        "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+      }
+    ],
+    "children": [
+      {
+        "id": "ca-major-transfers-to-persons",
+        "name": "Major transfers to persons",
+        "amountMillions": 131579.0,
+        "color": "#c45c26",
+        "description": "Fiscal Reference Tables FY 2024-25: Major transfers to persons.",
+        "sources": [
+          {
+            "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+            "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+          },
+          {
+            "label": "FRT PDF",
+            "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+          }
+        ],
+        "children": [
+          {
+            "id": "ca-major-transfers-persons-old-age-security-benefits",
+            "name": "Old Age Security benefits",
+            "amountMillions": 80294.0,
+            "color": "#cd7649",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to persons \u2014 Old Age Security benefits.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-major-transfers-persons-children-s-benefits",
+            "name": "Children's benefits",
+            "amountMillions": 28574.0,
+            "color": "#aa572c",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to persons \u2014 Children's benefits.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-major-transfers-persons-employment-insurance",
+            "name": "Employment Insurance",
+            "amountMillions": 24880.0,
+            "color": "#cd7649",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to persons \u2014 Employment Insurance.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-major-transfers-persons-relief-for-heating-expenses",
+            "name": "Relief for heating expenses",
+            "amountMillions": -2169.0,
+            "color": "#aa572c",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to persons \u2014 Relief for heating expenses.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ca-major-transfers-to-provinces-territories-and-municipalities",
+        "name": "Major transfers to provinces, territories and municipalities",
+        "amountMillions": 105101.0,
+        "color": "#2a6f97",
+        "description": "Fiscal Reference Tables FY 2024-25: Major transfers to provinces, territories and municipalities.",
+        "sources": [
+          {
+            "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+            "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+          },
+          {
+            "label": "FRT PDF",
+            "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+          }
+        ],
+        "children": [
+          {
+            "id": "ca-major-transfers-provinces-canada-health-transfer",
+            "name": "Canada Health Transfer",
+            "amountMillions": 68979.0,
+            "color": "#4c86a8",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to provinces, territories and municipalities \u2014 Canada Health Transfer.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-major-transfers-provinces-fiscal-arrangements",
+            "name": "Fiscal arrangements",
+            "amountMillions": 30457.0,
+            "color": "#28678b",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to provinces, territories and municipalities \u2014 Fiscal arrangements.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-major-transfers-provinces-canada-wide-early-learning-and-child-care",
+            "name": "Canada-wide early learning and child care",
+            "amountMillions": 6639.0,
+            "color": "#4c86a8",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to provinces, territories and municipalities \u2014 Canada-wide early learning and child care.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-major-transfers-provinces-other",
+            "name": "Other",
+            "amountMillions": 6568.0,
+            "color": "#28678b",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to provinces, territories and municipalities \u2014 Other.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-major-transfers-provinces-quebec-abatement",
+            "name": "Quebec Abatement",
+            "amountMillions": -7542.0,
+            "color": "#4c86a8",
+            "description": "Fiscal Reference Tables FY 2024-25: Major transfers to provinces, territories and municipalities \u2014 Quebec Abatement.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ca-other-transfer-payments",
+        "name": "Other transfer payments",
+        "amountMillions": 15595.0,
+        "color": "#2f7d6d",
+        "description": "Fiscal Reference Tables FY 2024-25: Other transfer payments.",
+        "sources": [
+          {
+            "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+            "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+          },
+          {
+            "label": "FRT PDF",
+            "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+          }
+        ]
+      },
+      {
+        "id": "ca-direct-program-expenses",
+        "name": "Direct program expenses",
+        "amountMillions": 237594.0,
+        "color": "#c4922a",
+        "description": "Fiscal Reference Tables FY 2024-25: Direct program expenses.",
+        "sources": [
+          {
+            "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+            "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+          },
+          {
+            "label": "FRT PDF",
+            "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+          }
+        ],
+        "children": [
+          {
+            "id": "ca-direct-program-other-transfer-payments",
+            "name": "Other transfer payments",
+            "amountMillions": 107140.0,
+            "color": "#cda34c",
+            "description": "Fiscal Reference Tables FY 2024-25: Direct program expenses \u2014 Other transfer payments.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          },
+          {
+            "id": "ca-direct-program-other-direct-program-expenses",
+            "name": "Other direct program expenses",
+            "amountMillions": 130454.0,
+            "color": "#aa8430",
+            "description": "Fiscal Reference Tables FY 2024-25: Direct program expenses \u2014 Other direct program expenses.",
+            "sources": [
+              {
+                "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+                "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+              },
+              {
+                "label": "FRT PDF",
+                "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ca-pollution-pricing-proceeds-returned-to-canadians",
+        "name": "Pollution pricing proceeds returned to Canadians",
+        "amountMillions": 4020.0,
+        "color": "#5c6b73",
+        "description": "Fiscal Reference Tables FY 2024-25: Pollution pricing proceeds returned to Canadians.",
+        "sources": [
+          {
+            "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+            "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+          },
+          {
+            "label": "FRT PDF",
+            "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+          }
+        ]
+      },
+      {
+        "id": "ca-public-debt-charges",
+        "name": "Public debt charges",
+        "amountMillions": 53410.0,
+        "color": "#6b5b95",
+        "description": "Finance Canada Fiscal Reference Tables, FY 2024-25. Public debt charge detail from Public Accounts.",
+        "sources": [
+          {
+            "label": "Fiscal Reference Tables, October 2025 (FY 2024-25)",
+            "url": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+          },
+          {
+            "label": "FRT PDF",
+            "url": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf"
+          },
+          {
+            "label": "Revenues / expenses CSV",
+            "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+          }
+        ],
+        "children": [
+          {
+            "id": "ca-debt-unmatured-debt",
+            "name": "Unmatured debt",
+            "amountMillions": 42455.0,
+            "color": "#8375a6",
+            "description": "Public Accounts FY 2024-25: public debt charges \u2014 Unmatured debt.",
+            "sources": [
+              {
+                "label": "Public Accounts of Canada, FY 2024-25",
+                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+              },
+              {
+                "label": "Revenues / expenses CSV",
+                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+              }
+            ]
+          },
+          {
+            "id": "ca-debt-pensions-and-other-future-benefits",
+            "name": "Pensions and other future benefits",
+            "amountMillions": 9623.0,
+            "color": "#5f5689",
+            "description": "Public Accounts FY 2024-25: public debt charges \u2014 Pensions and other future benefits.",
+            "sources": [
+              {
+                "label": "Public Accounts of Canada, FY 2024-25",
+                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+              },
+              {
+                "label": "Revenues / expenses CSV",
+                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+              }
+            ]
+          },
+          {
+            "id": "ca-debt-other-liabilities",
+            "name": "Other liabilities",
+            "amountMillions": 1332.0,
+            "color": "#8375a6",
+            "description": "Public Accounts FY 2024-25: public debt charges \u2014 Other liabilities.",
+            "sources": [
+              {
+                "label": "Public Accounts of Canada, FY 2024-25",
+                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+              },
+              {
+                "label": "Revenues / expenses CSV",
+                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+              }
+            ]
+          },
+          {
+            "id": "ca-debt-consolidated-specified-purpose-accounts",
+            "name": "Consolidated specified purpose accounts",
+            "amountMillions": 13.0,
+            "color": "#5f5689",
+            "description": "Public Accounts FY 2024-25: public debt charges \u2014 Consolidated specified purpose accounts.",
+            "sources": [
+              {
+                "label": "Public Accounts of Canada, FY 2024-25",
+                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+              },
+              {
+                "label": "Revenues / expenses CSV",
+                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+              }
+            ]
+          },
+          {
+            "id": "ca-debt-consolidation-adjustments",
+            "name": "Consolidation adjustments",
+            "amountMillions": -13.0,
+            "color": "#8375a6",
+            "description": "Public Accounts FY 2024-25: public debt charges \u2014 Consolidation adjustments.",
+            "sources": [
+              {
+                "label": "Public Accounts of Canada, FY 2024-25",
+                "url": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09"
+              },
+              {
+                "label": "Revenues / expenses CSV",
+                "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gdp": {
+    "fiscalYear": 2025,
+    "status": "actual",
+    "table": "FRT Table 1 / 2",
+    "title": "Canadian GDP (implied from budgetary balance as % of GDP)",
+    "units": "billions of dollars",
+    "amountBillions": 3029.0,
+    "amountMillions": 3029000.0,
+    "spreadsheetUrl": "https://www.canada.ca/content/dam/fin/publications/frt-trf/2025/frt-trf-25-eng.pdf",
+    "historicalTablesUrl": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html",
+    "detailsUrl": "https://www.canada.ca/en/department-finance/services/publications/fiscal-reference-tables/2025.html"
+  },
+  "publicAccounts": {
+    "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/revenuesdeficit/revenuesdeficit-2025.csv",
+    "datasetUrl": "https://open.canada.ca/data/en/dataset/2599fe61-0e6e-40b9-958a-f56dd7f1fa09",
+    "expenseMillions": 543279.0
+  }
+}

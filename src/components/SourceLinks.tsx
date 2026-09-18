@@ -3,8 +3,8 @@ import type { SourceLink } from "@/lib/spend";
 export default function SourceLinks({ sources }: { sources: SourceLink[] }) {
   return (
     <ul className="flex flex-col gap-1">
-      {sources.map((source) => (
-        <li key={source.url}>
+      {sources.map((source, index) => (
+        <li key={`${source.label}-${source.url}-${index}`}>
           <a
             href={source.url}
             target="_blank"

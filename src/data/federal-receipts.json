@@ -1,0 +1,3504 @@
+{
+  "generatedAt": "2026-09-18T05:45:37Z",
+  "omb": {
+    "table": "2.1 / 2.4 / 2.5",
+    "title": "Receipts by Source (with detail)",
+    "fiscalYear": 2025,
+    "status": "actual",
+    "units": "millions of dollars",
+    "publication": "Budget of the United States Government, Fiscal Year 2027",
+    "dateIssued": "2026-04-03",
+    "zipUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/zip/BUDGET-2027-TAB.zip",
+    "spreadsheetUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx",
+    "detailsUrl": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB",
+    "historicalTablesUrl": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/",
+    "amountMillions": 5236421.0,
+    "onBudgetMillions": 3952685.0,
+    "offBudgetMillions": 1283736.0,
+    "tables": {
+      "2.1": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx",
+      "2.4": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx",
+      "2.5": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-5.xlsx"
+    }
+  },
+  "publicBudgetDatabase": {
+    "zipUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip",
+    "detailsUrl": "https://www.govinfo.gov/app/details/BUDGET-2027-DB",
+    "receiptsSpreadsheetUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx",
+    "units": "thousands of dollars in source file; converted to millions here",
+    "enrichedLeaves": 11,
+    "skippedLeaves": 22
+  },
+  "treasuryMts": {
+    "recordDate": "2026-08-31",
+    "fiscalYear": 2026,
+    "periodLabel": "FY 2026 through August 31, 2026",
+    "receipts": 4845452239722.57,
+    "netOutlays": 6811043257196.1,
+    "sources": [
+      {
+        "name": "Individual Income Taxes",
+        "amount": 2547997569751.14,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Individual%20Income%20Taxes&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Corporation Income Taxes",
+        "amount": 294856565453.14,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Corporation%20Income%20Taxes&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Employment and General Retirement",
+        "amount": 1606904005427.9,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Employment%20and%20General%20Retirement&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Unemployment Insurance",
+        "amount": 48640742518.47,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Unemployment%20Insurance&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Other Retirement",
+        "amount": 7735763580.01,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Other%20Retirement&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Excise Taxes",
+        "amount": 92921147322.15,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Excise%20Taxes&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Estate and Gift Taxes",
+        "amount": 36034481042.17,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Estate%20and%20Gift%20Taxes&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Customs Duties",
+        "amount": 167308212393.62,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Customs%20Duties&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      },
+      {
+        "name": "Miscellaneous Receipts",
+        "amount": 43053752233.97,
+        "apiUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31,classification_desc:eq:Miscellaneous%20Receipts&fields=record_date,classification_desc,current_fytd_rcpt_outly_amt,src_line_nbr&page[size]=1"
+      }
+    ],
+    "queryUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=record_date:eq:2026-08-31&sort=src_line_nbr&page[size]=200",
+    "datasetUrl": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-by-source-and-outlays-by-function-of-the-u-s-government/",
+    "latestRecordQueryUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?sort=-record_date&page[size]=1&fields=record_date,record_fiscal_year,record_calendar_month"
+  },
+  "root": {
+    "id": "us-federal-receipts",
+    "name": "US Federal Revenue",
+    "amountMillions": 5236421.0,
+    "color": "#1f3d4d",
+    "description": "FY 2025 actual US Federal Revenue from OMB Historical Tables 2.1, 2.4, and 2.5, with agency/account detail from the Public Budget Database. Click a source to dig deeper.",
+    "sources": [
+      {
+        "label": "OMB Historical Table 2.1, FY 2025 actual receipts",
+        "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+      },
+      {
+        "label": "FY 2027 Historical Tables (GovInfo)",
+        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+      },
+      {
+        "label": "Spreadsheet",
+        "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx"
+      }
+    ],
+    "children": [
+      {
+        "id": "individual-income-taxes",
+        "name": "Individual Income Taxes",
+        "amountMillions": 2656044.0,
+        "color": "#2a6f97",
+        "description": "OMB Table 2.1: Individual Income Taxes. FY 2025 actual receipts. Deeper agency/account detail from the OMB Public Budget Database.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 2.1, FY 2025 actual receipts",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx"
+          },
+          {
+            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+          },
+          {
+            "label": "Public Budget Database ZIP",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+          }
+        ],
+        "children": [
+          {
+            "id": "individual-income-taxes-a901",
+            "name": "Governmental Receipts",
+            "amountMillions": 2655810.0,
+            "color": "#4480a3",
+            "description": "OMB Public Budget Database FY 2025 receipts (individual-income-taxes): Governmental Receipts.",
+            "sources": [
+              {
+                "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+              }
+            ],
+            "children": [
+              {
+                "id": "individual-income-taxes-a901-c011050",
+                "name": "Individual Income Taxes",
+                "amountMillions": 2655790.0,
+                "color": "#6d9cb7",
+                "description": "Budget account: Individual Income Taxes.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ]
+              },
+              {
+                "id": "individual-income-taxes-a901-c508110",
+                "name": "Presidential Election Campaign Fund",
+                "amountMillions": 20.0,
+                "color": "#3c7190",
+                "description": "Budget account: Presidential Election Campaign Fund.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "individual-income-taxes-a015",
+            "name": "Department of the Treasury",
+            "amountMillions": 234.0,
+            "color": "#29698e",
+            "description": "OMB Public Budget Database FY 2025 receipts (individual-income-taxes): Department of the Treasury.",
+            "sources": [
+              {
+                "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+              }
+            ],
+            "children": [
+              {
+                "id": "individual-income-taxes-a015-c551010",
+                "name": "Private Collection Agent Program",
+                "amountMillions": 234.0,
+                "color": "#588aa7",
+                "description": "Budget account: Private Collection Agent Program.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "corporation-income-taxes",
+        "name": "Corporation Income Taxes",
+        "amountMillions": 452089.0,
+        "color": "#245d82",
+        "description": "OMB Table 2.1: Corporation Income Taxes. FY 2025 actual receipts.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 2.1, FY 2025 actual receipts",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx"
+          }
+        ]
+      },
+      {
+        "id": "social-insurance-and-retirement-receipts",
+        "name": "Social Insurance and Retirement Receipts",
+        "amountMillions": 1748294.0,
+        "color": "#2f7d6d",
+        "description": "OMB Tables 2.1 and 2.4: Social Insurance and Retirement Receipts. FY 2025 actual receipts.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 2.1, FY 2025 actual receipts",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+          }
+        ],
+        "children": [
+          {
+            "id": "employment-and-general-retirement",
+            "name": "Employment and general retirement",
+            "amountMillions": 1685632.0,
+            "color": "#488d7f",
+            "description": "OMB Table 2.4: Employment and general retirement.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+              }
+            ],
+            "children": [
+              {
+                "id": "omb-table-2-4-employment-and-general-retirement-trust-funds-off-budget",
+                "name": "Trust funds (Off-Budget)",
+                "amountMillions": 1097382.0,
+                "color": "#549487",
+                "description": "OMB Table 2.4 employment and general retirement: Trust funds (Off-Budget). Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-trust-funds-off-budget-c800610",
+                    "name": "FOASI, Transfers from General Fund (FICA Taxes)",
+                    "amountMillions": 1040256.0,
+                    "color": "#7aaca1",
+                    "description": "Budget account: FOASI, Transfers from General Fund (FICA Taxes).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-trust-funds-off-budget-c800611",
+                    "name": "FOASI, Transfers from General Fund (SECA Taxes)",
+                    "amountMillions": 57126.0,
+                    "color": "#48817a",
+                    "description": "Budget account: FOASI, Transfers from General Fund (SECA Taxes).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-employment-and-general-retirement-disability-insurance-off-budget",
+                "name": "Disability insurance (Off-Budget)",
+                "amountMillions": 186354.0,
+                "color": "#2c7167",
+                "description": "OMB Table 2.4 employment and general retirement: Disability insurance (Off-Budget). Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-disability-insurance-off-budget-c800701",
+                    "name": "FDI, Transfers from General Fund (FICA Taxes)",
+                    "amountMillions": 176650.0,
+                    "color": "#5a9088",
+                    "description": "Budget account: FDI, Transfers from General Fund (FICA Taxes).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-disability-insurance-off-budget-c800711",
+                    "name": "FDI, Transfers from General Fund (SECA Taxes)",
+                    "amountMillions": 9704.0,
+                    "color": "#296661",
+                    "description": "Budget account: FDI, Transfers from General Fund (SECA Taxes).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-employment-and-general-retirement-hospital-insurance",
+                "name": "Hospital insurance",
+                "amountMillions": 395350.0,
+                "color": "#549487",
+                "description": "OMB Table 2.4 employment and general retirement: Hospital insurance. Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-hospital-insurance-c800501",
+                    "name": "FHI Trust Fund, Transfers from General Fund (FICA Taxes)",
+                    "amountMillions": 367068.0,
+                    "color": "#7aaca1",
+                    "description": "Budget account: FHI Trust Fund, Transfers from General Fund (FICA Taxes).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-hospital-insurance-c800511",
+                    "name": "FHI Trust Fund, Transfers from General Fund (SECA Taxes)",
+                    "amountMillions": 27596.0,
+                    "color": "#48817a",
+                    "description": "Budget account: FHI Trust Fund, Transfers from General Fund (SECA Taxes).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-hospital-insurance-c800510",
+                    "name": "FHI Trust Fund, Receipts from Railroad Retirement Board",
+                    "amountMillions": 686.0,
+                    "color": "#7aaca1",
+                    "description": "Budget account: FHI Trust Fund, Receipts from Railroad Retirement Board.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-employment-and-general-retirement-trust-funds",
+                "name": "Trust funds",
+                "amountMillions": 3855.0,
+                "color": "#2c7167",
+                "description": "OMB Table 2.4 employment and general retirement: Trust funds.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-employment-and-general-retirement-railroad-social-security-equivalent-account",
+                "name": "Railroad social security equivalent account",
+                "amountMillions": 2691.0,
+                "color": "#549487",
+                "description": "OMB Table 2.4 employment and general retirement: Railroad social security equivalent account. Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-railroad-social-security-equivalent-account-c801020",
+                    "name": "Railroad Social Security Equivalent Benefit Account, Taxes",
+                    "amountMillions": 3377.0,
+                    "color": "#7aaca1",
+                    "description": "Budget account: Railroad Social Security Equivalent Benefit Account, Taxes.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-employment-and-general-retirement-railroad-social-security-equivalent-account-c801021",
+                    "name": "Railroad Social Security Equivalent Benefit Account, Receipts Transferred to Federal Hospital Insurance Trust Fund",
+                    "amountMillions": -686.0,
+                    "color": "#48817a",
+                    "description": "Budget account: Railroad Social Security Equivalent Benefit Account, Receipts Transferred to Federal Hospital Insurance Trust Fund.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "unemployment-insurance",
+            "name": "Unemployment insurance",
+            "amountMillions": 54049.0,
+            "color": "#2d7569",
+            "description": "OMB Table 2.4: Unemployment insurance.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+              }
+            ],
+            "children": [
+              {
+                "id": "omb-table-2-4-unemployment-insurance-trust-funds",
+                "name": "Trust funds",
+                "amountMillions": 54049.0,
+                "color": "#549487",
+                "description": "OMB Table 2.4 unemployment insurance: Trust funds. Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-unemployment-insurance-trust-funds-c804230",
+                    "name": "Unemployment Trust Fund, State Accounts, Deposits by States",
+                    "amountMillions": 45383.0,
+                    "color": "#7aaca1",
+                    "description": "Budget account: Unemployment Trust Fund, State Accounts, Deposits by States.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-unemployment-insurance-trust-funds-c804201",
+                    "name": "General Taxes, FUTA, Unemployment Trust Fund",
+                    "amountMillions": 8632.0,
+                    "color": "#48817a",
+                    "description": "Budget account: General Taxes, FUTA, Unemployment Trust Fund.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-unemployment-insurance-trust-funds-c804250",
+                    "name": "Unemployment Trust Fund, Deposits by Railroad Retirement Board",
+                    "amountMillions": 34.0,
+                    "color": "#7aaca1",
+                    "description": "Budget account: Unemployment Trust Fund, Deposits by Railroad Retirement Board.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "other-retirement",
+            "name": "Other retirement",
+            "amountMillions": 8613.0,
+            "color": "#5d9a8d",
+            "description": "OMB Table 2.4: Other retirement.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+              }
+            ],
+            "children": [
+              {
+                "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share",
+                "name": "Federal employees retirement - employee share",
+                "amountMillions": 8596.0,
+                "color": "#549487",
+                "description": "OMB Table 2.4 other retirement: Federal employees retirement - employee share. Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a027",
+                    "name": "Office of Personnel Management",
+                    "amountMillions": 8510.0,
+                    "color": "#69a195",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other retirement): Office of Personnel Management.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a027-c813510",
+                        "name": "Employee Contributions, Civil Service Retirement and Disability Fund",
+                        "amountMillions": 7905.0,
+                        "color": "#8ab6ac",
+                        "description": "Budget account: Employee Contributions, Civil Service Retirement and Disability Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a027-c813530",
+                        "name": "Employee Deposits, Redeposits and Other Contributions, Civil Service Retirement and Disability Fund",
+                        "amountMillions": 605.0,
+                        "color": "#598b85",
+                        "description": "Budget account: Employee Deposits, Redeposits and Other Contributions, Civil Service Retirement and Disability Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a014",
+                    "name": "Department of State",
+                    "amountMillions": 60.0,
+                    "color": "#4e8a80",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other retirement): Department of State.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a014-c818610",
+                        "name": "Deductions from Employees Salaries, Foreign Service Retirement and Disability Fund",
+                        "amountMillions": 60.0,
+                        "color": "#75a49c",
+                        "description": "Budget account: Deductions from Employees Salaries, Foreign Service Retirement and Disability Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a002",
+                    "name": "Judicial Branch",
+                    "amountMillions": 17.0,
+                    "color": "#69a195",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other retirement): Judicial Branch.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a002-c811010",
+                        "name": "Judicial Survivors Annuity, Deductions from Employees Salaries",
+                        "amountMillions": 11.0,
+                        "color": "#8ab6ac",
+                        "description": "Budget account: Judicial Survivors Annuity, Deductions from Employees Salaries.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a002-c812210",
+                        "name": "Deductions from Employee Salaries and Voluntary Contributions, Judicial Officers' Annuity",
+                        "amountMillions": 6.0,
+                        "color": "#598b85",
+                        "description": "Budget account: Deductions from Employee Salaries and Voluntary Contributions, Judicial Officers' Annuity.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a200",
+                    "name": "Other Defense--Civil Programs",
+                    "amountMillions": 7.0,
+                    "color": "#4e8a80",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other retirement): Other Defense--Civil Programs.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a200-c852210",
+                        "name": "Deductions, Armed Forces Retirement Home",
+                        "amountMillions": 7.0,
+                        "color": "#75a49c",
+                        "description": "Budget account: Deductions, Armed Forces Retirement Home.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a349",
+                    "name": "District of Columbia",
+                    "amountMillions": 1.0,
+                    "color": "#69a195",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other retirement): District of Columbia.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a349-c821210",
+                        "name": "Deductions from Employees Salaries, District of Columbia Judicial Retirement and Survivors Annuity Fund",
+                        "amountMillions": 1.0,
+                        "color": "#8ab6ac",
+                        "description": "Budget account: Deductions from Employees Salaries, District of Columbia Judicial Retirement and Survivors Annuity Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a001",
+                    "name": "Legislative Branch",
+                    "amountMillions": 1.0,
+                    "color": "#4e8a80",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other retirement): Legislative Branch.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-other-retirement-federal-employees-retirement-employee-share-a001-c811510",
+                        "name": "Tax Court Judges Survivors Annuity, Deductions from Employees Salaries",
+                        "amountMillions": 1.0,
+                        "color": "#75a49c",
+                        "description": "Budget account: Tax Court Judges Survivors Annuity, Deductions from Employees Salaries.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-other-retirement-non-federal-employees-retirement",
+                "name": "Non-Federal employees retirement",
+                "amountMillions": 17.0,
+                "color": "#2c7167",
+                "description": "OMB Table 2.4 other retirement: Non-Federal employees retirement.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "excise-taxes",
+        "name": "Excise Taxes",
+        "amountMillions": 105937.0,
+        "color": "#c4922a",
+        "description": "OMB Tables 2.1 and 2.4: Excise Taxes. FY 2025 actual receipts.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 2.1, FY 2025 actual receipts",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+          }
+        ],
+        "children": [
+          {
+            "id": "excise-federal-funds",
+            "name": "Federal funds",
+            "amountMillions": 32565.0,
+            "color": "#cb9f44",
+            "description": "OMB Table 2.4: Federal-fund excise taxes.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+              }
+            ],
+            "children": [
+              {
+                "id": "omb-table-2-4-federal-fund-excise-alcohol",
+                "name": "Alcohol",
+                "amountMillions": 8116.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 federal-fund excise: Alcohol.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-federal-fund-excise-tobacco",
+                "name": "Tobacco",
+                "amountMillions": 9468.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 federal-fund excise: Tobacco.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-federal-fund-excise-telephone",
+                "name": "Telephone",
+                "amountMillions": 197.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 federal-fund excise: Telephone.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-federal-fund-excise-transportation-fuels",
+                "name": "Transportation fuels",
+                "amountMillions": -5610.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 federal-fund excise: Transportation fuels.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-federal-fund-excise-corporate-stock-repurchase",
+                "name": "Corporate stock repurchase",
+                "amountMillions": 8527.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 federal-fund excise: Corporate stock repurchase.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-federal-fund-excise-indoor-tanning-services",
+                "name": "Indoor tanning services",
+                "amountMillions": 63.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 federal-fund excise: Indoor tanning services.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-federal-fund-excise-other",
+                "name": "Other",
+                "amountMillions": 11804.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 federal-fund excise: Other. Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-federal-fund-excise-other-a901",
+                    "name": "Governmental Receipts",
+                    "amountMillions": 10375.0,
+                    "color": "#d5b165",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other federal excise): Governmental Receipts.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-federal-fund-excise-other-a901-c015250",
+                        "name": "Other Federal Fund Excise Taxes",
+                        "amountMillions": 10375.0,
+                        "color": "#dec287",
+                        "description": "Budget account: Other Federal Fund Excise Taxes.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-federal-fund-excise-other-a010",
+                    "name": "Department of the Interior",
+                    "amountMillions": 862.0,
+                    "color": "#ba9950",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other federal excise): Department of the Interior.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-federal-fund-excise-other-a010-c502930",
+                        "name": "Excise Taxes, Federal Aid to Wildlife Restoration Fund",
+                        "amountMillions": 861.0,
+                        "color": "#c9af76",
+                        "description": "Budget account: Excise Taxes, Federal Aid to Wildlife Restoration Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "omb-table-2-4-federal-fund-excise-other-a010-c500530",
+                        "name": "Land and Water Conservation Fund, Motorboat Fuels Tax,",
+                        "amountMillions": 1.0,
+                        "color": "#98854f",
+                        "description": "Budget account: Land and Water Conservation Fund, Motorboat Fuels Tax,.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-federal-fund-excise-other-a015",
+                    "name": "Department of the Treasury",
+                    "amountMillions": 406.0,
+                    "color": "#d5b165",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other federal excise): Department of the Treasury.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-federal-fund-excise-other-a015-c573710",
+                        "name": "Deposits, Internal Revenue Collections for Puerto Rico",
+                        "amountMillions": 395.0,
+                        "color": "#dec287",
+                        "description": "Budget account: Deposits, Internal Revenue Collections for Puerto Rico.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "omb-table-2-4-federal-fund-excise-other-a015-c309500",
+                        "name": "Recovery from Leaking Underground Storage Tank Trust Fund for Refunds of Taxes, EPA",
+                        "amountMillions": 8.0,
+                        "color": "#ad9760",
+                        "description": "Budget account: Recovery from Leaking Underground Storage Tank Trust Fund for Refunds of Taxes, EPA.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "omb-table-2-4-federal-fund-excise-other-a015-c309400",
+                        "name": "Recovery from Airport and Airway Trust Fund for Refunds of Taxes",
+                        "amountMillions": 3.0,
+                        "color": "#dec287",
+                        "description": "Budget account: Recovery from Airport and Airway Trust Fund for Refunds of Taxes.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-federal-fund-excise-other-a021",
+                    "name": "Department of Transportation",
+                    "amountMillions": 161.0,
+                    "color": "#ba9950",
+                    "description": "OMB Public Budget Database FY 2025 receipts (other federal excise): Department of Transportation.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "omb-table-2-4-federal-fund-excise-other-a021-c542240",
+                        "name": "Aviation User Fees, Overflight Fees",
+                        "amountMillions": 161.0,
+                        "color": "#c9af76",
+                        "description": "Budget account: Aviation User Fees, Overflight Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "excise-trust-funds",
+            "name": "Trust funds",
+            "amountMillions": 73372.0,
+            "color": "#b0882e",
+            "description": "OMB Table 2.4: Trust-fund excise taxes.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+              }
+            ],
+            "children": [
+              {
+                "id": "omb-table-2-4-trust-fund-excise-transportation",
+                "name": "Transportation",
+                "amountMillions": 43768.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 trust-fund excise: Transportation. Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "omb-table-2-4-trust-fund-excise-transportation-c810210",
+                    "name": "Highway Trust Fund, Deposits (Highway Account)",
+                    "amountMillions": 38454.0,
+                    "color": "#daba76",
+                    "description": "Budget account: Highway Trust Fund, Deposits (Highway Account).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "omb-table-2-4-trust-fund-excise-transportation-c810211",
+                    "name": "Highway Trust Fund, Deposits (Mass Transit Account)",
+                    "amountMillions": 5314.0,
+                    "color": "#a88f4f",
+                    "description": "Budget account: Highway Trust Fund, Deposits (Mass Transit Account).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-airport-and-airway",
+                "name": "Airport and airway",
+                "amountMillions": 23118.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 trust-fund excise: Airport and airway.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-black-lung-disability",
+                "name": "Black lung disability",
+                "amountMillions": 243.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 trust-fund excise: Black lung disability.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-inland-waterway",
+                "name": "Inland waterway",
+                "amountMillions": 108.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 trust-fund excise: Inland waterway.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-hazardous-substance-superfund",
+                "name": "Hazardous substance superfund",
+                "amountMillions": 1556.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 trust-fund excise: Hazardous substance superfund.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-oil-spill-liability",
+                "name": "Oil spill liability",
+                "amountMillions": 332.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 trust-fund excise: Oil spill liability.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-aquatic-resources",
+                "name": "Aquatic resources",
+                "amountMillions": 578.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 trust-fund excise: Aquatic resources.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-leaking-underground-storage-tank",
+                "name": "Leaking underground storage tank",
+                "amountMillions": 229.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 trust-fund excise: Leaking underground storage tank.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-tobacco-assessments",
+                "name": "Tobacco Assessments",
+                "amountMillions": 6.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 trust-fund excise: Tobacco Assessments.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-vaccine-injury-compensation",
+                "name": "Vaccine injury compensation",
+                "amountMillions": 131.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 trust-fund excise: Vaccine injury compensation.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-supplementary-medical-insurance",
+                "name": "Supplementary medical insurance",
+                "amountMillions": 2795.0,
+                "color": "#cfa650",
+                "description": "OMB Table 2.4 trust-fund excise: Supplementary medical insurance.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "omb-table-2-4-trust-fund-excise-patient-centered-outcomes-research",
+                "name": "Patient-centered outcomes research",
+                "amountMillions": 508.0,
+                "color": "#a68330",
+                "description": "OMB Table 2.4 trust-fund excise: Patient-centered outcomes research.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.4, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-4.xlsx"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "other-receipts",
+        "name": "Other Receipts",
+        "amountMillions": 274057.0,
+        "color": "#7a6a58",
+        "description": "OMB Tables 2.1 and 2.5: Other Receipts. FY 2025 actual receipts.",
+        "sources": [
+          {
+            "label": "OMB Historical Table 2.1, FY 2025 actual receipts",
+            "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-1.xlsx"
+          },
+          {
+            "label": "FY 2027 Historical Tables (GovInfo)",
+            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+          },
+          {
+            "label": "Spreadsheet",
+            "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-5.xlsx"
+          }
+        ],
+        "children": [
+          {
+            "id": "estate-and-gift-taxes",
+            "name": "Estate and Gift Taxes",
+            "amountMillions": 29462.0,
+            "color": "#8a7c6c",
+            "description": "OMB Table 2.5: Estate and Gift Taxes.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.5, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-5.xlsx"
+              }
+            ]
+          },
+          {
+            "id": "customs-duties-and-fees",
+            "name": "Customs Duties and Fees",
+            "amountMillions": 194866.0,
+            "color": "#6f6557",
+            "description": "OMB Table 2.5: Customs Duties and Fees. Deeper agency/account detail from the OMB Public Budget Database.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.5, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-5.xlsx"
+              },
+              {
+                "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+              },
+              {
+                "label": "Public Budget Database ZIP",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+              }
+            ],
+            "children": [
+              {
+                "id": "customs-duties-and-fees-a901",
+                "name": "Governmental Receipts",
+                "amountMillions": 132483.0,
+                "color": "#80776b",
+                "description": "OMB Public Budget Database FY 2025 receipts (customs-duties-and-fees): Governmental Receipts.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "customs-duties-and-fees-a901-c031050",
+                    "name": "Other Federal Fund Customs Duties",
+                    "amountMillions": 132483.0,
+                    "color": "#9c958c",
+                    "description": "Budget account: Other Federal Fund Customs Duties.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "customs-duties-and-fees-a005",
+                "name": "Department of Agriculture",
+                "amountMillions": 60388.0,
+                "color": "#656056",
+                "description": "OMB Public Budget Database FY 2025 receipts (customs-duties-and-fees): Department of Agriculture.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "customs-duties-and-fees-a005-c520910",
+                    "name": "30 Percent of Customs Duties, Funds for Strengthening Markets, Income and Supply (section 32)",
+                    "amountMillions": 60201.0,
+                    "color": "#87837b",
+                    "description": "Budget account: 30 Percent of Customs Duties, Funds for Strengthening Markets, Income and Supply (section 32).",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "customs-duties-and-fees-a005-c804610",
+                    "name": "Transfers from General Fund of Amounts Equal to Certain Customs Duties, Reforestation Trust Fund",
+                    "amountMillions": 187.0,
+                    "color": "#565854",
+                    "description": "Budget account: Transfers from General Fund of Amounts Equal to Certain Customs Duties, Reforestation Trust Fund.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "customs-duties-and-fees-a202",
+                "name": "Corps of Engineers--Civil Works",
+                "amountMillions": 1869.0,
+                "color": "#80776b",
+                "description": "OMB Public Budget Database FY 2025 receipts (customs-duties-and-fees): Corps of Engineers--Civil Works.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "customs-duties-and-fees-a202-c886310",
+                    "name": "User Fees, Harbor Maintenance Trust Fund",
+                    "amountMillions": 1869.0,
+                    "color": "#9c958c",
+                    "description": "Budget account: User Fees, Harbor Maintenance Trust Fund.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "customs-duties-and-fees-a024",
+                "name": "Department of Homeland Security",
+                "amountMillions": 75.0,
+                "color": "#656056",
+                "description": "OMB Public Budget Database FY 2025 receipts (customs-duties-and-fees): Department of Homeland Security.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "customs-duties-and-fees-a024-c814750",
+                    "name": "Customs Duties, Aquatic Resources Trust Fund",
+                    "amountMillions": 75.0,
+                    "color": "#87837b",
+                    "description": "Budget account: Customs Duties, Aquatic Resources Trust Fund.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "customs-duties-and-fees-a010",
+                "name": "Department of the Interior",
+                "amountMillions": 51.0,
+                "color": "#80776b",
+                "description": "OMB Public Budget Database FY 2025 receipts (customs-duties-and-fees): Department of the Interior.",
+                "sources": [
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "customs-duties-and-fees-a010-c513720",
+                    "name": "Custom Duties on Arms and Ammunition",
+                    "amountMillions": 51.0,
+                    "color": "#9c958c",
+                    "description": "Budget account: Custom Duties on Arms and Ammunition.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "miscellaneous-receipts",
+            "name": "Miscellaneous Receipts",
+            "amountMillions": 49729.0,
+            "color": "#978b7d",
+            "description": "OMB Table 2.5: Miscellaneous Receipts.",
+            "sources": [
+              {
+                "label": "OMB Historical Table 2.5, FY 2025 actual receipts",
+                "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+              },
+              {
+                "label": "FY 2027 Historical Tables (GovInfo)",
+                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+              },
+              {
+                "label": "Spreadsheet",
+                "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-5.xlsx"
+              }
+            ],
+            "children": [
+              {
+                "id": "federal-reserve-deposits",
+                "name": "Federal Reserve Deposits",
+                "amountMillions": 5490.0,
+                "color": "#a2978a",
+                "description": "OMB Table 2.5: Federal Reserve Deposits.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.5, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-5.xlsx"
+                  }
+                ]
+              },
+              {
+                "id": "miscellaneous-all-other",
+                "name": "All Other",
+                "amountMillions": 44239.0,
+                "color": "#666056",
+                "description": "OMB Table 2.5: All other miscellaneous receipts. Deeper agency/account detail from the OMB Public Budget Database.",
+                "sources": [
+                  {
+                    "label": "OMB Historical Table 2.5, FY 2025 actual receipts",
+                    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/"
+                  },
+                  {
+                    "label": "FY 2027 Historical Tables (GovInfo)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-TAB"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-TAB/xls/BUDGET-2027-TAB-3-5.xlsx"
+                  },
+                  {
+                    "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                    "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                  },
+                  {
+                    "label": "Public Budget Database ZIP",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/zip/BUDGET-2027-DB.zip"
+                  },
+                  {
+                    "label": "Spreadsheet",
+                    "url": "https://www.govinfo.gov/content/pkg/BUDGET-2027-DB/xls/BUDGET-2027-DB-3.xlsx"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "miscellaneous-all-other-a009",
+                    "name": "Department of Health and Human Services",
+                    "amountMillions": 12201.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Health and Human Services.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a009-c573310",
+                        "name": "Receipts, Risk Adjustment Program",
+                        "amountMillions": 11699.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Receipts, Risk Adjustment Program.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a009-c800549",
+                        "name": "FHI Trust Fund, Civil Penalties and Damages",
+                        "amountMillions": 502.0,
+                        "color": "#646764",
+                        "description": "Budget account: FHI Trust Fund, Civil Penalties and Damages.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a015",
+                    "name": "Department of the Treasury",
+                    "amountMillions": 10665.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of the Treasury.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a015-c109900",
+                        "name": "Fines, Penalties, and Forfeitures, not Otherwise Classified",
+                        "amountMillions": 3800.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, not Otherwise Classified.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c569710",
+                        "name": "Forfeited Cash and Proceeds from Sale of Forfeited Property, Treasury Forfeiture Fund",
+                        "amountMillions": 2997.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Forfeited Cash and Proceeds from Sale of Forfeited Property, Treasury Forfeiture Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c104000",
+                        "name": "Fines, Penalties, and Forfeitures, Customs, Commerce, and Antitrust Laws",
+                        "amountMillions": 1319.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, Customs, Commerce, and Antitrust Laws.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c085015",
+                        "name": "Registration, Filing, and Transaction Fees, SEC",
+                        "amountMillions": 977.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Registration, Filing, and Transaction Fees, SEC.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c089100",
+                        "name": "Miscellaneous Fees for Regulatory and Judicial Services, not Otherwise Classified",
+                        "amountMillions": 733.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Miscellaneous Fees for Regulatory and Judicial Services, not Otherwise Classified.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c862510",
+                        "name": "Administrative and Civil Penalties, Gulf Coast Restoration Trust Fund",
+                        "amountMillions": 303.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Administrative and Civil Penalties, Gulf Coast Restoration Trust Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c103000",
+                        "name": "Fines, Penalties, and Forfeitures, Immigration and Labor Laws",
+                        "amountMillions": 264.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, Immigration and Labor Laws.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c559010",
+                        "name": "Fees and Assessments, Financial Research Fund",
+                        "amountMillions": 103.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Fees and Assessments, Financial Research Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c108000",
+                        "name": "Fines, Penalties, and Forfeitures, Federal Coal Mine Health and Safety Laws",
+                        "amountMillions": 60.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, Federal Coal Mine Health and Safety Laws.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c086400",
+                        "name": "Filing Fees, P.L. 109-171, Title X",
+                        "amountMillions": 48.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Filing Fees, P.L. 109-171, Title X.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c086900",
+                        "name": "Fees for Legal and Judicial Services, not Otherwise Classified",
+                        "amountMillions": 39.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fees for Legal and Judicial Services, not Otherwise Classified.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c309990",
+                        "name": "Refunds of Moneys Erroneously Received and Recovered (20X1807)",
+                        "amountMillions": -22.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Refunds of Moneys Erroneously Received and Recovered (20X1807).",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c543240",
+                        "name": "Enrolled Agent Fee Increase, IRS Miscellaneous Retained Fees",
+                        "amountMillions": 13.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Enrolled Agent Fee Increase, IRS Miscellaneous Retained Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c543260",
+                        "name": "Tax Preparer Registration Fees, IRS Miscellaneous Retained Fees",
+                        "amountMillions": 10.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Tax Preparer Registration Fees, IRS Miscellaneous Retained Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c106000",
+                        "name": "Forfeitures of Unclaimed Money and Property",
+                        "amountMillions": 8.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Forfeitures of Unclaimed Money and Property.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c105000",
+                        "name": "Fines, Penalties, and Forfeitures, Narcotic Prohibition and Alcohol Laws",
+                        "amountMillions": 5.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, Narcotic Prohibition and Alcohol Laws.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c101000",
+                        "name": "Fines, Penalties, and Forfeitures, Agricultural Laws",
+                        "amountMillions": 3.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, Agricultural Laws.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c085000",
+                        "name": "Registration, Filing, and Transaction Fees",
+                        "amountMillions": 3.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Registration, Filing, and Transaction Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a015-c241100",
+                        "name": "User Fees for IRS",
+                        "amountMillions": 2.0,
+                        "color": "#81807a",
+                        "description": "Budget account: User Fees for IRS.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a356",
+                    "name": "Federal Communications Commission",
+                    "amountMillions": 10073.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Federal Communications Commission.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a356-c518310",
+                        "name": "Universal Service Fund",
+                        "amountMillions": 8573.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Universal Service Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a356-c570010",
+                        "name": "Contributions for Telecommunications Relay Services, Telecommunications Relay Services Fund",
+                        "amountMillions": 1500.0,
+                        "color": "#646764",
+                        "description": "Budget account: Contributions for Telecommunications Relay Services, Telecommunications Relay Services Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a011",
+                    "name": "Department of Justice",
+                    "amountMillions": 5291.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Justice.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a011-c504110",
+                        "name": "Fines, Penalties, and Forfeitures, Crime Victims Fund",
+                        "amountMillions": 3157.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, Crime Victims Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a011-c504210",
+                        "name": "Forfeited Cash and Proceeds from the Sale of Forfeited Property, Assets Forfeiture Fund",
+                        "amountMillions": 1913.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Forfeited Cash and Proceeds from the Sale of Forfeited Property, Assets Forfeiture Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a011-c560810",
+                        "name": "Fines, Penalties, and Forfeitures, United States Victims of State Sponsored Terrorism Fund",
+                        "amountMillions": 199.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, United States Victims of State Sponsored Terrorism Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a011-c085400",
+                        "name": "Registration Fees, DEA",
+                        "amountMillions": 15.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Registration Fees, DEA.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a011-c087000",
+                        "name": "Chapter Eleven Filing Fees, Bankruptcy, Department of Justice",
+                        "amountMillions": 5.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Chapter Eleven Filing Fees, Bankruptcy, Department of Justice.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a011-c560610",
+                        "name": "Fines, Penalties, and Forfeitures, Domestic Trafficking Victims' Fund",
+                        "amountMillions": 2.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Fines, Penalties, and Forfeitures, Domestic Trafficking Victims' Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a005",
+                    "name": "Department of Agriculture",
+                    "amountMillions": 1051.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Agriculture.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a005-c516110",
+                        "name": "1990 Food, Agricultural Quarantine Inspection Fees",
+                        "amountMillions": 1027.0,
+                        "color": "#96928b",
+                        "description": "Budget account: 1990 Food, Agricultural Quarantine Inspection Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a005-c249700",
+                        "name": "Full Cost Recovery Fees Pursuant to OMB Circular A-25",
+                        "amountMillions": 13.0,
+                        "color": "#646764",
+                        "description": "Budget account: Full Cost Recovery Fees Pursuant to OMB Circular A-25.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a005-c507010",
+                        "name": "License Fees and Defaults, Perishable Agricultural Commodities Act Fund",
+                        "amountMillions": 11.0,
+                        "color": "#96928b",
+                        "description": "Budget account: License Fees and Defaults, Perishable Agricultural Commodities Act Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a024",
+                    "name": "Department of Homeland Security",
+                    "amountMillions": 897.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Homeland Security.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a024-c568710",
+                        "name": "Deposits, Duties, and Taxes, Puerto Rico",
+                        "amountMillions": 754.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Deposits, Duties, and Taxes, Puerto Rico.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a024-c818530",
+                        "name": "Fines and Penalties, OSLTF",
+                        "amountMillions": 68.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Fines and Penalties, OSLTF.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a024-c559510",
+                        "name": "Electronic System for Travel Authorization (ESTA) Fees",
+                        "amountMillions": 52.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Electronic System for Travel Authorization (ESTA) Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a024-c242700",
+                        "name": "Temporary H-1B Visa Fee Increase",
+                        "amountMillions": 11.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Temporary H-1B Visa Fee Increase.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a024-c083400",
+                        "name": "Breached Bond Penalties",
+                        "amountMillions": 8.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Breached Bond Penalties.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a024-c242600",
+                        "name": "Temporary L-1 Visa Fee Increase",
+                        "amountMillions": 2.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Temporary L-1 Visa Fee Increase.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a024-c545130",
+                        "name": "Civil Penalties, Failure to Depart and Document Fraud, Immigration Enforcement Account",
+                        "amountMillions": 1.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Civil Penalties, Failure to Depart and Document Fraud, Immigration Enforcement Account.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a024-c878910",
+                        "name": "Proceeds of the Sales of Unclaimed Abandoned, Seized Goods",
+                        "amountMillions": 1.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Proceeds of the Sales of Unclaimed Abandoned, Seized Goods.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a581",
+                    "name": "Bureau of Consumer Financial Protection",
+                    "amountMillions": 670.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Bureau of Consumer Financial Protection.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a581-c557710",
+                        "name": "Transfers from the Federal Reserve Board, Bureau of Consumer Financial Protection Fund",
+                        "amountMillions": 494.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Transfers from the Federal Reserve Board, Bureau of Consumer Financial Protection Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a581-c557810",
+                        "name": "Penalties and Fines, Consumer Financial Protection",
+                        "amountMillions": 176.0,
+                        "color": "#646764",
+                        "description": "Budget account: Penalties and Fines, Consumer Financial Protection.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a530",
+                    "name": "Affordable Housing Program",
+                    "amountMillions": 650.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Affordable Housing Program.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a530-c552810",
+                        "name": "Contributions, Federal Home Loan Banks, Affordable Housing Program",
+                        "amountMillions": 650.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Contributions, Federal Home Loan Banks, Affordable Housing Program.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a576",
+                    "name": "Securities Investor Protection Corporation",
+                    "amountMillions": 519.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Securities Investor Protection Corporation.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a576-c560010",
+                        "name": "Assessments, SIPC",
+                        "amountMillions": 519.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Assessments, SIPC.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a537",
+                    "name": "Federal Housing Finance Agency",
+                    "amountMillions": 492.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Federal Housing Finance Agency.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a537-c553210",
+                        "name": "FHFA, Fees on GSEs for Administrative Expenses",
+                        "amountMillions": 492.0,
+                        "color": "#81807a",
+                        "description": "Budget account: FHFA, Fees on GSEs for Administrative Expenses.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a526",
+                    "name": "Public Company Accounting Oversight Board",
+                    "amountMillions": 376.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Public Company Accounting Oversight Board.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a526-c537610",
+                        "name": "Accounting Support Fees, Public Company Accounting Oversight Board",
+                        "amountMillions": 376.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Accounting Support Fees, Public Company Accounting Oversight Board.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a014",
+                    "name": "Department of State",
+                    "amountMillions": 230.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of State.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a014-c083000",
+                        "name": "Immigration, Passport, and Consular Fees",
+                        "amountMillions": 230.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Immigration, Passport, and Consular Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a580",
+                    "name": "Corporation for Travel Promotion",
+                    "amountMillions": 218.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Corporation for Travel Promotion.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a580-c558510",
+                        "name": "Fees, Travel Promotion Fund",
+                        "amountMillions": 218.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Fees, Travel Promotion Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a002",
+                    "name": "Judicial Branch",
+                    "amountMillions": 183.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Judicial Branch.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a002-c510010",
+                        "name": "Filing Fees, U.S. Courts, Judiciary",
+                        "amountMillions": 182.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Filing Fees, U.S. Courts, Judiciary.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a002-c510110",
+                        "name": "Fees, Registry Administration, Judiciary",
+                        "amountMillions": 1.0,
+                        "color": "#4f5553",
+                        "description": "Budget account: Fees, Registry Administration, Judiciary.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a010",
+                    "name": "Department of the Interior",
+                    "amountMillions": 155.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of the Interior.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a010-c501560",
+                        "name": "Abandoned Mine Reclamation Fund, Reclamation Fees",
+                        "amountMillions": 82.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Abandoned Mine Reclamation Fund, Reclamation Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a010-c514110",
+                        "name": "National Indian Gaming Commission, Gaming Activity Fees",
+                        "amountMillions": 33.0,
+                        "color": "#646764",
+                        "description": "Budget account: National Indian Gaming Commission, Gaming Activity Fees.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a010-c513710",
+                        "name": "Migratory Bird Hunting Stamps",
+                        "amountMillions": 24.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Migratory Bird Hunting Stamps.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a010-c513740",
+                        "name": "Migratory Birds Hunting Stamps (Conservation Easements)",
+                        "amountMillions": 16.0,
+                        "color": "#646764",
+                        "description": "Budget account: Migratory Birds Hunting Stamps (Conservation Easements).",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a531",
+                    "name": "Electric Reliability Organization",
+                    "amountMillions": 116.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Electric Reliability Organization.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a531-c552210",
+                        "name": "Fees, Electric Reliability Organization",
+                        "amountMillions": 116.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fees, Electric Reliability Organization.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a012",
+                    "name": "Department of Labor",
+                    "amountMillions": 88.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Labor.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a012-c813010",
+                        "name": "Longshoremen's and Harbor Workers Compensation Act, Receipts, Special Workers'",
+                        "amountMillions": 84.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Longshoremen's and Harbor Workers Compensation Act, Receipts, Special Workers'.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a012-c813410",
+                        "name": "Workmen's Compensation Act within District of Columbia, Receipts, Special Workers'",
+                        "amountMillions": 4.0,
+                        "color": "#646764",
+                        "description": "Budget account: Workmen's Compensation Act within District of Columbia, Receipts, Special Workers'.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a007",
+                    "name": "Department of Defense--Military Programs",
+                    "amountMillions": 83.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Defense--Military Programs.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a007-c833700",
+                        "name": "Contributions, Host National Support for U.S. Relocation Activities",
+                        "amountMillions": 83.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Contributions, Host National Support for U.S. Relocation Activities.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a449",
+                    "name": "Securities and Exchange Commission",
+                    "amountMillions": 60.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Securities and Exchange Commission.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a449-c556610",
+                        "name": "Registration Fees, Securities and Exchange Commission Reserve Fund",
+                        "amountMillions": 50.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Registration Fees, Securities and Exchange Commission Reserve Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a449-c109100",
+                        "name": "Post Judgement Penalties",
+                        "amountMillions": 11.0,
+                        "color": "#646764",
+                        "description": "Budget account: Post Judgement Penalties.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a449-c556710",
+                        "name": "Monetary Sanctions, Investor Protection Fund",
+                        "amountMillions": -1.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Monetary Sanctions, Investor Protection Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a328",
+                    "name": "Payment to Puerto Rico Oversight Board",
+                    "amountMillions": 59.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Payment to Puerto Rico Oversight Board.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a328-c561910",
+                        "name": "Payment from Puerto Rico, Puerto Rico Oversight Board",
+                        "amountMillions": 59.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Payment from Puerto Rico, Puerto Rico Oversight Board.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a362",
+                    "name": "Federal Financial Institutions Examination Council",
+                    "amountMillions": 35.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Federal Financial Institutions Examination Council.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a362-c554702",
+                        "name": "Assessments, Federal Financial Institutions Examination Council Activities",
+                        "amountMillions": 24.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Assessments, Federal Financial Institutions Examination Council Activities.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a362-c502600",
+                        "name": "Registry Fees, Appraisal Subcommittee, Federal Institution Examination Council",
+                        "amountMillions": 8.0,
+                        "color": "#646764",
+                        "description": "Budget account: Registry Fees, Appraisal Subcommittee, Federal Institution Examination Council.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a362-c502630",
+                        "name": "Incremental Registry Fees (Dodd-Frank Act) Appraisal Subcommittee",
+                        "amountMillions": 3.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Incremental Registry Fees (Dodd-Frank Act) Appraisal Subcommittee.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a527",
+                    "name": "Standard Setting Body",
+                    "amountMillions": 33.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Standard Setting Body.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a527-c537710",
+                        "name": "Accounting Support Fees, Standard Setting Body",
+                        "amountMillions": 33.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Accounting Support Fees, Standard Setting Body.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a006",
+                    "name": "Department of Commerce",
+                    "amountMillions": 23.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Commerce.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a006-c528410",
+                        "name": "Permit Title Registration Fees, Limited Access System Administration Fund",
+                        "amountMillions": 18.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Permit Title Registration Fees, Limited Access System Administration Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a006-c559810",
+                        "name": "Fees, North Pacific Fishery Observer Fund",
+                        "amountMillions": 4.0,
+                        "color": "#646764",
+                        "description": "Budget account: Fees, North Pacific Fishery Observer Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a006-c543910",
+                        "name": "Access Fees, Western Pacific Sustainable Fisheries Fund",
+                        "amountMillions": 1.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Access Fees, Western Pacific Sustainable Fisheries Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a200",
+                    "name": "Other Defense--Civil Programs",
+                    "amountMillions": 16.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Other Defense--Civil Programs.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a200-c852230",
+                        "name": "Fines and Forfeitures, Armed Forces Retirement Home",
+                        "amountMillions": 16.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Fines and Forfeitures, Armed Forces Retirement Home.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a257",
+                    "name": "Concrete Masonry Products Board",
+                    "amountMillions": 10.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Concrete Masonry Products Board.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a257-c576810",
+                        "name": "Concrete Masonry Products, Available",
+                        "amountMillions": 10.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Concrete Masonry Products, Available.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a476",
+                    "name": "United Mine Workers of America Benefit Funds",
+                    "amountMillions": 9.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): United Mine Workers of America Benefit Funds.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a476-c829510",
+                        "name": "Premiums, Combined Fund and 1992 Plan, UMWA",
+                        "amountMillions": 9.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Premiums, Combined Fund and 1992 Plan, UMWA.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a202",
+                    "name": "Corps of Engineers--Civil Works",
+                    "amountMillions": 8.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Corps of Engineers--Civil Works.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a202-c512500",
+                        "name": "Licenses under Federal Power Act, Improvements of Navigable Waters, Maintenance and Operation of Dams, Etc.",
+                        "amountMillions": 8.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Licenses under Federal Power Act, Improvements of Navigable Waters, Maintenance and Operation of Dams, Etc..",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a021",
+                    "name": "Department of Transportation",
+                    "amountMillions": 8.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Transportation.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a021-c815930",
+                        "name": "Drug and Alcohol Clearinghouse Fees, Motor Carrier Safety Operations and Programs",
+                        "amountMillions": 8.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Drug and Alcohol Clearinghouse Fees, Motor Carrier Safety Operations and Programs.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a544",
+                    "name": "National Oilheat Research Alliance",
+                    "amountMillions": 8.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): National Oilheat Research Alliance.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a544-c567810",
+                        "name": "Fees, National Oilheat Research Alliance",
+                        "amountMillions": 8.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Fees, National Oilheat Research Alliance.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a019",
+                    "name": "Department of Energy",
+                    "amountMillions": 5.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Department of Energy.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a019-c510500",
+                        "name": "Licenses under Federal Power Act from Public Lands and National Forests, Payment to States (37 1/2%)",
+                        "amountMillions": 5.0,
+                        "color": "#81807a",
+                        "description": "Budget account: Licenses under Federal Power Act from Public Lands and National Forests, Payment to States (37 1/2%).",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a349",
+                    "name": "District of Columbia",
+                    "amountMillions": 4.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): District of Columbia.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a349-c567610",
+                        "name": "Fines and Fees, District of Columbia Crime Victims Compensation Fund",
+                        "amountMillions": 4.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Fines and Fees, District of Columbia Crime Victims Compensation Fund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a001",
+                    "name": "Legislative Branch",
+                    "amountMillions": 2.0,
+                    "color": "#5d5c55",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Legislative Branch.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a001-b25",
+                        "name": "Library of Congress",
+                        "amountMillions": 1.0,
+                        "color": "#74736d",
+                        "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Library of Congress.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "miscellaneous-all-other-a001-b25-c517510",
+                            "name": "Fees from Jukebox, Satellite and Cable Television for Operating Costs, Copyright Office",
+                            "amountMillions": 1.0,
+                            "color": "#93928d",
+                            "description": "Budget account: Fees from Jukebox, Satellite and Cable Television for Operating Costs, Copyright Office.",
+                            "sources": [
+                              {
+                                "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "miscellaneous-all-other-a001-b40",
+                        "name": "United States Tax Court",
+                        "amountMillions": 1.0,
+                        "color": "#545854",
+                        "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): United States Tax Court.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "miscellaneous-all-other-a001-b40-c563310",
+                            "name": "U. S. Tax Court Fees",
+                            "amountMillions": 1.0,
+                            "color": "#7a7d7a",
+                            "description": "Budget account: U. S. Tax Court Fees.",
+                            "sources": [
+                              {
+                                "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                                "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "miscellaneous-all-other-a020",
+                    "name": "Environmental Protection Agency",
+                    "amountMillions": 1.0,
+                    "color": "#78736a",
+                    "description": "OMB Public Budget Database FY 2025 receipts (miscellaneous): Environmental Protection Agency.",
+                    "sources": [
+                      {
+                        "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                        "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "id": "miscellaneous-all-other-a020-c814530",
+                        "name": "Fines and Penalties, and Miscellaneous, Hazardous Substance Superfund",
+                        "amountMillions": 1.0,
+                        "color": "#96928b",
+                        "description": "Budget account: Fines and Penalties, and Miscellaneous, Hazardous Substance Superfund.",
+                        "sources": [
+                          {
+                            "label": "OMB Public Budget Database \u2014 receipts (DB-3)",
+                            "url": "https://www.govinfo.gov/app/details/BUDGET-2027-DB"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

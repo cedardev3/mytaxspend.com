@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "refresh-budget": "python scripts/refresh-federal-outlays.py"
+    "refresh-budget": "python scripts/refresh-federal-outlays.py && python scripts/refresh-federal-receipts.py",
+    "refresh-outlays": "python scripts/refresh-federal-outlays.py",
+    "refresh-receipts": "python scripts/refresh-federal-receipts.py",
+    "refresh-canada": "python scripts/refresh-canada-federal.py",
+    "validate-budget": "python scripts/validate-budget-totals.py"
   },
   "dependencies": {
     "next": "16.3.5",
