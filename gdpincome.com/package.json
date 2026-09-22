@@ -1,0 +1,31 @@
+{
+  "name": "mytaxspend.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "refresh-budget": "python scripts/refresh-federal-outlays.py && python scripts/refresh-federal-receipts.py",
+    "refresh-outlays": "python scripts/refresh-federal-outlays.py",
+    "refresh-receipts": "python scripts/refresh-federal-receipts.py",
+    "refresh-canada": "python scripts/refresh-canada-federal.py",
+    "validate-budget": "python scripts/validate-budget-totals.py"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
