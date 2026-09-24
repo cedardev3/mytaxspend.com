@@ -105,7 +105,7 @@ export type PieChartModel = {
   slices: PieSlice[];
   /** Negative outlays drawn on top of the positive pie (do not expand geometry). */
   overlays: PieSlice[];
-  /** Sidebar / legend order matches the source tree. */
+  /** Largest absolute amount first, matching the pie. */
   legend: PieSlice[];
 };
 
@@ -121,9 +121,13 @@ export function offsetChildren(node: SpendNode): SpendNode[] {
   return (node.children ?? []).filter((child) => child.amountMillions < 0);
 }
 
-/** Children that contribute a wedge or overlay (non-zero outlays). Preserves source order. */
+/** Children that contribute a wedge or overlay (non-zero outlays). */
 export function chartChildren(node: SpendNode): SpendNode[] {
   return (node.children ?? []).filter((child) => child.amountMillions !== 0);
+}
+
+function byAbsoluteAmount(a: SpendNode, b: SpendNode): number {
+  return Math.abs(b.amountMillions) - Math.abs(a.amountMillions);
 }
 
 export function totalPositive(node: SpendNode): number {
@@ -263,8 +267,8 @@ export function nodeAtPath(root: SpendNode, path: string[]): SpendNode {
  * - Parents with only offsets render hatch-only wedges (no solid base).
  */
 export function buildPieChart(parent: SpendNode): PieChartModel {
-  const positives = positiveChildren(parent);
-  const offsets = offsetChildren(parent);
+  const positives = positiveChildren(parent).slice().sort(byAbsoluteAmount);
+  const offsets = offsetChildren(parent).slice().sort(byAbsoluteAmount);
   const positiveTotal = positives.reduce((sum, n) => sum + n.amountMillions, 0);
 
   let slices: PieSlice[] = [];
@@ -326,7 +330,8 @@ export function buildPieChart(parent: SpendNode): PieChartModel {
   }
   const legend = chartChildren(parent)
     .map((child) => byId.get(child.id))
-    .filter((slice): slice is PieSlice => slice != null);
+    .filter((slice): slice is PieSlice => slice != null)
+    .sort(byAbsoluteAmount);
 
   return { slices, overlays, legend };
 }
@@ -371,6 +376,22 @@ export function formatMillions(amountMillions: number): string {
     return `${sign}$${trimZeros((abs / 1_000).toFixed(decimals))} billion`;
   }
   return `${sign}$${abs.toLocaleString("en-US")} million`;
+}
+
+/** Short money for tight lists: $1.2T, $234B, $45M, $500K. Amounts are millions of dollars. */
+export function formatCompactMillions(amountMillions: number): string {
+  const sign = amountMillions < 0 ? "-" : "";
+  const abs = Math.abs(amountMillions);
+  if (abs >= 1_000_000) return `${sign}$${compactUnit(abs / 1_000_000)}T`;
+  if (abs >= 1_000) return `${sign}$${compactUnit(abs / 1_000)}B`;
+  if (abs >= 1) return `${sign}$${compactUnit(abs)}M`;
+  if (abs > 0) return `${sign}$${compactUnit(abs * 1_000)}K`;
+  return `${sign}$0`;
+}
+
+function compactUnit(value: number): string {
+  const decimals = value >= 100 ? 0 : value >= 10 ? 1 : 2;
+  return trimZeros(value.toFixed(decimals));
 }
 
 export function formatDollars(amount: number): string {

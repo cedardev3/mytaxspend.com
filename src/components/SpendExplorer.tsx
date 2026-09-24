@@ -21,6 +21,7 @@ import {
 } from "@/lib/jurisdiction";
 import {
   buildPieChart,
+  formatCompactMillions,
   formatMillions,
   formatPercent,
   hasChildren,
@@ -75,7 +76,11 @@ function SliceRow({
 
   const ofOutflows = shareOf(slice.amountMillions, outflowTotalMillions);
   const ofGdp = shareOf(slice.amountMillions, gdpMillions);
+  const amount = formatCompactMillions(slice.amountMillions);
   const metrics = showGdpShare
+    ? `${amount} · ${formatPercent(ofOutflows)} · ${formatPercent(ofGdp)} GDP`
+    : `${amount} · ${formatPercent(slice.percent)}`;
+  const metricsTitle = showGdpShare
     ? `${formatMillions(slice.amountMillions)} · ${formatPercent(ofOutflows)} ${jurisdiction.ofSpending} · ${formatPercent(ofGdp)} ${jurisdiction.ofGdp}`
     : `${formatMillions(slice.amountMillions)} · ${formatPercent(slice.percent)}`;
 
@@ -86,9 +91,8 @@ function SliceRow({
         {slice.name}
       </span>
       <span
-        className={`shrink-0 text-right text-xs tabular-nums ${amountClass} ${
-          showGdpShare ? "max-w-[11.5rem] leading-4 sm:max-w-none" : ""
-        }`}
+        className={`shrink-0 text-right text-xs tabular-nums ${amountClass}`}
+        title={metricsTitle}
       >
         {metrics}
       </span>
@@ -406,9 +410,7 @@ export default function SpendExplorer() {
             {current.name}
           </p>
           <ul className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-1 [scrollbar-gutter:stable] max-lg:max-h-[22rem]">
-            {[...slices]
-              .sort((a, b) => Math.abs(b.amountMillions) - Math.abs(a.amountMillions))
-              .map((slice) => (
+            {slices.map((slice) => (
                 <SliceRow
                   key={slice.id}
                   slice={slice}
@@ -424,7 +426,7 @@ export default function SpendExplorer() {
                     setPath([...path, slice.id]);
                   }}
                 />
-              ))}
+            ))}
           </ul>
           <p className="mt-2 shrink-0 text-[11px] leading-4 text-[#b3a28c]">
             <span className="text-[#2a6f97]">›</span> has more detail ·{" "}
