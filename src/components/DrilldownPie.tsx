@@ -2,6 +2,7 @@
 
 import { useId } from "react";
 import {
+  abbreviateDisplayName,
   buildPieChart,
   formatMillions,
   formatPercent,
@@ -107,7 +108,7 @@ const PIE_SHORT_LABELS: Record<string, string> = {
 
 function shortPieLabel(name: string): string {
   const mapped = PIE_SHORT_LABELS[name];
-  if (mapped) return mapped;
+  if (mapped) return abbreviateDisplayName(mapped);
 
   let short = name;
   short = short.replace(/^National\s+/i, "");
@@ -118,8 +119,8 @@ function shortPieLabel(name: string): string {
   short = short.replace(/\s+revenues$/i, "");
   short = short.replace(/\s+Receipts$/i, "");
   short = short.replace(/\s+Taxes$/i, "");
-  if (short !== name && short.length >= 3) return short;
-  return name;
+  if (short !== name && short.length >= 3) return abbreviateDisplayName(short);
+  return abbreviateDisplayName(name);
 }
 
 function polarPoint(radius: number, angle: number) {

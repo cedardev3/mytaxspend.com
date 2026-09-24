@@ -20,6 +20,7 @@ import {
   type JurisdictionLabels,
 } from "@/lib/jurisdiction";
 import {
+  abbreviateDisplayName,
   buildPieChart,
   formatCompactMillions,
   formatMillions,
@@ -87,8 +88,8 @@ function SliceRow({
   const label = (
     <>
       {swatch}
-      <span className={`min-w-0 flex-1 truncate text-sm ${nameClass}`}>
-        {slice.name}
+      <span className={`min-w-0 flex-1 truncate text-sm ${nameClass}`} title={slice.name}>
+        {abbreviateDisplayName(slice.name)}
       </span>
       <span
         className={`shrink-0 text-right text-xs tabular-nums ${amountClass}`}

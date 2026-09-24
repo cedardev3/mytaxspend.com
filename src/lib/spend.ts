@@ -402,6 +402,11 @@ export function formatPercent(percent: number): string {
   return `${(percent * 100).toFixed(1)}%`;
 }
 
+/** Compact display: "General" → "Gen." (pie labels, side list). Full names stay in data/tooltips. */
+export function abbreviateDisplayName(name: string): string {
+  return name.replace(/\bGeneral\b/gi, "Gen.");
+}
+
 export function formatIsoDate(isoDate: string): string {
   const datePart = isoDate.slice(0, 10);
   const [year, month, day] = datePart.split("-").map(Number);
