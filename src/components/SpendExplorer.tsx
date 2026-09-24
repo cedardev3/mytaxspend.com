@@ -368,7 +368,7 @@ export default function SpendExplorer() {
       </nav>
 
       <div
-        className={`grid items-start gap-6 ${
+        className={`grid items-stretch gap-6 ${
           mode === "spending" && drilled
             ? "lg:grid-cols-[minmax(0,1fr)_20rem]"
             : "lg:grid-cols-[minmax(0,1fr)_16.5rem]"
@@ -401,30 +401,32 @@ export default function SpendExplorer() {
           />
         </section>
 
-        <aside className="min-w-0">
-          <p className="mb-2 truncate text-sm font-semibold text-[#1f3d4d]">
+        <aside className="flex min-h-0 min-w-0 flex-col">
+          <p className="mb-2 shrink-0 truncate text-sm font-semibold text-[#1f3d4d]">
             {current.name}
           </p>
-          <ul className="flex flex-col">
-            {slices.map((slice) => (
-              <SliceRow
-                key={slice.id}
-                slice={slice}
-                active={hoveredId === slice.id}
-                drillable={hasChildren(slice)}
-                showGdpShare={mode === "spending" && drilled}
-                outflowTotalMillions={budget.spending.amountMillions}
-                gdpMillions={budget.gdp.amountMillions}
-                jurisdiction={jurisdiction}
-                onHover={setHoveredId}
-                onOpen={() => {
-                  setHoveredId(null);
-                  setPath([...path, slice.id]);
-                }}
-              />
-            ))}
+          <ul className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-1 [scrollbar-gutter:stable] max-lg:max-h-[22rem]">
+            {[...slices]
+              .sort((a, b) => Math.abs(b.amountMillions) - Math.abs(a.amountMillions))
+              .map((slice) => (
+                <SliceRow
+                  key={slice.id}
+                  slice={slice}
+                  active={hoveredId === slice.id}
+                  drillable={hasChildren(slice)}
+                  showGdpShare={mode === "spending" && drilled}
+                  outflowTotalMillions={budget.spending.amountMillions}
+                  gdpMillions={budget.gdp.amountMillions}
+                  jurisdiction={jurisdiction}
+                  onHover={setHoveredId}
+                  onOpen={() => {
+                    setHoveredId(null);
+                    setPath([...path, slice.id]);
+                  }}
+                />
+              ))}
           </ul>
-          <p className="mt-2 text-[11px] leading-4 text-[#b3a28c]">
+          <p className="mt-2 shrink-0 text-[11px] leading-4 text-[#b3a28c]">
             <span className="text-[#2a6f97]">›</span> has more detail ·{" "}
             <span className="text-[#d4c4ae]">·</span> end of detail
           </p>
